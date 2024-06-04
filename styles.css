@@ -1,0 +1,79 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2b292d;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #3040c4;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 18px 28px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3c6bd;
+  padding: 40px 25px 78px 130px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header__logo-img {
+  width: 70px;
+  height: 60px;
+}
+
+.header__logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.header__logo-text .header__logo-name {
+  color: #2b292d;
+  font-weight: 700;
+  font-size: 20px;
+}
+.header__logo-text .header__logo-description {
+  font-size: 18px;
+}
+
+.header__nav .active {
+  font-weight: 700;
+}
+.header__nav-link {
+  color: #2b292d;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */
