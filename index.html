@@ -3,12 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Foundation layout</title>
+		<title>Foundation layout | Main page</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="styles.css" />
@@ -16,41 +23,75 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="container">
-					<div class="header__inner">
-						<div class="header__logo">
-							<a class="header__logo-link" href="/">
-								<img
-									class="header__logo-img"
-									src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
-									alt="Foundation Logo"
-								/>
-							</a>
-							<div class="header__logo-text">
-								<span class="header__logo-name">Foundation</span>
-								<span class="header__logo-description"
-									>Startup landing template</span
-								>
-							</div>
+				<div class="header__inner">
+					<div class="logo">
+						<a class="logo__link" href="/">
+							<img
+								class="logo__img"
+								src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+								alt="Foundation Logo"
+							/>
+						</a>
+						<div class="logo__text">
+							<span class="logo__text-name">Foundation</span>
+							<span class="logo__text-description"
+								>Startup landing template</span
+							>
 						</div>
-						<nav class="header__nav">
-							<ul class="header__nav-list">
-								<li class="header__nav-item">
-									<a class="header__nav-link active" href="#">Home </a>
+					</div>
+					<div class="header__content">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__list-item">
+									<a class="nav__list-link nav__list-link--active" href="#"
+										>Home
+									</a>
 								</li>
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="#">Stories</a>
+								<li class="nav__list-item">
+									<a class="nav__list-link" href="#">Stories</a>
 								</li>
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="#">Library</a>
+								<li class="nav__list-item">
+									<a class="nav__list-link" href="#">Library</a>
+									<i class="fa-solid fa-chevron-down fa-sm"></i>
 								</li>
 							</ul>
 						</nav>
-						<button class="header__btn btn">Get Started</button>
+						<button class="button-blue">
+							Get Started
+							<span class="sr-only"> Get Started </span>
+						</button>
 					</div>
 				</div>
 			</header>
-			<main class="main">Main</main>
+			<main class="main">
+				<section class="hero">
+					<div class="container">
+						<div class="hero__inner">
+							<div class="hero__content">
+								<h1 class="hero__title">Build stunning websites & apps.</h1>
+								<p class="hero__description">
+									Create live segments and target the right people for messages
+									based on their behaviors.
+								</p>
+								<div class="hero__buttons">
+									<button class="button-blue">Get Started</button>
+									<button class="button-white">Learn More</button>
+								</div>
+							</div>
+							<div class="hero__image">
+								<img
+									class="hero__img"
+									src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+									alt="Image	ouch"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>Section 2</section>
+				<section>Section 3</section>
+				<section>Section 4</section>
+			</main>
 			<footer class="footer">Footer</footer>
 		</div>
 	</body>

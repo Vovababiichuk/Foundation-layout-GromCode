@@ -1,2 +1,69 @@
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 130px 36px 130px;
+	background-color: $color-beige;
+
+	.header__content {
+		display: flex;
+		align-items: center;
+		gap: 58px;
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&__img {
+		max-width: 68px;
+		height: 60px;
+	}
+}
+
+.logo__text {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+
+	&-name {
+		color: $color-black;
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	&-description {
+		font-size: 18px;
+		opacity: 0.6;
+	}
+}
+
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+
+		&-link {
+			color: $color-black;
+			transition: color 0.2s linear, font-weight 0.2s linear;
+			&:hover {
+				color: $color-accent;
+			}
+
+			&--active {
+				font-weight: 700;
+			}
+		}
+
+		.fa-solid {
+			font-size: 10px;
+		}
+	}
+}
+
+
 
 
