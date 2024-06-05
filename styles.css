@@ -100,7 +100,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  padding: 76px 130px;
+  padding: 76px 130px 50px;
   background-color: #f4f5f7;
 }
 .about__content {
@@ -115,6 +115,14 @@
   font-size: 22px;
 }
 
+.partners__inner {
+  padding: 30px 130px 106px;
+}
+.partners__list {
+  display: flex;
+  align-items: center;
+  gap: 106px;
+}
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
