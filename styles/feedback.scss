@@ -20,7 +20,8 @@
 }
 
 .feedback {
-	padding-bottom: 68px;
+	position: relative;
+	padding-bottom: 50px;
 
 	.feedback__blockquote-author {
 		display: block;
@@ -33,6 +34,15 @@
 		font-size: 16px;
 		color: $color-black;
 		opacity: 0.6;
+	}
+
+	&__image {
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+		width: 273px;
+		height: 243px;
+		z-index: 999;
 	}
 }
 

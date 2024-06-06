@@ -522,7 +522,8 @@
 }
 
 .feedback {
-  padding-bottom: 68px;
+  position: relative;
+  padding-bottom: 50px;
 }
 .feedback .feedback__blockquote-author {
   display: block;
@@ -534,6 +535,14 @@
   font-size: 16px;
   color: #2b292d;
   opacity: 0.6;
+}
+.feedback__image {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 273px;
+  height: 243px;
+  z-index: 999;
 }
 
 .feedback__title {
