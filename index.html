@@ -17,6 +17,10 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -395,10 +399,161 @@
 						</div>
 					</div>
 				</section>
+				<section class="partners">
+					<div class="partners__inner partners-copy">
+						<ul class="partners__list">
+							<li class="partners__list-item">
+								<a class="partners__link" href="#">
+									<img
+										class="partners__link-logo"
+										src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+										alt="New York Times"
+									/>
+								</a>
+							</li>
+							<li class="partners__list-item">
+								<a class="partners__link" href="#">
+									<img
+										class="partners__link-logo"
+										src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+										alt="Forbes"
+									/>
+								</a>
+							</li>
+							<li class="partners__list-item">
+								<a class="partners__link" href="#">
+									<img
+										class="partners__link-logo"
+										src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+										alt="Apple"
+									/>
+								</a>
+							</li>
+							<li class="partners__list-item">
+								<a class="partners__link" href="#">
+									<img
+										class="partners__link-logo"
+										src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+										alt="Mashable"
+									/>
+								</a>
+							</li>
+							<li class="partners__list-item">
+								<a class="partners__link" href="#">
+									<img
+										class="partners__link-logo"
+										src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+										alt="WSJ"
+									/>
+								</a>
+							</li>
+							<li class="partners__list-item">
+								<a class="partners__link" href="#">
+									<img
+										class="partners__link-logo"
+										src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+										alt="Google"
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="feedback">
+					<h2 class="feedback__title">
+						Trusted by the world’s most innovative businesses – big and small
+					</h2>
+					<!-- Swiper -->
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<blockquote class="feedback__blockquote">
+									<p class="feedback__blockquote-text">
+										“Comprehensive set of startup tools for all imaginable
+										entrepreneurial needs. Create landing pages, send emails,
+										find freelancers. Perfect for sales, marketing, and support”
+									</p>
+									<cite class="feedback__blockquote-author"
+										>Viella Malkovich</cite
+									>
+									<span class="feedback__blockquote-role"
+										>Creative Director at Johnson</span
+									>
+								</blockquote>
+							</div>
+							<div class="swiper-slide">
+								<blockquote class="feedback__blockquote">
+									<p class="feedback__blockquote-text">
+										“Comprehensive set of startup tools for all imaginable
+										entrepreneurial needs. Create landing pages, send emails,
+										find freelancers. Perfect for sales, marketing, and support”
+									</p>
+									<cite class="feedback__blockquote-author"
+										>Viella Malkovich</cite
+									>
+									<span class="feedback__blockquote-role"
+										>Creative Director at Johnson</span
+									>
+								</blockquote>
+							</div>
+							<div class="swiper-slide">
+								<blockquote class="feedback__blockquote">
+									<p class="feedback__blockquote-text">
+										“Comprehensive set of startup tools for all imaginable
+										entrepreneurial needs. Create landing pages, send emails,
+										find freelancers. Perfect for sales, marketing, and support”
+									</p>
+									<cite class="feedback__blockquote-author"
+										>Viella Malkovich</cite
+									>
+									<span class="feedback__blockquote-role"
+										>Creative Director at Johnson</span
+									>
+								</blockquote>
+							</div>
+							<div class="swiper-slide">
+								<blockquote class="feedback__blockquote">
+									<p class="feedback__blockquote-text">
+										“Comprehensive set of startup tools for all imaginable
+										entrepreneurial needs. Create landing pages, send emails,
+										find freelancers. Perfect for sales, marketing, and support”
+									</p>
+									<cite class="feedback__blockquote-author"
+										>Viella Malkovich</cite
+									>
+									<span class="feedback__blockquote-role"
+										>Creative Director at Johnson</span
+									>
+								</blockquote>
+							</div>
+							<div class="swiper-slide">
+								<blockquote class="feedback__blockquote">
+									<p class="feedback__blockquote-text">
+										“Comprehensive set of startup tools for all imaginable
+										entrepreneurial needs. Create landing pages, send emails,
+										find freelancers. Perfect for sales, marketing, and support”
+									</p>
+									<cite class="feedback__blockquote-author"
+										>Viella Malkovich</cite
+									>
+									<span class="feedback__blockquote-role"
+										>Creative Director at Johnson</span
+									>
+								</blockquote>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</section>
 			</main>
-			<footer class="footer">Footer</footer>
+			<footer class="footer">
+				<button id="scrollToTopBtn" class="scroll-top-btn">
+					<i class="fa fa-arrow-up"></i>
+				</button>
+			</footer>
 		</div>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./js/index.js"></script>
 	</body>
 </html>
