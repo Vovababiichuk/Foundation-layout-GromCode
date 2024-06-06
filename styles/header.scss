@@ -46,11 +46,17 @@
 		align-items: center;
 		gap: 50px;
 
+		&-item {
+			cursor: pointer;
+		}
+
 		&-link {
 			color: $color-black;
-			transition: color 0.2s linear, font-weight 0.2s linear;
+			transition: border-bottom 0.2s linear;
+			border-bottom-width: 2px;
 			&:hover {
-				color: $color-accent;
+				border-bottom: 3px solid $color-accent;
+				border-bottom-width: 4px;
 			}
 
 			&--active {
@@ -64,6 +70,39 @@
 	}
 }
 
+// Dropdown
 
+.nav__list-item {
+	position: relative;
+}
 
+.dropdown {
+	display: none;
+	background-color: $color-light;
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	border-radius: 6px;
+	width: 612px;
+	height: 292px;
+	z-index: 300;
 
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		gap: 20px;
+		padding: 20px 40px;
+	}
+
+	&__list-title {
+		font-weight: 700;
+		&--active {
+			color: $color-green;
+		}
+	}
+
+	&__list-description {
+		font-size: 18px;
+	}
+}

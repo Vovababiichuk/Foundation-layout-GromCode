@@ -22,6 +22,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
+			<div id="overlay"></div>
 			<header class="header">
 				<div class="header__inner">
 					<div class="logo">
@@ -50,9 +51,29 @@
 								<li class="nav__list-item">
 									<a class="nav__list-link" href="#">Stories</a>
 								</li>
-								<li class="nav__list-item">
+								<li id='library' class="nav__list-item">
 									<a class="nav__list-link" href="#">Library</a>
 									<i class="fa-solid fa-chevron-down fa-sm"></i>
+									<div id='dropdown' class="dropdown">
+										<ul class="dropdown__list">
+												<li class='dropdown__list-item'><a class="dropdown__list-link" href="#">
+													<span class='dropdown__list-title dropdown__list-title--active'>Acquire Users</span>
+													<p class='dropdown__list-description'>Work with the tools and services you use.</p>
+												</a></li>
+												<li class='dropdown__list-item'><a  class="dropdown__list-link" href="#">
+													<span class='dropdown__list-title'>Engage Customers</span>
+													<p class='dropdown__list-description'>Get started with our simple snippet of JavaScript.</p>
+												</a></li>
+												<li class='dropdown__list-item'><a class="dropdown__list-link" href="#">
+													<span class='dropdown__list-title'>Book Appointments</span>
+													<p class='dropdown__list-description'>We offer measures like 2FA to ensure the safety.</p>
+												</a></li>
+												<li class='dropdown__list-item'><a class="dropdown__list-link" href="#">
+													<span class='dropdown__list-title'>Generate Leads</span>
+													<p class='dropdown__list-description'>Become a better designer by learning this courses.</p>
+												</a></li>
+										</ul>
+								</div>
 								</li>
 							</ul>
 						</nav>
@@ -236,5 +257,11 @@
 			</main>
 			<footer class="footer">Footer</footer>
 		</div>
+
+		<script src="./js/index.js">
+
+
+	
+		</script>
 	</body>
 </html>
