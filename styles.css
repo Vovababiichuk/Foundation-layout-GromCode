@@ -152,6 +152,9 @@
   font-size: 22px;
 }
 
+.partners {
+  background-color: #fff;
+}
 .partners__inner {
   padding: 30px 130px 106px;
 }
@@ -168,6 +171,9 @@
   padding: 44px 130px 72px;
 }
 
+.features {
+  background-color: #fff;
+}
 .features__inner {
   display: flex;
   gap: 125px;
@@ -359,6 +365,9 @@
   font-size: 16px;
 }
 
+.communicate {
+  background-color: #fff;
+}
 .communicate__inner {
   display: flex;
   flex-direction: column;
@@ -522,8 +531,10 @@
 }
 
 .feedback {
+  background-color: #fff;
   position: relative;
   padding-bottom: 50px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.1);
 }
 .feedback .feedback__blockquote-author {
   display: block;
@@ -562,12 +573,68 @@
   margin-top: -80px;
 }
 
+.hiring {
+  background-color: #fff;
+}
+.hiring__inner {
+  padding: 100px 0 110px;
+}
+.hiring__content {
+  text-align: center;
+  margin-bottom: 110px;
+}
+.hiring__title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.hiring__description {
+  font-size: 24px;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+.hiring__list {
+  margin: 0 auto;
+  max-width: 750px;
+}
+.hiring__list-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px;
+  border: 2px solid rgba(43, 41, 45, 0.1);
+  border-radius: 8px;
+  max-width: 750px;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+.hiring__list-link:hover {
+  background-color: #3142c6;
+  cursor: pointer;
+  color: #fff;
+}
+.hiring__list-link .list-link__role {
+  font-size: 22;
+  font-weight: 700;
+}
+.hiring__list-link .list-link__location {
+  font-size: 18px;
+}
+.hiring__list-link .list-link__arrow {
+  width: 8px;
+  height: 12px;
+  line-height: 0.4;
+  display: block;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #f2f2f2;
   color: #2b292d;
 }
 

@@ -8,13 +8,14 @@
 @import 'communicate';
 @import 'audience';
 @import 'feedback';
+@import 'hiring';
 
 body {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.5;
-	background-color: $color-light;
+	background-color: $color-body;
 	color: $color-black;
 }
 
