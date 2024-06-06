@@ -577,7 +577,7 @@
   background-color: #fff;
 }
 .hiring__inner {
-  padding: 100px 0 110px;
+  padding: 80px 0 110px;
 }
 .hiring__content {
   text-align: center;
@@ -627,6 +627,55 @@
   height: 12px;
   line-height: 0.4;
   display: block;
+}
+
+.subscription {
+  background-color: #f4f5f7;
+  padding: 72px 224px;
+}
+.subscription__inner {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.subscription__image {
+  max-width: 270px;
+  height: 296px;
+}
+.subscription__title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.subscription__description {
+  font-size: 22px;
+  margin-bottom: 26px;
+  max-width: 555px;
+  margin-bottom: 30px;
+}
+.subscription__form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.subscription__form-input {
+  width: 100%;
+  max-width: 385px;
+  padding: 13px 0 13px 15px;
+  line-height: 1;
+  border-radius: 2px;
+  display: block;
+}
+.subscription__text {
+  font-size: 14px;
+  color: rgba(43, 41, 45, 0.5);
+}
+.subscription__link {
+  color: #3142c6;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+.subscription__link:hover {
+  color: #0189d1;
 }
 
 body {

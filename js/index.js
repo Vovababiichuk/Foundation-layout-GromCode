@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	const cards = document.querySelectorAll('.cards__list-link');
 	const buttonsBlue = document.querySelectorAll('.button-blue');
 	const buttonsWhite = document.querySelectorAll('.button-white');
+	const allLinks = document.getElementsByTagName('a');
 
 	const handleClick = e => {
 		e.preventDefault();
-		alert('Now website is under development! 💪💪💪');
+		alert('NOW WEBSITE IS UNDER DEVELOPMENT! 💪💪💪');
 	};
 
 	try {
@@ -54,6 +55,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const buttonsWhiteArr = [...buttonsWhite];
 	buttonsWhiteArr.forEach(el => {
+		el.addEventListener('click', handleClick);
+	});
+
+	const allLinksArr = [...allLinks];
+	allLinksArr.forEach(el => {
 		el.addEventListener('click', handleClick);
 	});
 });

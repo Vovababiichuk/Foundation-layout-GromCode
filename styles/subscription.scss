@@ -1,0 +1,57 @@
+.subscription {
+	background-color: $color-light-dark;
+	padding: 72px 224px;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: 120px;
+	}
+
+	&__image {
+		max-width: 270px;
+		height: 296px;
+	}
+
+	&__title {
+		font-size: 40px;
+		font-weight: 700;
+	}
+
+	&__description {
+		font-size: 22px;
+		margin-bottom: 26px;
+		max-width: 555px;
+		margin-bottom: 30px;
+	}
+
+	&__form {
+		display: flex;
+		gap: 10px;
+		margin-bottom: 10px;
+	}
+
+	&__form-input {
+		width: 100%;
+		max-width: 385px;
+		padding: 13px 0 13px 15px;
+		line-height: 1;
+		border-radius: 2px;
+		display: block;
+	}
+
+	&__text {
+		font-size: 14px;
+		color: rgba($color-black, 0.5);
+	}
+
+	&__link {
+		color: $color-blue;
+		text-decoration: underline;
+		transition: color 0.2s ease-in-out;
+
+		&:hover {
+			color: $color-blue-light;
+		}
+	}
+}
