@@ -2,8 +2,16 @@ $color-beige: #f3c6bd;
 $color-black: #2b292d;
 $color-accent: #3040c4;
 $color-blue: #3142c6;
+$color-blue-light: #0189d1;
 $color-light: #fff;
 $color-light-dark: #f4f5f7;
 $color-green: #009b4d;
 $color-yellow-light: #fcf0e3;
 $color-orange: #f1592b;
+
+@mixin title {
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 30px;
+}

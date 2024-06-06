@@ -24,10 +24,9 @@
 	}
 
 	&__title {
+		@include title;
 		font-size: 55px;
 		max-width: 462px;
-		font-weight: 700;
-		line-height: 1;
 		margin-bottom: 28px;
 	}
 

@@ -3,7 +3,7 @@
 	align-items: center;
 	gap: 160px;
 	background-color: $color-yellow-light;
-	padding: 142px 24px 116px 192px;
+	padding: 142px 24px 102px 192px;
 
 	&__image {
 		&-wheel {
@@ -34,10 +34,8 @@
 		}
 
 		&-title {
-			font-size: 56px;
-			font-weight: 700;
+			@include title;
 			max-width: 462px;
-			line-height: 1;
 			margin-bottom: 30px;
 		}
 
