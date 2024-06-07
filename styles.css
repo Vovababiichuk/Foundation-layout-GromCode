@@ -665,6 +665,9 @@
   border-radius: 2px;
   display: block;
 }
+.subscription__form-input:focus {
+  outline: 1px solid #3142c6;
+}
 .subscription__text {
   font-size: 14px;
   color: rgba(43, 41, 45, 0.5);
