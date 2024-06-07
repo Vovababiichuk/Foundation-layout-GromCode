@@ -24,6 +24,7 @@ $color-body: #f2f2f2;
 	&:hover {
 		border-bottom: 3px solid $color-accent;
 		border-bottom-width: 4px;
+		color: $color-accent;
 	}
 }
 
