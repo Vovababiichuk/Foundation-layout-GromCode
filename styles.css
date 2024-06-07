@@ -45,6 +45,9 @@
 .nav__list-item {
   cursor: pointer;
 }
+.nav__list-item:nth-of-type(3) {
+  animation: pulse-wave 1.5s infinite;
+}
 .nav__list-link {
   color: #2b292d;
   border-bottom-width: 2px;
@@ -93,6 +96,14 @@
   font-size: 18px;
 }
 
+@keyframes pulse-wave {
+  0% {
+    box-shadow: 0 0 0 0 rgba(252, 240, 227, 0.5), 0 0 0 10px rgba(243, 198, 189, 0.4), 0 0 0 20px rgba(252, 240, 227, 0.3), 0 0 0 30px rgba(243, 198, 189, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(252, 240, 227, 0), 0 0 0 30px rgba(243, 198, 189, 0), 0 0 0 40px rgba(252, 240, 227, 0), 0 0 0 50px rgba(243, 198, 189, 0);
+  }
+}
 .hero__inner {
   display: flex;
   justify-content: space-between;

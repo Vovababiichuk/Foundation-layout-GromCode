@@ -33,3 +33,9 @@ $color-body: #f2f2f2;
 	justify-content: $justify;
 	gap: $gap;
 }
+
+@mixin flex-column($gap: 0) {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+}
