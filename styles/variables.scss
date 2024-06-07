@@ -18,3 +18,18 @@ $color-body: #f2f2f2;
 	line-height: 1;
 	margin-bottom: 30px;
 }
+
+@mixin hover-link {
+	transition: border-bottom 0.2s linear;
+	&:hover {
+		border-bottom: 3px solid $color-accent;
+		border-bottom-width: 4px;
+	}
+}
+
+@mixin flex-center($justify: space-between, $gap: 0) {
+	display: flex;
+	align-items: center;
+	justify-content: $justify;
+	gap: $gap;
+}

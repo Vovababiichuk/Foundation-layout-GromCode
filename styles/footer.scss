@@ -1,0 +1,71 @@
+.footer {
+	background-color: $color-light;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__top {
+		display: grid;
+		grid-template-columns: repeat(3, 360px 220px 220px);
+		column-gap: 100px;
+		border-bottom: 1px solid rgba($color-black, 0.1);
+		padding: 42px 260px 46px 130px;
+	}
+
+	&__info-desc {
+		font-size: 18px;
+		color: rgba($color-black, 0.6);
+		margin-bottom: 28px;
+	}
+
+	&__info-apps {
+		@include flex-center(flex-start, 10px);
+	}
+
+	&__links {
+		&-title {
+			font-size: 22px;
+			font-weight: 700;
+			margin-bottom: 22px;
+		}
+
+		&-list {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+		}
+
+		&-item {
+			font-size: 18px;
+			color: rgba($color-black, 0.6);
+		}
+
+		&-link {
+			@include hover-link;
+		}
+	}
+
+	&__bottom {
+		@include flex-center(space-between);
+		padding: 15px 130px;
+
+		&-info {
+			font-size: 14px;
+		}
+
+		&-list {
+			@include flex-center(flex-start, 20px);
+			color: rgba($color-black, 0.6);
+		}
+
+		&-link {
+			@include hover-link;
+		}
+	}
+
+	&__social-list {
+		@include flex-center(flex-end, 20px);
+	}
+}

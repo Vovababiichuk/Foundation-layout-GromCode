@@ -37,6 +37,7 @@
 	&-description {
 		font-size: 18px;
 		opacity: 0.6;
+		color: $color-black;
 	}
 }
 
@@ -52,12 +53,8 @@
 
 		&-link {
 			color: $color-black;
-			transition: border-bottom 0.2s linear;
 			border-bottom-width: 2px;
-			&:hover {
-				border-bottom: 3px solid $color-accent;
-				border-bottom-width: 4px;
-			}
+			@include hover-link;
 
 			&--active {
 				font-weight: 700;
