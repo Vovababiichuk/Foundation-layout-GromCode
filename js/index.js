@@ -79,7 +79,22 @@ const swiper = new Swiper('.mySwiper', {
 	},
 });
 
-// scroll to top
+// sticky
+
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.header__inner');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+      header.classList.add('header__inner--sticky');
+    } else {
+      header.classList.remove('header__inner--sticky');
+    }
+  });
+});
+
+
+// scroll button to top
 
 document.addEventListener('DOMContentLoaded', function () {
 	const scrollToTopBtn = document.getElementById('scrollToTopBtn');
