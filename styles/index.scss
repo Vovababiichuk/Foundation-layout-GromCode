@@ -90,7 +90,7 @@ body {
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.7);
 	z-index: 260;
-	height: 6738px
+	height: 6738px;
 }
 
 ::-webkit-scrollbar {
@@ -136,3 +136,8 @@ body {
 	line-height: 1.2;
 }
 
+.header__audio--sticky {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}

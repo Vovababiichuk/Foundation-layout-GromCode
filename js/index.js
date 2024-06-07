@@ -83,12 +83,15 @@ const swiper = new Swiper('.mySwiper', {
 
 document.addEventListener('DOMContentLoaded', function () {
   const header = document.querySelector('.header__inner');
+	const audio = document.querySelector('.header__audio');
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 500) {
       header.classList.add('header__inner--sticky');
+			audio.classList.add('header__audio--sticky');
     } else {
       header.classList.remove('header__inner--sticky');
+			audio.classList.remove('header__audio--sticky');
     }
   });
 });
@@ -114,3 +117,18 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 });
+
+// Audio
+
+const audio = document.getElementById("myAudio");
+const playButton = document.getElementById("playButton");
+
+function togglePlay() {
+  if (audio.paused) {
+    audio.play();
+    playButton.innerHTML = '<i class="fa fa-pause pulsating-icon"></i>';
+  } else {
+    audio.pause();
+    playButton.innerHTML = '<i class="fa fa-play"></i>';
+  }
+}

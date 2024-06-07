@@ -1,4 +1,5 @@
 .header__inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,6 +128,18 @@
     top: 0;
   }
 }
+.play-btn {
+  cursor: pointer;
+  color: #fcf0e3;
+  font-size: 26px;
+}
+
+.header__audio {
+  position: absolute;
+  top: 52px;
+  right: 30px;
+}
+
 .hero__inner {
   display: flex;
   justify-content: space-between;
@@ -913,6 +926,12 @@ body {
 .fa-arrow-up {
   font-size: 34px;
   line-height: 1.2;
+}
+
+.header__audio--sticky {
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
