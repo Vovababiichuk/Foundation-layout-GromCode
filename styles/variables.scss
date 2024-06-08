@@ -13,30 +13,45 @@ $color-grey: #2c3241;
 $color-body: #f2f2f2;
 
 @mixin title {
-	font-size: 56px;
-	font-weight: 700;
-	line-height: 1;
-	margin-bottom: 30px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px;
 }
 
 @mixin hover-link {
-	transition: border-bottom 0.2s linear;
-	&:hover {
-		border-bottom: 3px solid $color-accent;
-		border-bottom-width: 4px;
-		color: $color-accent;
-	}
+  transition: border-bottom 0.2s linear;
+  &:hover {
+    border-bottom: 3px solid $color-accent;
+    border-bottom-width: 4px;
+    color: $color-accent;
+  }
 }
 
 @mixin flex-center($justify: space-between, $gap: 0) {
-	display: flex;
-	align-items: center;
-	justify-content: $justify;
-	gap: $gap;
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  gap: $gap;
 }
 
 @mixin flex-column($gap: 0) {
-	display: flex;
-	flex-direction: column;
-	gap: $gap;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin adaptive-image($width, $height) {
+  position: relative;
+  width: 100%;
+  padding-bottom: calc(($height / $width) * 100%);
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

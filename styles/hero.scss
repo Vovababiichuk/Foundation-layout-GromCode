@@ -1,48 +1,112 @@
 .hero {
-	&__inner {
-		display: flex;
-		justify-content: space-between;
-		background-color: $color-beige;
-		padding: 40px 25px 126px 130px;
-		position: relative;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-beige;
+    padding: 40px 25px 126px 130px;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 100;
+    max-width: 754px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 14px;
+    letter-spacing: -1px;
+
+    @media screen and (max-width: $media-1440) {
+      font-size: clamp(50px, 2.6372rem + 2.439vw, 80px);
+    }
+  }
+
+  &__description {
+    max-width: 456px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+    font-size: 24px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 48px;
+    right: 22px;
+    width: 796px;
+    height: 448px;
+  }
+}
+
+@media screen and (max-width: $media-1200) {
+  .hero__image {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: $media-992) {
+  .hero__inner {
+    padding-left: 15px;
+    padding: 40px 15px 126px;
+  }
+}
+
+@media screen and (max-width: $media-855) {
+  .hero__inner {
+    flex-wrap: wrap;
+  }
+  .hero__img {
+    position: static;
+  }
+
+  .hero__description {
+    margin-bottom: 30px;
+  }
+
+	.hero__content {
+		margin-bottom: 32px;
 	}
 
-	&__content {
-		display: flex;
+	.hero__image {
+		@include adaptive-image(796, 448);
+	}
+}
+
+@media screen and (max-width: $media-576) {
+	.hero__buttons {
 		flex-direction: column;
-		z-index: 100;
-	}
 
-	&__title {
-		position: relative;
-		z-index: 100;
-		max-width: 754px;
-		font-size: 80px;
-		font-weight: 700;
-		line-height: 1;
-		margin-bottom: 14px;
-		letter-spacing: -1px;
+		.button-blue,
+		.button-white {
+			width: 100%;
+		}
 	}
+}
 
-	&__description {
-		max-width: 456px;
-		line-height: 1.4;
-		margin-bottom: 60px;
-		font-size: 24px;
+@media screen and (max-width: $media-480) {
+	.hero__inner {
+		padding-top: 32px;
 	}
-
-	&__buttons {
-		display: flex;
-		align-items: center;
-		gap: 10px;
+	.mobile-menu-icon {
+		padding-right: 6px;
 	}
-
-	&__img {
-		position: absolute;
-		top: 48px;
-		right: 22px;
-		width: 796px;
-		height: 448px;
+	.hero__title {
+		margin-bottom: 8px;
+	}
+	.hero__buttons {
+		gap: 15px;
 	}
 }
 

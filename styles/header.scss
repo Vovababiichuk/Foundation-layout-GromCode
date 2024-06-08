@@ -175,7 +175,7 @@
   color: rgba($color-black, 0.6);
 
   .fa-bars,
-	.fa-times {
+  .fa-times {
     font-size: 40px;
 
     @media screen and (max-width: $media-768) {
@@ -195,14 +195,14 @@
   bottom: 0;
   padding: 150px 20px;
   background-color: $color-beige;
-	width: 100%;
+  width: 100%;
   max-width: 360px;
   z-index: 999;
 
-	@media screen and (max-width: $media-576) {
-		max-width: 100%;
-		right: 0;
-	}
+  @media screen and (max-width: $media-576) {
+    max-width: 100%;
+    right: 0;
+  }
 }
 
 .mobile-nav {
@@ -252,22 +252,23 @@
     display: none;
   }
 
-  .button-blue,
+  .button-blue--mobile,
   .header__audio,
   .logo__text-description {
     display: none;
   }
 
-	.logo,
-	.mobile-menu-icon {
-		position: relative;
-		z-index: 1100;
-	}
+  .logo,
+  .mobile-menu-icon {
+    position: relative;
+    z-index: 1100;
+  }
 }
 
-@media screen and (max-width: $media-768) {
+@media screen and (max-width: $media-992) {
   .header__inner {
     padding: 10px 15px;
+    background-color: $color-light;
   }
 }
 

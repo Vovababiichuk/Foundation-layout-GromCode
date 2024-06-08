@@ -143,8 +143,10 @@ function toggleMobileMenu() {
   if (mobileNav.classList.contains('show')) {
     menuIcon.classList.remove('fa-bars');
     menuIcon.classList.add('fa-times');
+    document.body.classList.add('no-scroll');
   } else {
     menuIcon.classList.remove('fa-times');
     menuIcon.classList.add('fa-bars');
+    document.body.classList.remove('no-scroll');
   }
 }

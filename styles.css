@@ -237,7 +237,7 @@
   .nav__list {
     display: none;
   }
-  .button-blue,
+  .button-blue--mobile,
   .header__audio,
   .logo__text-description {
     display: none;
@@ -248,9 +248,10 @@
     z-index: 1100;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .header__inner {
     padding: 10px 15px;
+    background-color: #fff;
   }
 }
 @media screen and (max-width: 480px) {
@@ -284,6 +285,11 @@
   margin-bottom: 14px;
   letter-spacing: -1px;
 }
+@media screen and (max-width: 1440px) {
+  .hero__title {
+    font-size: clamp(50px, 2.6372rem + 2.439vw, 80px);
+  }
+}
 .hero__description {
   max-width: 456px;
   line-height: 1.4;
@@ -303,6 +309,67 @@
   height: 448px;
 }
 
+@media screen and (max-width: 1200px) {
+  .hero__image {
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero__inner {
+    padding-left: 15px;
+    padding: 40px 15px 126px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .hero__inner {
+    flex-wrap: wrap;
+  }
+  .hero__img {
+    position: static;
+  }
+  .hero__description {
+    margin-bottom: 30px;
+  }
+  .hero__content {
+    margin-bottom: 32px;
+  }
+  .hero__image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.2814070352%;
+  }
+  .hero__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__buttons {
+    flex-direction: column;
+  }
+  .hero__buttons .button-blue,
+  .hero__buttons .button-white {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__inner {
+    padding-top: 32px;
+  }
+  .mobile-menu-icon {
+    padding-right: 6px;
+  }
+  .hero__title {
+    margin-bottom: 8px;
+  }
+  .hero__buttons {
+    gap: 15px;
+  }
+}
 .about__inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1013,6 +1080,10 @@
   right: 50px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -1031,6 +1102,11 @@ body {
   max-width: 1420px;
   padding: 0 10px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 0;
+  }
 }
 
 .main {

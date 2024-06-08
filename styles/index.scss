@@ -33,6 +33,10 @@ body {
 	max-width: 1420px;
 	padding: 0 10px;
 	margin: 0 auto;
+
+	@media screen and (max-width: $media-1200) {
+		padding: 0;
+	}
 }
 
 .main {
