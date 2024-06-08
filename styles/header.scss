@@ -178,6 +178,9 @@
 	.fa-times {
     font-size: 40px;
 
+    @media screen and (max-width: $media-768) {
+      font-size: 32px;
+    }
     @media screen and (max-width: $media-480) {
       font-size: 22px;
     }
@@ -192,9 +195,14 @@
   bottom: 0;
   padding: 150px 20px;
   background-color: $color-beige;
-  width: 100%;
-  max-width: 300px;
+	width: 100%;
+  max-width: 360px;
   z-index: 999;
+
+	@media screen and (max-width: $media-576) {
+		max-width: 100%;
+		right: 0;
+	}
 }
 
 .mobile-nav {
@@ -250,7 +258,8 @@
     display: none;
   }
 
-	.logo {
+	.logo,
+	.mobile-menu-icon {
 		position: relative;
 		z-index: 1100;
 	}

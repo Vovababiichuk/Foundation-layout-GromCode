@@ -155,6 +155,12 @@
 .mobile-menu-icon .fa-times {
   font-size: 40px;
 }
+@media screen and (max-width: 768px) {
+  .mobile-menu-icon .fa-bars,
+  .mobile-menu-icon .fa-times {
+    font-size: 32px;
+  }
+}
 @media screen and (max-width: 480px) {
   .mobile-menu-icon .fa-bars,
   .mobile-menu-icon .fa-times {
@@ -171,8 +177,14 @@
   padding: 150px 20px;
   background-color: #f3c6bd;
   width: 100%;
-  max-width: 300px;
+  max-width: 360px;
   z-index: 999;
+}
+@media screen and (max-width: 576px) {
+  .mobile-menu {
+    max-width: 100%;
+    right: 0;
+  }
 }
 
 .mobile-nav {
@@ -230,7 +242,8 @@
   .logo__text-description {
     display: none;
   }
-  .logo {
+  .logo,
+  .mobile-menu-icon {
     position: relative;
     z-index: 1100;
   }
