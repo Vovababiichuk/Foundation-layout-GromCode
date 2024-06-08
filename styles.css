@@ -380,12 +380,12 @@
 .about__content {
   max-width: 555px;
 }
-.about__title {
+.about__content-title {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: -14px;
 }
-.about__description {
+.about__content-description {
   font-size: 22px;
 }
 

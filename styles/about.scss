@@ -1,23 +1,23 @@
 .about {
-	&__inner {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 30px;
-		padding: 76px 130px 50px;
-		background-color: $color-light-dark;
-	}
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 76px 130px 50px;
+    background-color: $color-light-dark;
+  }
 
-	&__content {
-		max-width: 555px;
-	}
+  &__content {
+    max-width: 555px;
 
-	&__title {
-		font-size: 22px;
-		font-weight: 700;
-		margin-bottom: -14px;
-	}
+    &-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: -14px;
+    }
 
-	&__description {
-		font-size: 22px;
-	}
+    &-description {
+      font-size: 22px;
+    }
+  }
 }
