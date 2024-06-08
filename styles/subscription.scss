@@ -1,12 +1,7 @@
 .subscription {
+	@include flex-center(baseline, 120px);
 	background-color: $color-light-dark;
 	padding: 72px 224px;
-
-	&__inner {
-		display: flex;
-		align-items: center;
-		gap: 120px;
-	}
 
 	&__image {
 		max-width: 270px;

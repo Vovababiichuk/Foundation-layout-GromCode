@@ -1,31 +1,29 @@
 .manage {
-	display: flex;
-	align-items: center;
-	gap: 160px;
+	@include flex-center(baseline, 160px);
 	background-color: $color-yellow-light;
 	padding: 142px 24px 102px 192px;
 
-	&__image {
-		&-wheel {
-			max-width: 425px;
-			height: 510px;
-			margin-bottom: 15px;
-		}
+	&__wheel-image {
+		max-width: 425px;
+		height: 510px;
+		margin-bottom: 15px;
+	}
 
-		&-text {
-			font-size: 14px;
-			opacity: 0.6;
-			text-align: center;
-			display: block;
-		}
+	&__wheel-text {
+		font-size: 14px;
+		opacity: 0.6;
+		text-align: center;
+		display: block;
 	}
 
 	&__content {
+		margin-top: -38px;
+
 		&-inner {
 			padding-left: 30px;
 		}
-		margin-top: -38px;
-		&-decor {
+
+		&-inner-decor {
 			color: $color-orange;
 			font-weight: 700;
 			margin-bottom: 24px;
@@ -33,60 +31,57 @@
 			font-size: 22px;
 		}
 
-		&-title {
+		&-inner-title {
 			@include title;
 			max-width: 462px;
 			margin-bottom: 30px;
 		}
 
-		&-description {
+		&-inner-description {
 			font-size: 24px;
 			max-width: 462px;
 			line-height: 1.4;
 		}
-	}
-	&__content-blockquote {
-		font-size: 20px;
-		background-color: $color-light;
-		max-width: 520px;
-		padding: 30px 30px 28px 30px;
-		border-bottom: 4px solid $color-blue;
-		display: flex;
-		flex-direction: column;
-		gap: 26px;
-	}
 
-	.content-blockquote {
-		&__text {
-			display: block;
-
+		&-blockquote {
+			font-size: 20px;
+			background-color: $color-light;
+			max-width: 520px;
+			padding: 30px 30px 28px 30px;
+			border-bottom: 4px solid $color-blue;
+			display: flex;
+			flex-direction: column;
+			gap: 26px;
 		}
-		&__info {
+
+		&-blockquote-info {
 			display: flex;
 			align-items: center;
 			gap: 10px;
-
-			&-avatar {
-				width: 40px;
-				height: 40px;
-				border-radius: 50%;
-			}
-		}
-
-		&__info-text {
-			display: flex;
-			flex-direction: column;
 		}
 	}
-	.info-text {
-		&__author {
-			font-size: 16px;
-			font-weight: 700;
-			display: flex;
-		}
+}
 
-		&__position {
-			font-size: 16px;
-		}
+.blockquote-info {
+
+	&__avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__text-author {
+		font-size: 16px;
+		font-weight: 700;
+		display: flex;
+	}
+
+	&__text-position {
+		font-size: 16px;
 	}
 }

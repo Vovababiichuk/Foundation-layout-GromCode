@@ -21,7 +21,7 @@
 		@include flex-center(flex-start, 10px);
 
 		&-link:hover {
-			transition: scale .2s ease-in-out;
+			transition: scale 0.2s ease-in-out;
 			scale: 1.05;
 		}
 	}
@@ -35,15 +35,15 @@
 
 		&-list {
 			@include flex-column(12px);
-		}
 
-		&-item {
-			font-size: 18px;
-			color: rgba($color-black, 0.6);
-		}
+			&-item {
+				font-size: 18px;
+				color: rgba($color-black, 0.6);
+			}
 
-		&-link {
-			@include hover-link;
+			&-link {
+				@include hover-link;
+			}
 		}
 	}
 
@@ -51,21 +51,22 @@
 		@include flex-center(space-between);
 		padding: 15px 130px;
 
-		&-info {
-			font-size: 14px;
+		.footer-info {
+			&__list {
+				@include flex-center(flex-start, 20px);
+				color: rgba($color-black, 0.6);
+				font-size: 14px;
+
+				&-link {
+					@include hover-link;
+				}
+			}
 		}
 
-		&-list {
-			@include flex-center(flex-start, 20px);
-			color: rgba($color-black, 0.6);
+		.footer-social {
+			&__list {
+				@include flex-center(flex-start, 20px);
+			}
 		}
-
-		&-link {
-			@include hover-link;
-		}
-	}
-
-	&__social-list {
-		@include flex-center(flex-end, 20px);
 	}
 }

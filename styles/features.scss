@@ -1,22 +1,14 @@
 .features {
 	background-color: $color-light;
-	&__inner {
-		display: flex;
-		gap: 125px;
-		padding: 0 0 102px 130px;
-	}
+	display: flex;
+	gap: 125px;
+	padding: 0 0 102px 130px;
 
 	&__content {
 		position: relative;
-
-		.features__decor-img {
-			position: absolute;
-			top: 258px;
-			left: -130px;
-		}
 	}
 
-	&__decor-text {
+	&__content-subtitle {
 		font-size: 22px;
 		color: $color-green;
 		font-weight: 700;
@@ -24,14 +16,14 @@
 		display: block;
 	}
 
-	&__title {
+	&__content-title {
 		@include title;
 		font-size: 55px;
 		max-width: 462px;
 		margin-bottom: 28px;
 	}
 
-	&__description {
+	&__content-description {
 		font-size: 22px;
 		max-width: 462px;
 		margin-bottom: 42px;
@@ -40,43 +32,31 @@
 		letter-spacing: 0.85px;
 	}
 
-	&__subtitle {
+	&__content-sub {
 		color: $color-blue;
 		font-size: 22px;
 		font-weight: 700;
 		margin-bottom: -16px;
+
+		&::before {
+			content: '';
+			background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			margin-right: 15px;
+			vertical-align: -2px;
+		}
 	}
 
-	&__subtitle::before {
-		content: '';
-		background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png');
-		background-repeat: no-repeat;
-		background-position: center;
-		display: inline-block;
-		width: 24px;
-		height: 24px;
-		margin-right: 15px;
-		vertical-align: -2px;
-	}
-
-	&__subtitle::after {
-		content: '';
-		background-image: url('../img/pointer.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		display: inline-block;
-		width: 16px;
-		height: 20px;
-		vertical-align: -10px;
-		margin-left: -12px;
-	}
-
-	&__text {
+	&__content-text {
 		font-size: 18px;
 		max-width: 460px;
 	}
 
-	&__divider {
+	&__content-divider {
 		display: block;
 		height: 1px;
 		background-color: $color-black;
@@ -91,7 +71,7 @@
 		opacity: 1;
 	}
 
-	&__info {
+	&__content-info {
 		font-size: 22px;
 		font-weight: 700;
 		margin-bottom: 22px;
@@ -119,5 +99,11 @@
 			margin-right: 15px;
 			vertical-align: middle;
 		}
+	}
+
+	&__content-img {
+		position: absolute;
+		top: 258px;
+		left: -130px;
 	}
 }

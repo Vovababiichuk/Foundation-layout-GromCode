@@ -2,7 +2,7 @@
 	background-color: $color-light;
 
 	&__inner {
-		padding: 30px  130px 106px;
+		padding: 30px 130px 106px;
 	}
 
 	&__list {
@@ -11,11 +11,13 @@
 		gap: 106px;
 	}
 
-	&__link-logo {
+	&__list-item-logo {
 		filter: brightness(0);
+	}
+
+	&__inner--copy {
+		padding: 44px 130px 72px;
 	}
 }
 
-.partners-copy {
-	padding: 44px  130px 72px;
-}
+

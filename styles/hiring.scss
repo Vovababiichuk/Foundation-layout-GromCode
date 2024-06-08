@@ -1,19 +1,17 @@
 .hiring {
 	background-color: $color-light;
-	&__inner {
-		padding: 80px 0 110px;
-	}
+	padding: 80px 0 110px;
 
 	&__content {
 		text-align: center;
 		margin-bottom: 110px;
 	}
 
-	&__title {
+	&__content-title {
 		@include title;
 	}
 
-	&__description {
+	&__content-description {
 		font-size: 24px;
 		max-width: 555px;
 		margin: 0 auto;
@@ -25,7 +23,7 @@
 		max-width: 750px;
 	}
 
-	&__list-link {
+	&__link {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -41,21 +39,21 @@
 			cursor: pointer;
 			color: $color-light;
 		}
+	}
 
-		.list-link__role {
-			font-size: 22;
-			font-weight: 700;
-		}
+	&__link-role {
+		font-size: 22;
+		font-weight: 700;
+	}
 
-		.list-link__location {
-			font-size: 18px;
-		}
+	&__link-location {
+		font-size: 18px;
+	}
 
-		.list-link__arrow {
-			width: 8px;
-			height: 12px;
-			line-height: 0.4;
-			display: block;
-		}
+	&__link-arrow {
+		width: 8px;
+		height: 12px;
+		line-height: 0.4;
+		display: block;
 	}
 }
