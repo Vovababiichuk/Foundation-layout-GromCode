@@ -346,6 +346,9 @@
     height: 100%;
     object-fit: cover;
   }
+  .hero__inner {
+    padding-bottom: 58px;
+  }
 }
 @media screen and (max-width: 576px) {
   .hero__buttons {
@@ -355,11 +358,11 @@
   .hero__buttons .button-white {
     width: 100%;
   }
+  .hero__inner {
+    padding: 32px 15px 58px;
+  }
 }
 @media screen and (max-width: 480px) {
-  .hero__inner {
-    padding-top: 32px;
-  }
   .mobile-menu-icon {
     padding-right: 6px;
   }
@@ -376,6 +379,13 @@
   gap: 30px;
   padding: 76px 130px 50px;
   background-color: #f4f5f7;
+}
+@media screen and (max-width: 768px) {
+  .about__inner {
+    grid-template-columns: 1fr;
+    padding: 48px 15px 50px;
+    gap: 4px;
+  }
 }
 .about__content {
   max-width: 555px;

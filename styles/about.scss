@@ -5,6 +5,12 @@
     gap: 30px;
     padding: 76px 130px 50px;
     background-color: $color-light-dark;
+
+		@media screen and (max-width: $media-768) {
+			grid-template-columns: 1fr;
+			padding: 48px 15px 50px;
+			gap: 4px;
+		}
   }
 
   &__content {
