@@ -1,86 +1,130 @@
 .manage {
-	@include flex-center(baseline, 160px);
-	background-color: $color-yellow-light;
-	padding: 142px 24px 102px 192px;
+  @include flex-center(baseline, 160px);
+  background-color: $color-yellow-light;
+  padding: 142px 24px 102px 192px;
 
-	&__wheel-image {
-		max-width: 425px;
-		height: 510px;
-		margin-bottom: 15px;
-	}
+  &__wheel-image {
+    width: 100%;
+    max-width: 425px;
+    height: 100%;
+    max-height: auto;
+    margin-bottom: 15px;
+  }
 
-	&__wheel-text {
-		font-size: 14px;
-		opacity: 0.6;
-		text-align: center;
-		display: block;
-	}
+  &__wheel-text {
+    font-size: 14px;
+    opacity: 0.6;
+    text-align: center;
+    display: block;
+  }
 
-	&__content {
-		margin-top: -38px;
+  &__content {
+    margin-top: -38px;
 
-		&-inner {
-			padding-left: 30px;
-		}
+    &-inner {
+      padding-left: 30px;
+    }
 
-		&-inner-decor {
-			color: $color-orange;
-			font-weight: 700;
-			margin-bottom: 24px;
-			display: block;
-			font-size: 22px;
-		}
+    &-inner-decor {
+      color: $color-orange;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: block;
+      font-size: 22px;
+    }
 
-		&-inner-title {
-			@include title;
-			max-width: 462px;
-			margin-bottom: 30px;
-		}
+    &-inner-title {
+      @include title;
+      font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+      max-width: 462px;
+      margin-bottom: 30px;
+    }
 
-		&-inner-description {
-			font-size: 24px;
-			max-width: 462px;
-			line-height: 1.4;
-		}
+    &-inner-description {
+      font-size: 24px;
+      max-width: 462px;
+      line-height: 1.4;
+    }
 
-		&-blockquote {
-			font-size: 20px;
-			background-color: $color-light;
-			max-width: 520px;
-			padding: 30px 30px 28px 30px;
-			border-bottom: 4px solid $color-blue;
-			display: flex;
-			flex-direction: column;
-			gap: 26px;
-		}
+    &-blockquote {
+      font-size: 20px;
+      background-color: $color-light;
+      max-width: 520px;
+      padding: 30px 30px 28px 30px;
+      border-bottom: 4px solid $color-blue;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
 
-		&-blockquote-info {
-			display: flex;
-			align-items: center;
-			gap: 10px;
-		}
-	}
+    &-blockquote-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
 }
 
 .blockquote-info {
-	&__avatar {
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-	}
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 
-	&__text {
-		display: flex;
-		flex-direction: column;
-	}
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
 
-	&__text-author {
-		font-size: 16px;
-		font-weight: 700;
-		display: flex;
-	}
+  &__text-author {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+  }
 
-	&__text-position {
-		font-size: 16px;
-	}
+  &__text-position {
+    font-size: 16px;
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: $media-1440) {
+  .manage {
+    padding: 142px 24px 102px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: $media-1200) {
+  .manage {
+    flex-direction: column;
+    gap: 58px;
+    text-align: center;
+    padding: 20px 24px 102px;
+  }
+  @media screen and (max-width: $media-480) {
+    .manage {
+      text-align: left;
+      padding: 20px 24px 34px;
+    }
+    .manage__wheel-image {
+      width: 290px;
+      height: 344px;
+    }
+
+    .manage__wheel-text {
+      display: none;
+    }
+    .manage__content-inner {
+      padding-left: 0px;
+    }
+    .manage__content-inner-decor {
+      margin-bottom: 20px;
+    }
+    .manage__content-inner-title {
+      margin-bottom: -8px;
+    }
+  }
 }
