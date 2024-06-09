@@ -34,12 +34,24 @@
     max-width: 100%;
     height: auto;
   }
+}
 
-  @media screen and (max-width: $media-855) {
+// MEDIA QUERIES
+
+@media screen and (max-width: $media-1200) {
+  .partners {
+    padding: 30px 130px 30px;
+  }
+}
+
+@media screen and (max-width: $media-855) {
+  .partners {
     padding: 0 15px 46px 15px;
   }
+}
 
-  @media (max-width: $media-576) {
+@media (max-width: $media-576) {
+  .partners {
     padding: 0 0 46px 0;
 
     &__list-item {
@@ -51,8 +63,5 @@
       grid-template-columns: repeat(3, minmax(107px, 1fr));
       gap: 0;
     }
-  }
-
-  @media screen and (max-width: $media-480) {
   }
 }

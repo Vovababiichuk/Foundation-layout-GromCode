@@ -177,7 +177,8 @@
 
   .fa-bars,
   .fa-times {
-    font-size: clamp(22px, 1.2124rem + 0.813vw, 32px);
+    // font-size: clamp(22px, 1.2124rem + 0.813vw, 32px);
+    font-size: clamp(22px, 1.1898rem + 0.9259vw, 32px);
   }
 }
 
@@ -270,7 +271,7 @@
     .mobile-menu-icon {
       display: block;
       height: 64px;
-      border-left: 1px solid rgba($color-black, 0.5);
+      border-left: 1px solid rgba($color-black, 0.6);
   }
   .fa-bars,
   .fa-times {

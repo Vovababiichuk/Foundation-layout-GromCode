@@ -17,15 +17,11 @@
     position: relative;
     z-index: 100;
     max-width: 754px;
-    font-size: 80px;
+    font-size: clamp(50px, 2.5694rem + 2.7778vw, 80px);
     font-weight: 700;
     line-height: 1;
     margin-bottom: 14px;
     letter-spacing: -1px;
-
-    @media screen and (max-width: $media-1440) {
-      font-size: clamp(50px, 2.6372rem + 2.439vw, 80px);
-    }
   }
 
   &__description {
@@ -49,6 +45,8 @@
     height: 448px;
   }
 }
+
+// MEDIA QUERIES
 
 @media screen and (max-width: $media-1200) {
   .hero__image {
@@ -81,6 +79,7 @@
 
   .hero__image {
     @include adaptive-image(796, 448);
+    opacity: 1;
   }
 
   .hero__inner {

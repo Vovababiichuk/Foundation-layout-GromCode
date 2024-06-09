@@ -1,109 +1,157 @@
 .features {
-	background-color: $color-light;
-	display: flex;
-	gap: 125px;
-	padding: 0 0 102px 130px;
+  display: flex;
+  gap: 125px;
+  background-color: $color-light;
+  padding: 0 0 102px 130px;
 
-	&__content {
-		position: relative;
-	}
+  &__content {
+    position: relative;
+  }
 
-	&__content-subtitle {
-		font-size: 22px;
-		color: $color-green;
-		font-weight: 700;
-		margin-bottom: 30px;
-		display: block;
-	}
+  &__content-subtitle {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: $color-green;
+    margin-bottom: 30px;
+  }
 
-	&__content-title {
-		@include title;
-		font-size: 55px;
-		max-width: 462px;
-		margin-bottom: 28px;
-	}
+  &__content-title {
+    @include title;
+    font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+    max-width: 462px;
+    margin-bottom: 28px;
+  }
 
-	&__content-description {
-		font-size: 22px;
-		max-width: 462px;
-		margin-bottom: 42px;
-		line-height: 1.5;
-		display: block;
-		letter-spacing: 0.85px;
-	}
+  &__content-description {
+    display: block;
+    font-size: 22px;
+    max-width: 462px;
+    letter-spacing: 0.85px;
+    line-height: 1.5;
+    margin-bottom: 42px;
+  }
 
-	&__content-sub {
-		color: $color-blue;
-		font-size: 22px;
-		font-weight: 700;
-		margin-bottom: -16px;
+  &__content-sub {
+    font-size: 22px;
+    font-weight: 700;
+    color: $color-blue;
+    margin-bottom: -16px;
 
-		&::before {
-			content: '';
-			background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			display: inline-block;
-			width: 24px;
-			height: 24px;
-			margin-right: 15px;
-			vertical-align: -2px;
-		}
-	}
+    &::before {
+      content: '';
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+      vertical-align: -2px;
+    }
+  }
 
-	&__content-text {
-		font-size: 18px;
-		max-width: 460px;
-	}
+  &__content-text {
+    font-size: 18px;
+    max-width: 460px;
+  }
 
-	&__content-divider {
-		display: block;
-		height: 1px;
-		background-color: $color-black;
-		opacity: 0.1;
-		width: 100%;
-		margin-bottom: 16px;
-	}
+  &__content-divider {
+    display: block;
+    height: 1px;
+    opacity: 0.1;
+    width: 100%;
+    background-color: $color-black;
+    margin-bottom: 16px;
+  }
 
-	&__divider--blue {
-		background-color: $color-blue;
-		height: 3px;
-		opacity: 1;
-	}
+  &__divider--blue {
+    height: 3px;
+    opacity: 1;
+    background-color: $color-blue;
+  }
 
-	&__content-info {
-		font-size: 22px;
-		font-weight: 700;
-		margin-bottom: 22px;
-		display: block;
+  &__content-info {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 22px;
 
-		&:nth-of-type(2):before {
-			content: '';
-			background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			display: inline-block;
-			width: 24px;
-			height: 24px;
-			margin-right: 15px;
-			vertical-align: middle;
-		}
-		&:nth-of-type(3):before {
-			content: '';
-			background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			display: inline-block;
-			width: 24px;
-			height: 24px;
-			margin-right: 15px;
-			vertical-align: middle;
-		}
-	}
+    &:nth-of-type(2):before {
+      content: '';
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+    &:nth-of-type(3):before {
+      content: '';
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+  }
 
-	&__content-img {
-		position: absolute;
-		top: 258px;
-		left: -130px;
-	}
+  &__content-img {
+    position: absolute;
+    top: 258px;
+    left: -130px;
+  }
+
+  &__image-caption {
+    display: none;
+    font-size: 14px;
+    color: rgba($color-black, 0.6);
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: $media-1320) {
+  .features {
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px 40px;
+  }
+  .features__content-img {
+    display: none;
+  }
+  .features__image-caption {
+    display: block;
+    text-align: center;
+  }
+  .features__image {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: $media-855) {
+  .features__content-info,
+  .features__content-divider,
+  .features__content-sub,
+  .features__content-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $media-768) {
+  .features {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: $media-576) {
+  .features__content-description {
+    margin-bottom: 0;
+  }
 }
