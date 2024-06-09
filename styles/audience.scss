@@ -1,91 +1,141 @@
 .audience {
-	&__inner {
-		background-color: $color-blue-birch;
-		padding: 108px 56px 110px 130px;
-		display: flex;
-		flex-direction: column;
-		gap: 110px;
-	}
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    background-color: $color-blue-birch;
+    padding: 108px 56px 110px 130px;
 
-	&__content {
-		margin: 0 auto;
-		text-align: center;
+    @media screen and (max-width: $media-1320) {
+      gap: 60px;
+    }
+    @media screen and (max-width: $media-576) {
+      gap: 40px;
+    }
+  }
 
-		&-decor {
-			font-size: 22px;
-			margin-bottom: 24px;
-			font-weight: 700;
-			display: block;
-		}
+  &__content {
+    margin: 0 auto;
+    text-align: center;
 
-		&-title {
-			@include title;
-			margin-bottom: 30px;
-			max-width: 555px;
-		}
+    &-decor {
+      display: block;
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
 
-		&-description {
-			font-size: 24px;
-			margin-bottom: 34px;
-			max-width: 555px;
-		}
-	}
+    &-title {
+      @include title;
+      margin-bottom: 30px;
+      max-width: 555px;
+      font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+    }
+
+    &-description {
+      font-size: 24px;
+      margin-bottom: 34px;
+      max-width: 555px;
+    }
+  }
 }
 
 .audience__content-buttons {
-	display: flex;
-	justify-content: center;
-	gap: 10px
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .cards {
-	&__list {
-		display: grid;
-		grid-template-columns: repeat(4, 262px);
-		column-gap: 30px;
+  &__list {
+    display: flex;
+    gap: 30px;
 
-		&-item {
-			width: 262px;
-			height: 300px;
-			background-color: $color-light;
-			border-radius: 8px;
-			padding: 22px 62px 32px;
-			transition: background-color 0.2s linear, color 0.2s linear;
-		}
+    &-item {
+      width: 262px;
+      height: 300px;
+      background-color: $color-light;
+      border-radius: 8px;
+      padding: 22px 62px 32px;
+      transition: background-color 0.2s linear, color 0.2s linear;
+    }
 
-		&-item:hover {
-			background-color: $color-blue;
-			color: $color-light;
-		}
+    &-item:hover {
+      background-color: $color-blue;
+      color: $color-light;
+    }
 
-		&-item:nth-of-type(2) {
-			background-color: $color-blue;
-			color: $color-light;
-		}
+    &-link {
+      transition: rotate 0.2s ease-in;
+    }
 
-		&-link {
-			transition: rotate 0.2s ease-in;
-		}
+    &-link:nth-of-type(3) &-item {
+      line-height: 4;
+    }
+    &-link:nth-of-type(2) &-item {
+      line-height: 2;
+    }
 
-		&-link:hover {
-			rotate: -5deg;
-			box-shadow: 0 0 10px rgba(29, 55, 82, 0.2);
-			border-radius: 8px;
-		}
+    &-link:hover {
+      rotate: -5deg;
+      box-shadow: 0 0 10px rgba(29, 55, 82, 0.2);
+      border-radius: 8px;
+    }
 
-		&-img {
-			margin-bottom: 22px;
-			width: 195px;
-			width: 142px;
-			height: 195px;
-			object-fit: contain;
-		}
+    &-img {
+      width: 142px;
+      height: 195px;
+      object-fit: contain;
+      margin-bottom: 22px;
+    }
 
-		&-title {
-			display: block;
-			text-align: center;
-			font-size: 22px;
-			font-weight: 700;
-		}
-	}
+    &-title {
+      display: block;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+			padding-top: 20px;
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: $media-1320) {
+  .audience__inner {
+    padding: 52px 15px 130px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards__list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cards__list-item {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: $media-576) {
+  .audience__content-buttons {
+    flex-direction: column;
+
+    .button-blue,
+    .button-white {
+      width: 100%;
+    }
+  }
+  .audience__content-decor {
+    margin-bottom: 18px;
+  }
+  .audience__content-title {
+    margin-bottom: -10px;
+  }
+  .audience__content-description {
+    margin-bottom: 26px;
+  }
 }
