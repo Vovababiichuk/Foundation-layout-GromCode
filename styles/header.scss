@@ -6,6 +6,7 @@
   padding: 40px 130px 36px 130px;
   background-color: $color-beige;
   transition: padding 0.3s, background-color 0.3s;
+  z-index: 1002;
 
   &--sticky {
     position: fixed;
@@ -176,14 +177,7 @@
 
   .fa-bars,
   .fa-times {
-    font-size: 40px;
-
-    @media screen and (max-width: $media-768) {
-      font-size: 32px;
-    }
-    @media screen and (max-width: $media-480) {
-      font-size: 22px;
-    }
+    font-size: clamp(22px, 1.2124rem + 0.813vw, 32px);
   }
 }
 
@@ -195,6 +189,7 @@
   bottom: 0;
   padding: 150px 20px;
   background-color: $color-beige;
+  box-shadow: 4px 6px 14px rgba($color-black, 0.3);
   width: 100%;
   max-width: 360px;
   z-index: 999;
@@ -269,6 +264,22 @@
   .header__inner {
     padding: 10px 15px;
     background-color: $color-light;
+    height: 64px;
+    }
+
+    .mobile-menu-icon {
+      display: block;
+      height: 64px;
+      border-left: 1px solid rgba($color-black, 0.5);
+  }
+  .fa-bars,
+  .fa-times {
+    padding: 20px 0 20px 20px;
+  }
+
+  .logo__img {
+    width: 48px;
+    height: 48px;
   }
 }
 

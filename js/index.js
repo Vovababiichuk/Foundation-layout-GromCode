@@ -31,11 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Error with dropdown', e);
   }
 
-  try {
-  } catch (e) {
-    console.log(e);
-  }
-
   hiringListArray.forEach(el => {
     el.addEventListener('click', e => {
       e.preventDefault();
@@ -139,6 +134,7 @@ function togglePlay() {
 function toggleMobileMenu() {
   const menuIcon = document.getElementById('menuIcon');
   const mobileNav = document.querySelector('.mobile-menu');
+  const hero = document.querySelector('.hero__inner');
 
   mobileNav.classList.toggle('show');
 
@@ -146,9 +142,11 @@ function toggleMobileMenu() {
     menuIcon.classList.remove('fa-bars');
     menuIcon.classList.add('fa-times');
     document.body.classList.add('no-scroll');
+    hero.classList.add('filter-blur');
   } else {
     menuIcon.classList.remove('fa-times');
     menuIcon.classList.add('fa-bars');
     document.body.classList.remove('no-scroll');
+    hero.classList.remove('filter-blur');
   }
 }

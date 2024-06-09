@@ -6,6 +6,7 @@
   padding: 40px 130px 36px 130px;
   background-color: #f3c6bd;
   transition: padding 0.3s, background-color 0.3s;
+  z-index: 1002;
 }
 .header__inner--sticky {
   position: fixed;
@@ -153,19 +154,7 @@
 }
 .mobile-menu-icon .fa-bars,
 .mobile-menu-icon .fa-times {
-  font-size: 40px;
-}
-@media screen and (max-width: 768px) {
-  .mobile-menu-icon .fa-bars,
-  .mobile-menu-icon .fa-times {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .mobile-menu-icon .fa-bars,
-  .mobile-menu-icon .fa-times {
-    font-size: 22px;
-  }
+  font-size: clamp(22px, 1.2124rem + 0.813vw, 32px);
 }
 
 .mobile-menu {
@@ -176,6 +165,7 @@
   bottom: 0;
   padding: 150px 20px;
   background-color: #f3c6bd;
+  box-shadow: 4px 6px 14px rgba(43, 41, 45, 0.3);
   width: 100%;
   max-width: 360px;
   z-index: 999;
@@ -252,6 +242,20 @@
   .header__inner {
     padding: 10px 15px;
     background-color: #fff;
+    height: 64px;
+  }
+  .mobile-menu-icon {
+    display: block;
+    height: 64px;
+    border-left: 1px solid rgba(43, 41, 45, 0.5);
+  }
+  .fa-bars,
+  .fa-times {
+    padding: 20px 0 20px 20px;
+  }
+  .logo__img {
+    width: 48px;
+    height: 48px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -401,22 +405,54 @@
 
 .partners {
   background-color: #fff;
-}
-.partners__inner {
   padding: 30px 130px 106px;
+  display: flex;
+  justify-content: center;
 }
 .partners__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 1400px;
+  width: 100%;
+}
+.partners__list-item {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 106px;
+  padding: 20px;
+  height: 94px;
+}
+.partners__list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners__list-item:nth-child(3), .partners__list-item:nth-child(6) {
+  border-right: 0;
 }
 .partners__list-item-logo {
   filter: brightness(0);
+  max-width: 100%;
+  height: auto;
 }
-.partners__inner--copy {
-  padding: 44px 130px 72px;
+@media screen and (max-width: 885px) {
+  .partners {
+    padding: 0 15px 46px 15px;
+  }
 }
-
+@media (max-width: 576px) {
+  .partners {
+    padding: 0 0 46px 0;
+  }
+  .partners__list-item {
+    border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+    border-right: 1px solid rgba(43, 41, 45, 0.1);
+  }
+  .partners__list {
+    grid-template-columns: repeat(3, minmax(107px, 1fr));
+    gap: 0;
+  }
+}
 .features {
   background-color: #fff;
   display: flex;
@@ -1092,6 +1128,10 @@
 
 .no-scroll {
   overflow: hidden;
+}
+
+.filter-blur {
+  filter: blur(6px);
 }
 
 body {
