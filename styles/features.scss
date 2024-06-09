@@ -13,18 +13,25 @@
     font-size: 22px;
     font-weight: 700;
     color: $color-green;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+
+    @media screen and (max-width: $media-855) {
+      display: none;
+    }
+  }
+
+  .features__content-subtitle--mobile {
+    display: none;
   }
 
   &__content-title {
     @include title;
     font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
     max-width: 462px;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
   }
 
   &__content-description {
-    display: block;
     font-size: 22px;
     max-width: 462px;
     letter-spacing: 0.85px;
@@ -141,12 +148,17 @@
   .features__content-text {
     display: none;
   }
+
+  .features .features__content-subtitle--mobile {
+    display: block;
+  }
 }
 
 @media screen and (max-width: $media-768) {
   .features {
     flex-direction: column;
     gap: 30px;
+    border-bottom: 1px solid rgba($color-black, 0.1);
   }
 }
 
