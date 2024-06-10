@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 130px 36px 130px;
+  width: 1140px;
+  margin: 0 auto;
   background-color: #f3c6bd;
   transition: padding 0.3s, background-color 0.3s;
   z-index: 1002;
