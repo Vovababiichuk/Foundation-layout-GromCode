@@ -27,12 +27,12 @@
   }
 
   &__form-input {
+    display: block;
     width: 100%;
     max-width: 385px;
-    padding: 13px 0 13px 15px;
-    line-height: 1;
     border-radius: 2px;
-    display: block;
+    line-height: 1;
+    padding: 13px 0 13px 15px;
 
     &:focus {
       outline: 1px solid $color-blue;
@@ -59,9 +59,9 @@
 
 @media screen and (max-width: $media-1440) {
   .subscription {
-    padding: 72px 15px;
-		align-items: center;
 		justify-content: center;
+		align-items: center;
+    padding: 72px 15px;
   }
 }
 
@@ -74,10 +74,10 @@
 
 @media screen and (max-width: 586px) {
 	.subscription {
-    padding: 54px 15px 46px;
 		align-items: center;
 		justify-content: center;
 		gap: 36px;
+    padding: 54px 15px 46px;
   }
 	.subscription__form  {
 		flex-direction: column;

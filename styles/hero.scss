@@ -20,15 +20,15 @@
     font-size: clamp(50px, 2.5694rem + 2.7778vw, 80px);
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 14px;
     letter-spacing: -1px;
+    margin-bottom: 14px;
   }
 
   &__description {
     max-width: 456px;
+    font-size: 24px;
     line-height: 1.4;
     margin-bottom: 60px;
-    font-size: 24px;
   }
 
   &__buttons {

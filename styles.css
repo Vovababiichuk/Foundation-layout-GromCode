@@ -286,14 +286,14 @@
   font-size: clamp(50px, 2.5694rem + 2.7778vw, 80px);
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 14px;
   letter-spacing: -1px;
+  margin-bottom: 14px;
 }
 .hero__description {
   max-width: 456px;
+  font-size: 24px;
   line-height: 1.4;
   margin-bottom: 60px;
-  font-size: 24px;
 }
 .hero__buttons {
   display: flex;
@@ -400,16 +400,16 @@
 }
 
 .partners {
-  background-color: #fff;
-  padding: 30px 130px 106px;
   display: flex;
   justify-content: center;
+  background-color: #fff;
+  padding: 30px 130px 106px;
 }
 .partners__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  max-width: 1400px;
   width: 100%;
+  max-width: 1400px;
 }
 .partners__list-item {
   display: flex;
@@ -708,11 +708,11 @@
   padding-left: 30px;
 }
 .manage__content-inner-decor {
-  color: #f1592b;
-  font-weight: 700;
-  margin-bottom: 24px;
   display: block;
   font-size: 22px;
+  font-weight: 700;
+  color: #f1592b;
+  margin-bottom: 24px;
 }
 .manage__content-inner-title {
   font-size: 56px;
@@ -729,14 +729,14 @@
   line-height: 1.4;
 }
 .manage__content-blockquote {
-  font-size: 20px;
-  background-color: #fff;
-  max-width: 520px;
-  padding: 30px 30px 28px 30px;
-  border-bottom: 4px solid #3142c6;
   display: flex;
   flex-direction: column;
   gap: 26px;
+  max-width: 520px;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 30px 30px 28px 30px;
+  border-bottom: 4px solid #3142c6;
 }
 .manage__content-blockquote-info {
   display: flex;
@@ -754,9 +754,9 @@
   flex-direction: column;
 }
 .blockquote-info__text-author {
+  display: flex;
   font-size: 16px;
   font-weight: 700;
-  display: flex;
 }
 .blockquote-info__text-position {
   font-size: 16px;
@@ -764,15 +764,15 @@
 
 @media screen and (max-width: 1440px) {
   .manage {
-    padding: 142px 24px 102px;
     justify-content: center;
+    padding: 142px 24px 102px;
   }
 }
 @media screen and (max-width: 1200px) {
   .manage {
     flex-direction: column;
-    gap: 58px;
     text-align: center;
+    gap: 58px;
     padding: 20px 24px 102px;
   }
 }
@@ -825,14 +825,14 @@
   line-height: 1;
   margin-bottom: 30px;
   max-width: 462px;
-  margin-bottom: 29px;
   font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+  margin-bottom: 29px;
 }
 .communicate__content-description {
   font-size: 24px;
   max-width: 462px;
-  margin-bottom: 40px;
   line-height: 1.4;
+  margin-bottom: 40px;
 }
 .communicate__content-divider {
   border-width: 1px;
@@ -856,10 +856,10 @@
   display: none;
 }
 .communicate__list {
-  font-size: 18px;
   display: flex;
   align-items: center;
   gap: 30px;
+  font-size: 18px;
 }
 .communicate__list-item {
   max-width: 360px;
@@ -1067,12 +1067,12 @@
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 }
 
 .swiper-slide img {
@@ -1346,12 +1346,12 @@
   margin-bottom: 10px;
 }
 .subscription__form-input {
+  display: block;
   width: 100%;
   max-width: 385px;
-  padding: 13px 0 13px 15px;
-  line-height: 1;
   border-radius: 2px;
-  display: block;
+  line-height: 1;
+  padding: 13px 0 13px 15px;
 }
 .subscription__form-input:focus {
   outline: 1px solid #3142c6;
@@ -1371,9 +1371,9 @@
 
 @media screen and (max-width: 1440px) {
   .subscription {
-    padding: 72px 15px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 72px 15px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1384,10 +1384,10 @@
 }
 @media screen and (max-width: 586px) {
   .subscription {
-    padding: 54px 15px 46px;
     align-items: center;
     justify-content: center;
     gap: 36px;
+    padding: 54px 15px 46px;
   }
   .subscription__form {
     flex-direction: column;
@@ -1412,9 +1412,9 @@
 }
 .footer {
   position: relative;
-  background-color: #fff;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 .footer__top {
   display: grid;

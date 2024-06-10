@@ -1,8 +1,8 @@
 .footer {
   position: relative;
-  background-color: $color-light;
   display: flex;
   flex-direction: column;
+  background-color: $color-light;
 
   &__top {
     display: grid;

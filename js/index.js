@@ -96,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const scrollToTopBtn = document.getElementById('scrollToTopBtn');
   const header = document.querySelector('.header__inner--sticky');
-  header.style.backgroundColor = 'yellow';
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 200) {

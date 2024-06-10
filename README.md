@@ -5,8 +5,11 @@
 
 ### [Site link](https://vovababiichuk.github.io/Foundation-layout-GromCode/)
 
+### Layout supports all screen resolutions from mobile (from 320) to desktop (up to 1400)
+
 ### The tech stack is:
 
+- [JavaScript](https://https://javascript.info/)
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [Flexbox](https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout)

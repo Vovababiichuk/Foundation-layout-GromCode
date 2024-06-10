@@ -26,11 +26,11 @@
     }
 
     &-inner-decor {
-      color: $color-orange;
-      font-weight: 700;
-      margin-bottom: 24px;
       display: block;
       font-size: 22px;
+      font-weight: 700;
+      color: $color-orange;
+      margin-bottom: 24px;
     }
 
     &-inner-title {
@@ -47,14 +47,14 @@
     }
 
     &-blockquote {
-      font-size: 20px;
-      background-color: $color-light;
-      max-width: 520px;
-      padding: 30px 30px 28px 30px;
-      border-bottom: 4px solid $color-blue;
       display: flex;
       flex-direction: column;
       gap: 26px;
+      max-width: 520px;
+      font-size: 20px;
+      background-color: $color-light;
+      padding: 30px 30px 28px 30px;
+      border-bottom: 4px solid $color-blue;
     }
 
     &-blockquote-info {
@@ -78,9 +78,9 @@
   }
 
   &__text-author {
+    display: flex;
     font-size: 16px;
     font-weight: 700;
-    display: flex;
   }
 
   &__text-position {
@@ -92,16 +92,16 @@
 
 @media screen and (max-width: $media-1440) {
   .manage {
-    padding: 142px 24px 102px;
     justify-content: center;
+    padding: 142px 24px 102px;
   }
 }
 
 @media screen and (max-width: $media-1200) {
   .manage {
     flex-direction: column;
-    gap: 58px;
     text-align: center;
+    gap: 58px;
     padding: 20px 24px 102px;
   }
   @media screen and (max-width: $media-480) {

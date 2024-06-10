@@ -2,9 +2,7 @@
   background-color: $color-light;
 
   &__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    @include flex-column(24px);
     padding: 110px 50px 120px 130px;
   }
 
@@ -24,15 +22,15 @@
     &-title {
       @include title;
       max-width: 462px;
-      margin-bottom: 29px;
       font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+      margin-bottom: 29px;
     }
 
     &-description {
       font-size: 24px;
       max-width: 462px;
-      margin-bottom: 40px;
       line-height: 1.4;
+      margin-bottom: 40px;
     }
 
     &-divider {
@@ -62,10 +60,10 @@
   }
 
   &__list {
-    font-size: 18px;
     display: flex;
     align-items: center;
     gap: 30px;
+    font-size: 18px;
 
     &-item {
       max-width: 360px;

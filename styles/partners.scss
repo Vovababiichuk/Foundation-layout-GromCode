@@ -1,14 +1,14 @@
 .partners {
-  background-color: $color-light;
-  padding: 30px 130px 106px;
   display: flex;
   justify-content: center;
+  background-color: $color-light;
+  padding: 30px 130px 106px;
 
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    max-width: 1400px;
     width: 100%;
+    max-width: 1400px;
   }
 
   &__list-item {

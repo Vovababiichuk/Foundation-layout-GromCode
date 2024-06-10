@@ -1,8 +1,6 @@
 .audience {
   &__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 110px;
+   @include flex-column(110px);
     background-color: $color-blue-birch;
     padding: 108px 56px 110px 130px;
 
