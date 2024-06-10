@@ -614,6 +614,7 @@
   background-color: #fff;
 }
 .engage__content:nth-of-type(1) {
+  width: 100%;
   border-bottom: 1px solid rgba(43, 41, 45, 0.1);
 }
 .engage__content-sub {
@@ -666,12 +667,17 @@
     text-align: center;
     align-items: center;
     gap: 40px;
-    padding: 40px 15px 4px;
+    padding: 40px 0 4px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 480px) {
   .engage {
     text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .engage__content {
+    padding: 0 15px;
   }
 }
 .manage {
@@ -1378,7 +1384,7 @@
 }
 @media screen and (max-width: 586px) {
   .subscription {
-    padding: 54px 15px;
+    padding: 54px 15px 46px;
     align-items: center;
     justify-content: center;
     gap: 36px;
@@ -1405,6 +1411,7 @@
   }
 }
 .footer {
+  position: relative;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -1430,6 +1437,15 @@
 .footer__info-apps-link:hover {
   transition: scale 0.2s ease-in-out;
   scale: 1.05;
+}
+.footer__line {
+  display: none;
+  position: absolute;
+  top: 280px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.1);
 }
 .footer__links-title {
   font-size: 22px;
@@ -1483,8 +1499,14 @@
   gap: 20px;
 }
 
-.footer-logo .logo__text-description {
+.logo--footer .logo__text-description {
   display: block;
+}
+
+.footer-divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(43, 41, 45, 0.1);
 }
 
 @media screen and (max-width: 1200px) {
@@ -1510,9 +1532,17 @@
 }
 @media screen and (max-width: 576px) {
   .footer__top {
-    padding: 42px 0 46px 25px;
+    padding: 42px 0 12px 25px;
     grid-template-columns: repeat(1, 300px);
     justify-items: left;
+  }
+  .footer__top {
+    gap: 64px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .footer__line {
+    display: block;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1522,6 +1552,7 @@
   .footer__info .logo {
     flex-direction: column;
     text-align: center;
+    gap: 16px;
   }
   .logo__img--footer {
     width: 60px;
@@ -1537,6 +1568,12 @@
   }
   .logo__text--footer {
     margin-bottom: 30px;
+  }
+  .footer__links-list {
+    gap: 8px;
+  }
+  .footer__links:nth-of-type(3) {
+    margin-top: -34px;
   }
 }
 .button-blue,

@@ -4,6 +4,7 @@
   background-color: $color-light;
 
   &__content:nth-of-type(1) {
+    width: 100%;
     border-bottom: 1px solid rgba($color-black, 0.1);
   }
 
@@ -60,10 +61,14 @@
 		text-align: center;
     align-items: center;
     gap: 40px;
-    padding: 40px 15px 4px;
+    padding: 40px 0 4px;
 
 		@media screen and (max-width: $media-480) {
 			text-align: left;
 		}
+  }
+
+  .engage__content {
+    padding: 0 15px;
   }
 }
