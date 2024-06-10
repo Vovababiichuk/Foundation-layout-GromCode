@@ -35,6 +35,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    .button-white--color {
+      color: $color-accent;
+    }
   }
 
   &__img {

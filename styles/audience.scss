@@ -1,6 +1,6 @@
 .audience {
   &__inner {
-   @include flex-column(110px);
+    @include flex-column(110px);
     background-color: #edf8fb;
     padding: 108px 56px 110px 130px;
 
@@ -69,9 +69,11 @@
 
     &-link:nth-of-type(3) &-item {
       line-height: 4;
+     
     }
     &-link:nth-of-type(2) &-item {
       line-height: 2;
+     
     }
 
     &-link:hover {
@@ -92,7 +94,7 @@
       text-align: center;
       font-size: 22px;
       font-weight: 700;
-			padding-top: 20px;
+      padding-top: 20px;
     }
   }
 }
@@ -114,7 +116,7 @@
   }
 
   .cards__list-item {
-    width: 290px;
+    // width: 290px;
   }
 }
 
@@ -140,5 +142,3 @@
     padding: 52px 15px 52px;
   }
 }
-
-

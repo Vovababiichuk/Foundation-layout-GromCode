@@ -292,6 +292,9 @@
   align-items: center;
   gap: 10px;
 }
+.hero__buttons .button-white--color {
+  color: #3040c4;
+}
 .hero__img {
   position: absolute;
   top: 48px;
@@ -1028,9 +1031,6 @@
     justify-content: center;
     gap: 15px;
   }
-  .cards__list-item {
-    width: 290px;
-  }
 }
 @media screen and (max-width: 576px) {
   .audience__content-buttons {
@@ -1584,7 +1584,7 @@
 
 .button-white {
   background-color: #fff;
-  color: #3040c4;
+  color: #000000;
 }
 
 .button-blue:hover,
