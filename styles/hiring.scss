@@ -1,59 +1,119 @@
 .hiring {
-	background-color: $color-light;
-	padding: 80px 0 110px;
+  background-color: $color-light;
+  padding: 80px 0 110px;
 
-	&__content {
-		text-align: center;
-		margin-bottom: 110px;
-	}
+  &__content {
+    text-align: center;
+    margin-bottom: 110px;
+  }
 
-	&__content-title {
-		@include title;
-	}
+  &__content-title {
+    @include title;
+    font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+  }
 
-	&__content-description {
-		font-size: 24px;
-		max-width: 555px;
-		margin: 0 auto;
-		margin-bottom: 28px;
-	}
+  &__content-description {
+    font-size: 24px;
+    max-width: 555px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
 
-	&__list {
-		margin: 0 auto;
-		max-width: 750px;
-	}
+  &__list {
+    margin: 0 auto;
+    max-width: 750px;
+  }
 
-	&__link {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 26px;
-		border: 2px solid rgb($color-black, 0.1);
-		border-radius: 8px;
-		max-width: 750px;
-		transition: background-color 0.2s ease-in-out;
-		margin-bottom: 20px;
+  &__link:hover &__item-info-location {
+    color: $color-light;
+  }
 
-		&:hover {
-			background-color: $color-blue;
-			cursor: pointer;
-			color: $color-light;
-		}
-	}
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 26px;
+    border: 2px solid rgb($color-black, 0.1);
+    border-radius: 8px;
+    max-width: 750px;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 20px;
 
-	&__link-role {
-		font-size: 22;
-		font-weight: 700;
-	}
+    &:hover {
+      background-color: $color-blue;
+      cursor: pointer;
+      color: $color-light;
+    }
 
-	&__link-location {
-		font-size: 18px;
-	}
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 620px;
 
-	&__link-arrow {
-		width: 8px;
-		height: 12px;
-		line-height: 0.4;
-		display: block;
-	}
+      &-role {
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      &-location {
+        font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+        color: rgb($color-black, 0.6);
+      }
+    }
+
+    &-arrow {
+      font-size: 14px;
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: $media-1200) {
+  .hiring {
+    padding: 50px 15px 110px;
+  }
+  .hiring__content {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: $media-768) {
+  .hiring__item-info {
+    flex-direction: column;
+    align-items: start;
+  }
+  .hiring__content-title {
+    margin-bottom: 22px;
+  }
+  .hiring__content-description {
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: $media-480) {
+  .hiring__item {
+    padding: 0 0 0 18px;
+    margin-bottom: 14px;
+  }
+  .hiring__item-arrow {
+    background-color: $color-gray;
+    padding: 60px 20px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hiring__item-info-role {
+    max-width: 130px;
+    margin-bottom: 14px;
+  }
+  .hiring__content-btn {
+    width: 100%;
+    max-width: 290px;
+  }
 }
