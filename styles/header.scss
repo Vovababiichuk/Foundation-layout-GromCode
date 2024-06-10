@@ -130,16 +130,16 @@
 
 // Pulse Wave
 
-@keyframes pulse-wave {
-  0% {
-    box-shadow: 0 0 0 0 rgba($color-yellow-light, 0.5), 0 0 0 10px rgba($color-beige, 0.4),
-      0 0 0 20px rgba($color-yellow-light, 0.3), 0 0 0 30px rgba($color-beige, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 20px rgba($color-yellow-light, 0), 0 0 0 30px rgba($color-beige, 0),
-      0 0 0 40px rgba($color-yellow-light, 0), 0 0 0 50px rgba($color-beige, 0);
-  }
-}
+// @keyframes pulse-wave {
+//   0% {
+//     box-shadow: 0 0 0 0 rgba($color-yellow-light, 0.5), 0 0 0 10px rgba($color-beige, 0.4),
+//       0 0 0 20px rgba($color-yellow-light, 0.3), 0 0 0 30px rgba($color-beige, 0.2);
+//   }
+//   100% {
+//     box-shadow: 0 0 0 20px rgba($color-yellow-light, 0), 0 0 0 30px rgba($color-beige, 0),
+//       0 0 0 40px rgba($color-yellow-light, 0), 0 0 0 50px rgba($color-beige, 0);
+//   }
+// }
 
 // smooth header
 
