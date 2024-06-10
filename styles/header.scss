@@ -86,6 +86,10 @@
       animation: pulse-wave 1.5s infinite;
     }
 
+    .nav__list-link--test {
+      letter-spacing: 0.3px; //!!!!!!!!!!!!!!!
+    }
+
     &-link {
       color: $color-black;
       border-bottom-width: 2px;

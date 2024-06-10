@@ -77,6 +77,9 @@
 .nav__list-item:nth-of-type(3) {
   animation: pulse-wave 1.5s infinite;
 }
+.nav__list .nav__list-link--test {
+  letter-spacing: 0.3px;
+}
 .nav__list-link {
   color: #2b292d;
   border-bottom-width: 2px;
