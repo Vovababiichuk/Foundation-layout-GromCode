@@ -1,56 +1,103 @@
 .subscription {
-	@include flex-center(baseline, 120px);
-	background-color: $color-light-dark;
-	padding: 72px 224px;
+  @include flex-center(flex-center, 120px);
+  background-color: $color-light-dark;
+  padding: 72px 224px;
 
-	&__image {
-		max-width: 270px;
-		height: 296px;
+  &__image {
+    max-width: 270px;
+    height: 296px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 22px;
+    margin-bottom: 26px;
+    max-width: 555px;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__form-input {
+    width: 100%;
+    max-width: 385px;
+    padding: 13px 0 13px 15px;
+    line-height: 1;
+    border-radius: 2px;
+    display: block;
+
+    &:focus {
+      outline: 1px solid $color-blue;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: rgba($color-black, 0.6);
+  }
+
+  &__link {
+    color: $color-blue;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $color-blue-light;
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: $media-1440) {
+  .subscription {
+    padding: 72px 15px;
+		align-items: center;
+		justify-content: center;
+  }
+}
+
+@media screen and (max-width: $media-1200) {
+	.subscription {
+		flex-direction: column;
+		gap: 50px;
 	}
+}
 
-	&__title {
-		font-size: 40px;
-		font-weight: 700;
+@media screen and (max-width: 586px) {
+	.subscription {
+    padding: 54px 15px;
+		align-items: center;
+		justify-content: center;
+		gap: 36px;
+  }
+	.subscription__form  {
+		flex-direction: column;
 	}
-
-	&__description {
-		font-size: 22px;
-		margin-bottom: 26px;
-		max-width: 555px;
-		margin-bottom: 30px;
+	.subscription__form-input {
+		max-width: 100%;
 	}
+}
 
-	&__form {
-		display: flex;
-		gap: 10px;
-		margin-bottom: 10px;
+@media screen and (max-width: $media-480) {
+	.subscription__image {
+    max-width: 200px;
+    height: 220px;
+  }
+	.subscription__title {
+		font-size: 38px;
+		text-align: center;
+		line-height: 1.1;
 	}
-
-	&__form-input {
-		width: 100%;
-		max-width: 385px;
-		padding: 13px 0 13px 15px;
-		line-height: 1;
-		border-radius: 2px;
-		display: block;
-
-		&:focus {
-			outline: 1px solid $color-blue;
-		}
-	}
-
-	&__text {
-		font-size: 14px;
-		color: rgba($color-black, 0.6);
-	}
-
-	&__link {
-		color: $color-blue;
-		text-decoration: underline;
-		transition: color 0.2s ease-in-out;
-
-		&:hover {
-			color: $color-blue-light;
-		}
+	.subscription__description  {
+		margin-bottom: 68px;
 	}
 }

@@ -1268,7 +1268,7 @@
 
 @media screen and (max-width: 1200px) {
   .hiring {
-    padding: 50px 15px 110px;
+    padding: 50px 15px 60px;
   }
   .hiring__content {
     margin-bottom: 40px;
@@ -1288,6 +1288,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .hiring {
+    padding: 50px 15px 30px;
+  }
   .hiring__item {
     padding: 0 0 0 18px;
     margin-bottom: 14px;
@@ -1312,7 +1315,7 @@
 .subscription {
   display: flex;
   align-items: center;
-  justify-content: baseline;
+  justify-content: flex-center;
   gap: 120px;
   background-color: #f4f5f7;
   padding: 72px 224px;
@@ -1360,6 +1363,47 @@
   color: #0189d1;
 }
 
+@media screen and (max-width: 1440px) {
+  .subscription {
+    padding: 72px 15px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .subscription {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 586px) {
+  .subscription {
+    padding: 54px 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+  }
+  .subscription__form {
+    flex-direction: column;
+  }
+  .subscription__form-input {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .subscription__image {
+    max-width: 200px;
+    height: 220px;
+  }
+  .subscription__title {
+    font-size: 38px;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .subscription__description {
+    margin-bottom: 68px;
+  }
+}
 .footer {
   background-color: #fff;
   display: flex;

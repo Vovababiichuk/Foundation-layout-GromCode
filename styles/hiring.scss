@@ -73,7 +73,7 @@
 
 @media screen and (max-width: $media-1200) {
   .hiring {
-    padding: 50px 15px 110px;
+    padding: 50px 15px 60px;
   }
   .hiring__content {
     margin-bottom: 40px;
@@ -95,6 +95,9 @@
 }
 
 @media screen and (max-width: $media-480) {
+  .hiring {
+    padding: 50px 15px 30px;
+  }
   .hiring__item {
     padding: 0 0 0 18px;
     margin-bottom: 14px;
