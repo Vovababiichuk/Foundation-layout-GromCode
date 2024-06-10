@@ -6,7 +6,7 @@
 }
 .header .nav__list {
   margin-top: 6px;
-  margin-right: 38px;
+  margin-right: 35px;
 }
 
 .header__inner {
@@ -1637,7 +1637,7 @@
 }
 
 .btn-test {
-  padding: 10.5px 28.5px;
+  padding: 10.5px 28.5px 11px;
 }
 
 .show {
