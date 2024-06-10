@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   width: 1140px;
-  padding-left: 15px;
+  padding: 4px 0 0 15px;
   margin: 0 auto;
   background-color: #f3c6bd;
   transition: padding 0.3s, background-color 0.3s;
@@ -1606,6 +1606,9 @@
   }
   .footer__info {
     padding: 0 15px;
+  }
+  .logo__text-name--footer {
+    line-height: 1.5;
   }
 }
 .button-blue,
