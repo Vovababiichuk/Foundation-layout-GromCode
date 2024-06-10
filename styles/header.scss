@@ -1,3 +1,14 @@
+.header {
+  background-color: #fff; //!!!!!!!!!!!!!!!!!
+  .fa-chevron-down {
+    display: none;
+  }
+  .nav__list {
+    margin-top: 18px;
+    margin-right: 38px;
+  }
+}
+
 .header__inner {
   position: relative;
   display: flex;
@@ -5,6 +16,7 @@
   align-items: center;
   // padding: 40px 130px 36px 130px; //!!!!!!
   width: 1140px; // !!!!!!!!!!!!
+  padding-left: 15px; //!!!!!!!!!
   margin: 0 auto;
   background-color: $color-beige;
   transition: padding 0.3s, background-color 0.3s;
