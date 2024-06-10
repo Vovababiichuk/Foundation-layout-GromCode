@@ -946,7 +946,7 @@
 .audience__content {
   margin: 0 auto;
   text-align: center;
-  padding-right: 60px;
+  padding-right: 70px;
 }
 @media screen and (max-width: 1200px) {
   .audience__content {
@@ -1067,7 +1067,7 @@
     margin-bottom: -10px;
   }
   .audience__content-description {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
   .audience__inner {
     padding: 52px 15px 52px;
