@@ -946,7 +946,7 @@
 .audience__content {
   margin: 0 auto;
   text-align: center;
-  padding-right: 20px;
+  padding-right: 60px;
 }
 .audience__content-decor {
   display: block;
@@ -965,7 +965,7 @@
 }
 @media screen and (max-width: 480px) {
   .audience__content-title {
-    font-size: 37px;
+    font-size: 38px;
   }
 }
 .audience__content-description {

@@ -15,7 +15,7 @@
   &__content {
     margin: 0 auto;
     text-align: center;
-    padding-right: 20px; //!!!!!!!!!!!!!!!
+    padding-right: 60px; //!!!!!!!!!!!!!!!
 
     &-decor {
       display: block;
@@ -31,7 +31,7 @@
       font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
 
       @media screen and (max-width: $media-480) {
-        font-size: 37px;
+        font-size: 38px;
       }
     }
 
