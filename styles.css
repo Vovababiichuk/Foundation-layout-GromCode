@@ -42,7 +42,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 15px;
 }
 .logo__img {
   max-width: 60px;
@@ -69,7 +69,7 @@
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 54px;
+  gap: 55px;
 }
 .nav__list-item {
   cursor: pointer;

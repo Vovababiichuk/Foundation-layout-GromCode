@@ -45,7 +45,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px; //!!!!!!!!!!!!!!!!!
+  gap: 15px; //!!!!!!!!!!!!!!!!!
   &__img {
     max-width: 60px;
     height: 60px;
@@ -76,7 +76,7 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 54px; //!!!!!!!!!!!!!!!
+    gap: 55px; //!!!!!!!!!!!!!!!
 
     &-item {
       cursor: pointer;
