@@ -78,7 +78,7 @@
   animation: pulse-wave 1.5s infinite;
 }
 .nav__list .nav__list-link--test {
-  letter-spacing: 0.01px;
+  letter-spacing: -0.01px;
 }
 .nav__list-link {
   color: #2b292d;
