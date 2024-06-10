@@ -6,7 +6,7 @@
 }
 .header .nav__list {
   margin-top: 6px;
-  margin-right: 38px;
+  margin-right: 34px;
 }
 
 .header__inner {
@@ -1634,6 +1634,10 @@
 .button-white:hover {
   opacity: 0.8;
   scale: 1.05;
+}
+
+.btn-test {
+  padding: 11px 29px;
 }
 
 .show {
