@@ -5,7 +5,7 @@
   display: none;
 }
 .header .nav__list {
-  margin-top: 12px;
+  margin-top: 10px;
   margin-right: 38px;
 }
 
@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   width: 1140px;
-  padding: 2px 0 2px 15px;
+  padding: 1px 0 1px 15px;
   margin: 0 auto;
   background-color: #f3c6bd;
   transition: padding 0.3s, background-color 0.3s;
@@ -69,7 +69,7 @@
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 52px;
+  gap: 54px;
 }
 .nav__list-item {
   cursor: pointer;
