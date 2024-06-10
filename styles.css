@@ -5,7 +5,7 @@
   display: none;
 }
 .header .nav__list {
-  margin-top: 14px;
+  margin-top: 12px;
   margin-right: 38px;
 }
 
@@ -57,11 +57,13 @@
   color: #2b292d;
   font-weight: 700;
   font-size: 20px;
+  line-height: 25px;
 }
 .logo__text-description {
   font-size: 18px;
   opacity: 0.6;
   color: #2b292d;
+  line-height: 25px;
 }
 
 .nav__list {
