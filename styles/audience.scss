@@ -33,7 +33,10 @@
     &-description {
       font-size: 24px;
       max-width: 555px;
-      line-height: 34px;
+      line-height: 32px;
+      @media  screen and (max-width: $media-480) {
+        line-height: 34px;
+      }
     }
   }
 }

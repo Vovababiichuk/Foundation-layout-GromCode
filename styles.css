@@ -965,7 +965,12 @@
 .audience__content-description {
   font-size: 24px;
   max-width: 555px;
-  line-height: 34px;
+  line-height: 32px;
+}
+@media screen and (max-width: 480px) {
+  .audience__content-description {
+    line-height: 34px;
+  }
 }
 
 .audience__content-buttons {
@@ -1454,7 +1459,7 @@
 .footer__links-title {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .footer__links-list {
   display: flex;
@@ -1579,6 +1584,9 @@
   }
   .footer__links:nth-of-type(3) {
     margin-top: -34px;
+  }
+  .footer__info {
+    padding: 0 15px;
   }
 }
 .button-blue,
