@@ -69,11 +69,12 @@
 
     &-link:nth-of-type(3) &-item {
       line-height: 4;
-     
     }
     &-link:nth-of-type(2) &-item {
       line-height: 2;
-     
+    }
+    &-link:nth-of-type(4) &-item {
+      // line-height: 2;
     }
 
     &-link:hover {
@@ -83,9 +84,9 @@
     }
 
     &-img {
-      width: 142px;
-      height: 195px;
-      object-fit: contain;
+      // width: 142px;
+      // height: 195px;
+      // object-fit: cover;
       margin-bottom: 22px;
     }
 

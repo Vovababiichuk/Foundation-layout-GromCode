@@ -1006,9 +1006,6 @@
   border-radius: 8px;
 }
 .cards__list-img {
-  width: 142px;
-  height: 195px;
-  object-fit: contain;
   margin-bottom: 22px;
 }
 .cards__list-title {
