@@ -69,7 +69,7 @@
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 55px;
+  gap: 56px;
 }
 .nav__list-item {
   cursor: pointer;
