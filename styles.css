@@ -928,7 +928,7 @@
   display: flex;
   flex-direction: column;
   gap: 110px;
-  background-color: rgba(0, 161, 198, 0.1);
+  background-color: #edf8fb;
   padding: 108px 56px 110px 130px;
 }
 @media screen and (max-width: 1320px) {

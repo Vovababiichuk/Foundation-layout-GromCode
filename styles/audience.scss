@@ -1,7 +1,7 @@
 .audience {
   &__inner {
    @include flex-column(110px);
-    background-color: $color-blue-birch;
+    background-color: #edf8fb;
     padding: 108px 56px 110px 130px;
 
     @media screen and (max-width: $media-1320) {
