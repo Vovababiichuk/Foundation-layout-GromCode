@@ -965,7 +965,7 @@
 }
 @media screen and (max-width: 480px) {
   .audience__content-title {
-    font-size: 39px;
+    font-size: 37px;
   }
 }
 .audience__content-description {
@@ -1579,10 +1579,10 @@
     border: none;
   }
   .logo__text--footer {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
   .footer__links-list {
-    gap: 8px;
+    gap: 6px;
   }
   .footer__links:nth-of-type(3) {
     margin-top: -34px;
