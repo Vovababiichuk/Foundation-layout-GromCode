@@ -948,6 +948,11 @@
   text-align: center;
   padding-right: 60px;
 }
+@media screen and (max-width: 1200px) {
+  .audience__content {
+    padding-right: 0;
+  }
+}
 .audience__content-decor {
   display: block;
   font-weight: 700;

@@ -17,6 +17,12 @@
     text-align: center;
     padding-right: 60px; //!!!!!!!!!!!!!!!
 
+  @media screen and (max-width: $media-1200) {
+    padding-right: 0; //!!!!!!!!!!!!!!!
+    
+  }
+
+
     &-decor {
       display: block;
       font-weight: 700;
