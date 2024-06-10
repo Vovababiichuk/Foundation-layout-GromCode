@@ -972,7 +972,7 @@
 .audience__content-description {
   font-size: 24px;
   max-width: 555px;
-  line-height: 32px;
+  line-height: 34px;
 }
 @media screen and (max-width: 480px) {
   .audience__content-description {
@@ -1067,7 +1067,7 @@
     margin-bottom: -10px;
   }
   .audience__content-description {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
   .audience__inner {
     padding: 52px 15px 52px;
