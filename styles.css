@@ -39,7 +39,6 @@
 .logo__text {
   display: flex;
   flex-direction: column;
-  gap: 6px;
 }
 .logo__text-name {
   color: #2b292d;
@@ -965,9 +964,8 @@
 }
 .audience__content-description {
   font-size: 24px;
-  margin-bottom: 34px;
   max-width: 555px;
-  line-height: 32px;
+  line-height: 34px;
 }
 
 .audience__content-buttons {
@@ -1465,6 +1463,7 @@
 }
 .footer__links-list-item {
   font-size: 18px;
+  line-height: 1.4;
   color: rgba(43, 41, 45, 0.6);
 }
 .footer__links-list-link {
@@ -1538,7 +1537,7 @@
 }
 @media screen and (max-width: 576px) {
   .footer__top {
-    padding: 42px 0 12px 25px;
+    padding: 42px 0 12px 15px;
     grid-template-columns: repeat(1, 300px);
     justify-items: left;
   }
