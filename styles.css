@@ -376,11 +376,6 @@
     padding: 32px 15px 58px;
   }
 }
-@media screen and (max-width: 576px) and (max-width: 480px) {
-  .headline__inner {
-    padding: 0 15px 58px;
-  }
-}
 @media screen and (max-width: 480px) {
   .mobile-menu-icon {
     padding-right: 6px;
