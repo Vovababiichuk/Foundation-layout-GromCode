@@ -95,10 +95,16 @@
   }
   .order__title {
     font-size: 38px;
-    text-align: center;
+    // text-align: center; //!!!!!!!!!!!!!!
     line-height: 1.1;
   }
   .order__description {
     margin-bottom: 68px;
+  }
+  .order {
+    padding: 54px 0 46px; //!!!!!!!!!!!!
+  }
+  .order__content {
+    padding: 54px 15px 46px; //!!!!!!!!!!!!!!!
   }
 }
