@@ -21,6 +21,7 @@
   background-color: $color-beige;
   transition: padding 0.3s, background-color 0.3s;
   z-index: 1002;
+  margin: 0 auto 0 140px; //!!!!!!!!!!!!!!
 
   &--sticky {
     position: fixed;
