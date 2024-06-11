@@ -17,10 +17,11 @@
   // padding: 40px 130px 36px 130px; //!!!!!!
   width: 1140px; // !!!!!!!!!!!!
   padding: 1px 0 1px 15px; //!!!!!!!!!
-  margin: 0 auto;
+  margin: auto;
   background-color: $color-beige;
   transition: padding 0.3s, background-color 0.3s;
   z-index: 1002;
+
 
   &--sticky {
     position: fixed;
