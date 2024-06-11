@@ -11,35 +11,33 @@
 @import 'audience';
 @import 'feedback';
 @import 'hiring';
-@import 'subscription';
+@import 'order';
 @import 'footer';
 @import 'global';
 
 body {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.5;
-	background-color: $color-body;
-	color: $color-black;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: $color-body;
+  color: $color-black;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	min-height: 100vh;
-	overflow-x: hidden;
-	max-width: 1400px;
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
 
-	@media screen and (max-width: $media-1200) {
-		padding: 0;
-	}
+  @media screen and (max-width: $media-1200) {
+    padding: 0;
+  }
 }
 
 .main {
-	flex-grow: 1;
+  flex-grow: 1;
 }
-
-

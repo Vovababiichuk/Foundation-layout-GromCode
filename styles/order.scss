@@ -1,4 +1,4 @@
-.subscription {
+.order {
   @include flex-center(flex-center, 120px);
   background-color: $color-light-dark;
   padding: 72px 224px;
@@ -58,46 +58,46 @@
 // MEDIA QUERIES
 
 @media screen and (max-width: $media-1440) {
-  .subscription {
-		justify-content: center;
-		align-items: center;
+  .order {
+    justify-content: center;
+    align-items: center;
     padding: 72px 15px;
   }
 }
 
 @media screen and (max-width: $media-1200) {
-	.subscription {
-		flex-direction: column;
-		gap: 50px;
-	}
+  .order {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 @media screen and (max-width: 586px) {
-	.subscription {
-		align-items: center;
-		justify-content: center;
-		gap: 36px;
+  .order {
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
     padding: 54px 15px 46px;
   }
-	.subscription__form  {
-		flex-direction: column;
-	}
-	.subscription__form-input {
-		max-width: 100%;
-	}
+  .order__form {
+    flex-direction: column;
+  }
+  .order__form-input {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: $media-480) {
-	.subscription__image {
+  .order__image {
     max-width: 200px;
     height: 220px;
   }
-	.subscription__title {
-		font-size: 38px;
-		text-align: center;
-		line-height: 1.1;
-	}
-	.subscription__description  {
-		margin-bottom: 68px;
-	}
+  .order__title {
+    font-size: 38px;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .order__description {
+    margin-bottom: 68px;
+  }
 }
