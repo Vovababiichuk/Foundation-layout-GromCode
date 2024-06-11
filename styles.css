@@ -18,6 +18,11 @@
   transition: padding 0.3s, background-color 0.3s;
   z-index: 1002;
 }
+@media screen and (max-width: 480px) {
+  .header__inner {
+    display: none;
+  }
+}
 .header__inner--sticky {
   position: fixed;
   top: 0;
@@ -368,7 +373,7 @@
     width: 100%;
   }
   .headline__inner {
-    padding: 32px 15px 58px;
+    padding: 0 15px 58px;
   }
 }
 @media screen and (max-width: 480px) {
