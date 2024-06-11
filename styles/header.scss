@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   transition: padding 0.3s, background-color 0.3s;
-  z-index: 1002;
+  // z-index: 100;
 
   &--sticky {
     position: fixed;
@@ -115,6 +115,7 @@
   width: 612px;
   height: 292px;
   transition: box-shadow 0.2s ease-in-out;
+  z-index: 1000;
   &:hover {
     box-shadow: 0 0 10px 6px rgba($color-beige, 0.8);
   }
