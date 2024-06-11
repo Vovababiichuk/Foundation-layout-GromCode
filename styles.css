@@ -1426,7 +1426,7 @@
   .order {
     align-items: center;
     justify-content: center;
-    gap: 36px;
+    gap: 42px;
     padding: 54px 15px 46px;
   }
   .order__form {
