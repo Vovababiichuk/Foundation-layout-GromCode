@@ -1387,6 +1387,7 @@
   max-width: 385px;
   border-radius: 2px;
   line-height: 1;
+  border: 1px solid rgba(43, 41, 45, 0.2);
   padding: 13px 0 13px 15px;
 }
 .order__form-input:focus {
@@ -1433,10 +1434,6 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .order__image {
-    max-width: 200px;
-    height: 220px;
-  }
   .order__title {
     font-size: 38px;
     text-align: center;

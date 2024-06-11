@@ -32,6 +32,7 @@
     max-width: 385px;
     border-radius: 2px;
     line-height: 1;
+    border: 1px solid rgba($color-black, 0.2);
     padding: 13px 0 13px 15px;
 
     &:focus {
@@ -89,8 +90,8 @@
 
 @media screen and (max-width: $media-480) {
   .order__image {
-    max-width: 200px;
-    height: 220px;
+    // max-width: 200px;
+    // height: 220px; //!!!!!!!!!!!!!!!!!!!
   }
   .order__title {
     font-size: 38px;
