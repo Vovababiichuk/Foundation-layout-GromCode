@@ -1397,6 +1397,8 @@
 .order__text {
   font-size: 14px;
   color: rgba(43, 41, 45, 0.6);
+  line-height: 157%;
+  display: block;
 }
 .order__link {
   color: #3142c6;
@@ -1447,7 +1449,7 @@
     margin-bottom: 40px;
   }
   .order {
-    padding: 54px 0 46px;
+    padding: 50px 0 46px;
   }
   .order__content {
     padding: 0 15px 46px;

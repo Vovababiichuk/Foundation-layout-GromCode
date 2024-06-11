@@ -45,6 +45,8 @@
   &__text {
     font-size: 14px;
     color: rgba($color-black, 0.6);
+    line-height: 157%;
+    display: block;
   }
 
   &__link {
@@ -106,7 +108,7 @@
     margin-bottom: 40px;
   }
   .order {
-    padding: 54px 0 46px; //!!!!!!!!!!!!
+    padding: 50px 0 46px; //!!!!!!!!!!!!
   }
   .order__content {
     padding: 0 15px 46px; //!!!!!!!!!!!!!!!
