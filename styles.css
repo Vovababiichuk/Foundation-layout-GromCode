@@ -276,19 +276,19 @@
     height: 48px;
   }
 }
-.hero__inner {
+.headline__inner {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   padding: 40px 25px 126px 130px;
   position: relative;
 }
-.hero__content {
+.headline__content {
   display: flex;
   flex-direction: column;
   z-index: 100;
 }
-.hero__title {
+.headline__title {
   position: relative;
   z-index: 100;
   max-width: 754px;
@@ -298,21 +298,21 @@
   letter-spacing: -1px;
   margin-bottom: 14px;
 }
-.hero__description {
+.headline__description {
   max-width: 456px;
   font-size: 24px;
   line-height: 1.4;
   margin-bottom: 60px;
 }
-.hero__buttons {
+.headline__buttons {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.hero__buttons .button-white--color {
+.headline__buttons .button-white--color {
   color: #3040c4;
 }
-.hero__img {
+.headline__img {
   position: absolute;
   top: 48px;
   right: 22px;
@@ -321,36 +321,36 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .hero__image {
+  .headline__image {
     opacity: 0.5;
   }
 }
 @media screen and (max-width: 992px) {
-  .hero__inner {
+  .headline__inner {
     padding-left: 15px;
     padding: 40px 15px 126px;
   }
 }
 @media screen and (max-width: 885px) {
-  .hero__inner {
+  .headline__inner {
     flex-wrap: wrap;
   }
-  .hero__img {
+  .headline__img {
     position: static;
   }
-  .hero__description {
+  .headline__description {
     margin-bottom: 30px;
   }
-  .hero__content {
+  .headline__content {
     margin-bottom: 32px;
   }
-  .hero__image {
+  .headline__image {
     position: relative;
     width: 100%;
     padding-bottom: 56.2814070352%;
     opacity: 1;
   }
-  .hero__image img {
+  .headline__image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -358,19 +358,19 @@
     height: 100%;
     object-fit: cover;
   }
-  .hero__inner {
+  .headline__inner {
     padding-bottom: 58px;
   }
 }
 @media screen and (max-width: 576px) {
-  .hero__buttons {
+  .headline__buttons {
     flex-direction: column;
   }
-  .hero__buttons .button-blue,
-  .hero__buttons .button-white {
+  .headline__buttons .button-blue,
+  .headline__buttons .button-white {
     width: 100%;
   }
-  .hero__inner {
+  .headline__inner {
     padding: 32px 15px 58px;
   }
 }
@@ -378,10 +378,10 @@
   .mobile-menu-icon {
     padding-right: 6px;
   }
-  .hero__title {
+  .headline__title {
     margin-bottom: 8px;
   }
-  .hero__buttons {
+  .headline__buttons {
     gap: 15px;
   }
 }

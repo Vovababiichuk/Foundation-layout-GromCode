@@ -1,4 +1,4 @@
-.hero {
+.headline {
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -54,46 +54,46 @@
 // MEDIA QUERIES
 
 @media screen and (max-width: $media-1200) {
-  .hero__image {
+  .headline__image {
     opacity: 0.5;
   }
 }
 
 @media screen and (max-width: $media-992) {
-  .hero__inner {
+  .headline__inner {
     padding-left: 15px;
     padding: 40px 15px 126px;
   }
 }
 
 @media screen and (max-width: $media-855) {
-  .hero__inner {
+  .headline__inner {
     flex-wrap: wrap;
   }
-  .hero__img {
+  .headline__img {
     position: static;
   }
 
-  .hero__description {
+  .headline__description {
     margin-bottom: 30px;
   }
 
-  .hero__content {
+  .headline__content {
     margin-bottom: 32px;
   }
 
-  .hero__image {
+  .headline__image {
     @include adaptive-image(796, 448);
     opacity: 1;
   }
 
-  .hero__inner {
+  .headline__inner {
     padding-bottom: 58px;
   }
 }
 
 @media screen and (max-width: $media-576) {
-  .hero__buttons {
+  .headline__buttons {
     flex-direction: column;
 
     .button-blue,
@@ -102,7 +102,7 @@
     }
   }
 
-  .hero__inner {
+  .headline__inner {
     padding: 32px 15px 58px;
   }
 }
@@ -111,10 +111,10 @@
   .mobile-menu-icon {
     padding-right: 6px;
   }
-  .hero__title {
+  .headline__title {
     margin-bottom: 8px;
   }
-  .hero__buttons {
+  .headline__buttons {
     gap: 15px;
   }
 }
