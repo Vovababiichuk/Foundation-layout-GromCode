@@ -1,7 +1,9 @@
 .order {
   @include flex-center(flex-center, 120px);
+  justify-content: center;//!!!!!!!!!!!!!!
   background-color: $color-light-dark;
-  padding: 72px 224px;
+  // padding: 72px 224px; //!!!!!!!!!!!!!!
+  padding: 72px 0;
 
   &__image {
     max-width: 270px;
@@ -105,6 +107,6 @@
     padding: 54px 0 46px; //!!!!!!!!!!!!
   }
   .order__content {
-    padding: 54px 15px 46px; //!!!!!!!!!!!!!!!
+    padding: 0 15px 46px; //!!!!!!!!!!!!!!!
   }
 }

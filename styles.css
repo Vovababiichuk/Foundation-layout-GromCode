@@ -1359,8 +1359,9 @@
   align-items: center;
   justify-content: flex-center;
   gap: 120px;
+  justify-content: center;
   background-color: #f4f5f7;
-  padding: 72px 224px;
+  padding: 72px 0;
 }
 .order__image {
   max-width: 270px;
@@ -1445,7 +1446,7 @@
     padding: 54px 0 46px;
   }
   .order__content {
-    padding: 54px 15px 46px;
+    padding: 0 15px 46px;
   }
 }
 .footer {
