@@ -381,6 +381,9 @@
   .headline__buttons {
     gap: 15px;
   }
+  .headline__inner {
+    padding: 0 15px 58px;
+  }
 }
 .about__inner {
   display: grid;
