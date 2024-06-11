@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     background-color: $color-beige;
-    // background-color: #fff; //!!!!!!!!!!
     padding: 40px 25px 126px 130px;
     position: relative;
   }
@@ -28,7 +27,7 @@
   &__description {
     max-width: 456px;
     font-size: 24px;
-    line-height: 142%; ///!!!!!!!!!!!!!
+    line-height: 142%;
     margin-bottom: 60px;
   }
 
@@ -103,7 +102,7 @@
   }
 
   .headline__inner {
-    padding: 32px 15px 58px; //!!!!!!!!!!!!!!!!!!!
+    padding: 32px 15px 58px;
   }
 }
 
@@ -120,9 +119,9 @@
     gap: 15px;
   }
   .headline__inner {
-    padding: 0 0px 58px; //!!!!!!!!!!!!!!!!!!!
+    padding: 0 0px 58px;
   }
   .headline__content {
-    padding: 35px 15px 0; //!!!!!!!!!!!!!!!!!!!
+    padding: 35px 15px 0;
   }
 }
