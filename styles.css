@@ -1432,11 +1432,12 @@
   }
   .order__form-input {
     max-width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
   .order__image {
-    margin-left: -14px;
+    margin-left: -24px;
   }
   .order__title {
     font-size: 38px;
