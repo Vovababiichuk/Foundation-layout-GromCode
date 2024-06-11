@@ -22,9 +22,9 @@
   transition: padding 0.3s, background-color 0.3s;
   z-index: 1002;
 
-  @media screen and (max-width: $media-480) {
-    display: none;
-  }
+  // @media screen and (max-width: $media-480) {
+  //   display: none;
+  // }
 
 
   &--sticky {
