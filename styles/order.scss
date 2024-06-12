@@ -1,8 +1,7 @@
 .order {
   @include flex-center(flex-center, 120px);
-  justify-content: center;//!!!!!!!!!!!!!!
+  justify-content: center;
   background-color: $color-light-dark;
-  // padding: 72px 224px; //!!!!!!!!!!!!!!
   padding: 72px 0;
 
   &__image {
