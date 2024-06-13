@@ -1668,6 +1668,16 @@
   height: 6738px;
 }
 
+.header__audio--sticky {
+  position: absolute;
+  top: 24px;
+  right: 50px;
+}
+
+.filter-blur {
+  filter: blur(6px);
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   background-color: transparent;
@@ -1710,18 +1720,8 @@
   line-height: 1.2;
 }
 
-.header__audio--sticky {
-  position: absolute;
-  top: 24px;
-  right: 50px;
-}
-
 .no-scroll {
   overflow: hidden;
-}
-
-.filter-blur {
-  filter: blur(6px);
 }
 
 body {
