@@ -16,6 +16,16 @@
 @import 'global';
 @import 'scroll';
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
@@ -66,4 +76,40 @@ body {
 .button-white:hover {
   opacity: 0.8;
   scale: 1.05;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  appearance: none;
+  outline: 0;
+  border: 0;
+  font: inherit;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+body,
+figure,
+blockquote {
+  margin: 0;
 }
