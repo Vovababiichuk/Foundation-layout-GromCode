@@ -4,9 +4,9 @@
     justify-content: space-between;
     background-color: $color-beige;
     padding: 40px 25px 126px 130px;
+    padding: 0px 0px 66px 0px;
 
     @media screen and (max-width: $media-1440) {
-      padding: 0px 0px 66px 0px;
     }
 
     position: relative;
@@ -98,9 +98,9 @@
     width: 796px;
     height: 448px;
 
+    top: 14px;
+    right: 0;
     @media screen and (max-width: $media-1440) {
-      top: 14px;
-      right: 0;
     }
     @media screen and (max-width: $media-855) {
       position: static;
