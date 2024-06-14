@@ -4,14 +4,50 @@
   background-color: $color-light-dark;
   padding: 72px 0;
 
+  @media screen and (max-width: $media-1440) {
+    justify-content: center;
+    align-items: center;
+    padding: 72px 15px;
+  }
+  @media screen and (max-width: $media-1200) {
+    flex-direction: column;
+    gap: 50px;
+  }
+  @media screen and (max-width: 586px) {
+    align-items: center;
+    justify-content: center;
+    gap: 46px;
+    padding: 54px 15px 46px;
+  }
+  @media screen and (max-width: $media-480) {
+    padding: 50px 0 46px;
+  }
+
   &__image {
     max-width: 270px;
     height: 296px;
+
+    @media screen and (max-width: $media-480) {
+      margin-left: -20px;
+    }
+  }
+
+  &__content {
+    @media screen and (max-width: $media-480) {
+      padding: 0 15px 46px;
+    }
   }
 
   &__title {
     font-size: 40px;
     font-weight: 700;
+
+    @media screen and (max-width: $media-480) {
+      font-size: 40px;
+      line-height: 100%;
+      line-height: 40px;
+      letter-spacing: -0.25px;
+    }
   }
 
   &__description {
@@ -19,12 +55,22 @@
     margin-bottom: 26px;
     max-width: 555px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: $media-480) {
+      margin-bottom: 38px;
+      font-size: 24px;
+      margin-top: 16px;
+    }
   }
 
   &__form {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 586px) {
+      flex-direction: column;
+    }
   }
 
   &__form-input {
@@ -35,6 +81,11 @@
     line-height: 1;
     border: 1px solid rgba($color-black, 0.2);
     padding: 13px 0 13px 15px;
+
+    @media screen and (max-width: 586px) {
+      max-width: 100%;
+      text-align: center;
+    }
 
     &:focus {
       outline: 1px solid $color-blue;
@@ -56,61 +107,5 @@
     &:hover {
       color: $color-blue-light;
     }
-  }
-}
-
-// MEDIA QUERIES
-
-@media screen and (max-width: $media-1440) {
-  .order {
-    justify-content: center;
-    align-items: center;
-    padding: 72px 15px;
-  }
-}
-
-@media screen and (max-width: $media-1200) {
-  .order {
-    flex-direction: column;
-    gap: 50px;
-  }
-}
-
-@media screen and (max-width: 586px) {
-  .order {
-    align-items: center;
-    justify-content: center;
-    gap: 46px;
-    padding: 54px 15px 46px;
-  }
-  .order__form {
-    flex-direction: column;
-  }
-  .order__form-input {
-    max-width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: $media-480) {
-  .order__image {
-    margin-left: -20px;
-  }
-  .order__title {
-    font-size: 40px;
-    line-height: 100%;
-    line-height: 40px;
-    letter-spacing: -0.25px;
-  }
-  .order__description {
-    margin-bottom: 38px;
-    font-size: 24px;
-    margin-top: 16px;
-  }
-  .order {
-    padding: 50px 0 46px;
-  }
-  .order__content {
-    padding: 0 15px 46px;
   }
 }

@@ -3,12 +3,32 @@
   background-color: $color-yellow-light;
   padding: 142px 24px 102px 192px;
 
+  @media screen and (max-width: $media-1440) {
+    justify-content: center;
+    padding: 142px 24px 102px;
+  }
+  @media screen and (max-width: $media-1200) {
+    flex-direction: column;
+    text-align: center;
+    gap: 58px;
+    padding: 20px 24px 102px;
+  }
+  @media screen and (max-width: $media-480) {
+    text-align: left;
+    padding: 50px 24px 34px;
+  }
+
   &__wheel-image {
     width: 100%;
     max-width: 425px;
     height: 100%;
     max-height: auto;
     margin-bottom: 15px;
+
+    @media screen and (max-width: $media-480) {
+      width: 290px;
+      height: 344px;
+    }
   }
 
   &__wheel-text {
@@ -16,6 +36,10 @@
     opacity: 0.6;
     text-align: center;
     display: block;
+
+    @media screen and (max-width: $media-480) {
+      display: none;
+    }
   }
 
   &__content {
@@ -23,6 +47,10 @@
 
     &-inner {
       padding-left: 30px;
+
+      @media screen and (max-width: $media-480) {
+        padding-left: 0px;
+      }
     }
 
     &-inner-decor {
@@ -31,6 +59,10 @@
       font-weight: 700;
       color: $color-orange;
       margin-bottom: 24px;
+
+      @media screen and (max-width: $media-480) {
+        margin-bottom: 20px;
+      }
     }
 
     &-inner-title {
@@ -38,6 +70,10 @@
       font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
       max-width: 462px;
       margin-bottom: 30px;
+
+      @media screen and (max-width: $media-480) {
+        margin-bottom: -8px;
+      }
     }
 
     &-inner-description {
@@ -85,46 +121,5 @@
 
   &__text-position {
     font-size: 16px;
-  }
-}
-
-// MEDIA QUERIES
-
-@media screen and (max-width: $media-1440) {
-  .manage {
-    justify-content: center;
-    padding: 142px 24px 102px;
-  }
-}
-
-@media screen and (max-width: $media-1200) {
-  .manage {
-    flex-direction: column;
-    text-align: center;
-    gap: 58px;
-    padding: 20px 24px 102px;
-  }
-  @media screen and (max-width: $media-480) {
-    .manage {
-      text-align: left;
-      padding: 50px 24px 34px;
-    }
-    .manage__wheel-image {
-      width: 290px;
-      height: 344px;
-    }
-
-    .manage__wheel-text {
-      display: none;
-    }
-    .manage__content-inner {
-      padding-left: 0px;
-    }
-    .manage__content-inner-decor {
-      margin-bottom: 20px;
-    }
-    .manage__content-inner-title {
-      margin-bottom: -8px;
-    }
   }
 }

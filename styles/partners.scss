@@ -4,11 +4,26 @@
   background-color: $color-light;
   padding: 30px 130px 106px;
 
+  @media screen and (max-width: $media-1200) {
+    padding: 30px 130px 30px;
+  }
+  @media screen and (max-width: $media-855) {
+    padding: 20px 15px 46px 15px;
+  }
+  @media (max-width: $media-576) {
+    padding: 0 0 46px 0;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     width: 100%;
     max-width: 1400px;
+
+    @media (max-width: $media-576) {
+      grid-template-columns: repeat(3, minmax(107px, 1fr));
+      gap: 0;
+    }
   }
 
   &__list-item {
@@ -17,6 +32,11 @@
     align-items: center;
     padding: 20px;
     height: 94px;
+
+    @media (max-width: $media-576) {
+      border-bottom: 1px solid rgba($color-black, 0.1);
+      border-right: 1px solid rgba($color-black, 0.1);
+    }
   }
 
   &__list-item-link {
@@ -33,35 +53,5 @@
     filter: brightness(0);
     max-width: 100%;
     height: auto;
-  }
-}
-
-// MEDIA QUERIES
-
-@media screen and (max-width: $media-1200) {
-  .partners {
-    padding: 30px 130px 30px;
-  }
-}
-
-@media screen and (max-width: $media-855) {
-  .partners {
-    padding: 20px 15px 46px 15px;
-  }
-}
-
-@media (max-width: $media-576) {
-  .partners {
-    padding: 0 0 46px 0;
-
-    &__list-item {
-      border-bottom: 1px solid rgba($color-black, 0.1);
-      border-right: 1px solid rgba($color-black, 0.1);
-    }
-
-    &__list {
-      grid-template-columns: repeat(3, minmax(107px, 1fr));
-      gap: 0;
-    }
   }
 }

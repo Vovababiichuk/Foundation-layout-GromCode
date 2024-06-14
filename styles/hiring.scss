@@ -2,14 +2,36 @@
   background-color: $color-light;
   padding: 80px 0 110px;
 
+  @media screen and (max-width: $media-1200) {
+    padding: 50px 15px 60px;
+  }
+  @media screen and (max-width: $media-480) {
+    padding: 50px 15px 30px;
+  }
+
   &__content {
     text-align: center;
     margin-bottom: 110px;
+
+    @media screen and (max-width: $media-1200) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .hiring__content-btn {
+      width: 100%;
+      max-width: 290px;
+    }
   }
 
   &__content-title {
     @include title;
     font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+
+    @media screen and (max-width: $media-768) {
+      margin-bottom: 22px;
+    }
   }
 
   &__content-description {
@@ -17,6 +39,11 @@
     max-width: 555px;
     margin: 0 auto;
     margin-bottom: 28px;
+
+    @media screen and (max-width: $media-768) {
+      line-height: 1.4;
+      margin-bottom: 32px;
+    }
   }
 
   &__list {
@@ -39,6 +66,11 @@
     transition: background-color 0.2s ease-in-out;
     margin-bottom: 20px;
 
+    @media screen and (max-width: $media-480) {
+      padding: 0 0 0 18px;
+      margin-bottom: 14px;
+    }
+
     &:hover {
       background-color: $color-blue;
       cursor: pointer;
@@ -52,9 +84,19 @@
       width: 100%;
       max-width: 620px;
 
+      @media screen and (max-width: $media-768) {
+        flex-direction: column;
+        align-items: start;
+      }
+
       &-role {
         font-size: 22px;
         font-weight: 700;
+
+        @media screen and (max-width: 370px) {
+          max-width: 130px;
+          margin-bottom: 14px;
+        }
       }
 
       &-location {
@@ -65,58 +107,13 @@
 
     &-arrow {
       font-size: 14px;
+
+      @media screen and (max-width: $media-480) {
+        background-color: $color-gray;
+        padding: 60px 20px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
     }
-  }
-}
-
-// MEDIA QUERIES
-
-@media screen and (max-width: $media-1200) {
-  .hiring {
-    padding: 50px 15px 60px;
-  }
-  .hiring__content {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: $media-768) {
-  .hiring__item-info {
-    flex-direction: column;
-    align-items: start;
-  }
-  .hiring__content-title {
-    margin-bottom: 22px;
-  }
-  .hiring__content-description {
-    line-height: 1.4;
-    margin-bottom: 32px;
-  }
-}
-
-@media screen and (max-width: $media-480) {
-  .hiring {
-    padding: 50px 15px 30px;
-  }
-  .hiring__item {
-    padding: 0 0 0 18px;
-    margin-bottom: 14px;
-  }
-  .hiring__item-arrow {
-    background-color: $color-gray;
-    padding: 60px 20px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .hiring__item-info-role {
-    max-width: 130px;
-    margin-bottom: 14px;
-  }
-  .hiring__content-btn {
-    width: 100%;
-    max-width: 290px;
   }
 }
