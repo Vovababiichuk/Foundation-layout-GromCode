@@ -336,7 +336,7 @@
 }
 @media screen and (max-width: 480px) {
   .headline__content {
-    padding: 35px 15px 0;
+    padding: 0px 15px 0;
   }
 }
 .headline__title {
@@ -1536,6 +1536,7 @@
     font-size: 40px;
     line-height: 100%;
     line-height: 40px;
+    text-align: center;
     letter-spacing: -0.25px;
   }
 }

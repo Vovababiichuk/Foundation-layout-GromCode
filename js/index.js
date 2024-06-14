@@ -76,20 +76,20 @@ const swiper = new Swiper('.my-swiper', {
 
 // sticky
 
-document.addEventListener('DOMContentLoaded', function () {
-  const header = document.querySelector('.header__inner');
-  const audio = document.querySelector('.header__audio');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const header = document.querySelector('.header__inner');
+//   const audio = document.querySelector('.header__audio');
 
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 500) {
-      header.classList.add('header__inner--sticky');
-      audio.classList.add('header__audio--sticky');
-    } else {
-      header.classList.remove('header__inner--sticky');
-      audio.classList.remove('header__audio--sticky');
-    }
-  });
-});
+//   window.addEventListener('scroll', function () {
+//     if (window.scrollY > 500) {
+//       header.classList.add('header__inner--sticky');
+//       audio.classList.add('header__audio--sticky');
+//     } else {
+//       header.classList.remove('header__inner--sticky');
+//       audio.classList.remove('header__audio--sticky');
+//     }
+//   });
+// });
 
 // scroll button to top
 
