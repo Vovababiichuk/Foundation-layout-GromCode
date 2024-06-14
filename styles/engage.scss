@@ -3,6 +3,22 @@
   padding: 40px 15px;
   background-color: $color-light;
 
+  @media screen and (max-width: $media-768) {
+    @include flex-column(30px);
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0 4px;
+  }
+  @media screen and (max-width: $media-480) {
+    text-align: left;
+  }
+  @media screen and (max-width: $media-768) {
+    .engage__content {
+      padding: 0 15px;
+    }
+  }
+
   &__content:nth-of-type(1) {
     width: 100%;
     border-bottom: 1px solid rgba($color-black, 0.1);
@@ -21,6 +37,10 @@
     font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
     max-width: 462px;
     margin-bottom: 22px;
+
+    @media screen and (max-width: $media-768) {
+      margin: 0 auto;
+    }
   }
 
   &__content-description {
@@ -29,6 +49,10 @@
     letter-spacing: 0.85px;
     line-height: 1.5;
     margin-bottom: 2px;
+
+    @media screen and (max-width: $media-768) {
+      margin: 22px auto 0;
+    }
   }
 
   &__content-figure {
@@ -50,25 +74,5 @@
     color: rgba($color-black, 0.6);
     margin: 0;
     margin-top: 19px;
-  }
-}
-
-// MEDIA QUERIES
-
-@media screen and (max-width: $media-768) {
-  .engage {
-    @include flex-column(30px);
-		text-align: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 0 4px;
-
-		@media screen and (max-width: $media-480) {
-			text-align: left;
-		}
-  }
-
-  .engage__content {
-    padding: 0 15px;
   }
 }

@@ -1,157 +1,137 @@
 .swiper {
-	width: 100%;
-	height: 250px;
+  width: 100%;
+  height: 250px;
+
+  @media screen and (max-width: $media-768) {
+    height: 285px;
+  }
+  @media screen and (max-width: $media-576) {
+    height: 300px;
+  }
+  @media screen and (max-width: 470px) {
+    height: 360px;
+  }
+  @media screen and (max-width: 380px) {
+    height: 440px;
+  }
+  @media screen and (max-width: 340px) {
+    height: 450px;
+  }
 }
 
 .swiper-slide {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 }
 
 .swiper-slide img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .feedback {
-	background-color: $color-light;
-	position: relative;
-	padding-bottom: 50px;
-	border-bottom: 1px solid rgba($color-black, 0.1);
+  background-color: $color-light;
+  position: relative;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba($color-black, 0.1);
 
-	.feedback__blockquote-author {
-		display: block;
-		font-size: 16px;
-		font-weight: 700;
-	}
+  @media screen and (max-width: $media-1200) {
+    padding: 0 15px;
+  }
 
-	.feedback__blockquote-role {
-		display: block;
-		font-size: 16px;
-		color: $color-black;
-		opacity: 0.6;
-	}
+  .feedback__blockquote-author {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
 
-	&__image {
-		position: absolute;
-		right: 20px;
-		bottom: 0;
-		width: 273px;
-		height: 243px;
-		z-index: 999;
-	}
+    @media screen and (max-width: $media-768) {
+      margin-top: 90px;
+    }
+    @media screen and (max-width: $media-576) {
+      margin-top: 120px;
+    }
+    @media screen and (max-width: 470px) {
+      margin-top: 156px;
+      text-align: left;
+    }
+    @media screen and (max-width: 380px) {
+      margin-top: 246px;
+    }
+    @media screen and (max-width: 340px) {
+      margin-top: 256px;
+    }
+  }
+
+  .feedback__blockquote-role {
+    display: block;
+    font-size: 16px;
+    color: $color-black;
+    opacity: 0.6;
+
+    @media screen and (max-width: 470px) {
+      text-align: left;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 273px;
+    height: 243px;
+    z-index: 999;
+
+    @media screen and (max-width: $media-1200) {
+      display: none;
+    }
+
+    @media screen and (max-width: 470px) {
+      display: block;
+      position: static;
+      width: 290px;
+      height: 258px;
+      margin: 30px auto 48px;
+    }
+  }
 }
 
 .feedback__title {
-	font-size: 24px;
-	font-weight: 700;
-	color: $color-blue;
-	text-align: center;
-	margin-bottom: 28px;
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-blue;
+  text-align: center;
+  margin-bottom: 28px;
 
-	@media screen and (max-width: $media-480) {
-		line-height: 1.3;
-	}
+  @media screen and (max-width: $media-576) {
+    text-align: left;
+  }
+  @media screen and (max-width: $media-480) {
+    line-height: 1.3;
+  }
 }
 
 .feedback__blockquote-text {
-	font-size: 24px;
-	max-width: 750px;
-	height: 80px;
-	margin: 0 auto;
-	margin-bottom: 54px;
-	margin-top: -80px;
-}
+  font-size: 24px;
+  max-width: 750px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+  margin-top: -80px;
 
-// MEDIA QUERIES
-
-@media screen and (max-width: $media-1200) {
-	.feedback__image {
-		display: none;
-	}
-	.feedback {
-		padding: 0 15px;
-	}
-}
-
-@media screen and (max-width: $media-768) {
-	.swiper {
-		height: 285px;
-	}
-	.feedback__blockquote-author {
-		margin-top: 90px;
-	}
-	.feedback__blockquote-text {
-		margin-top: -70px;
-	}
-}
-
-@media screen and (max-width: $media-576) {
-	.swiper {
-		height: 300px;
-	}
-	.feedback__blockquote-author {
-		margin-top: 120px;
-	}
-	.feedback__blockquote-text {
-		margin-top: -50px;
-	}
-	.feedback__title,
-	.feedback__blockquote-text {
-		text-align: left;
-	}
-}
-
-@media screen and (max-width: 470px) {
-	.feedback__image {
-		display: block;
-		position: static;
-		width: 290px;
-		height: 258px;
-		margin: 30px auto 48px;
-	}
-	.swiper {
-		height: 360px;
-	}
-	.feedback__blockquote-author {
-		margin-top: 156px;
-		text-align: left;
-	}
-	.feedback__blockquote-text {
-		margin-top: -70px;
-		line-height: 1.4;
-	}
-	.feedback__blockquote-role {
-		text-align: left;
-	}
-}
-
-@media screen and (max-width: 380px) {
-	.swiper {
-		height: 440px;
-	}
-	.feedback__blockquote-author {
-		margin-top: 246px;
-	}
-	.feedback__blockquote-text {
-		margin-top: -70px;
-	}
-}
-
-@media screen and (max-width: 340px) {
-	.swiper {
-		height: 450px;
-	}
-	.feedback__blockquote-author {
-		margin-top: 256px;
-	}
-	.feedback__blockquote-text {
-		margin-top: -70px;
-	}
+  @media screen and (max-width: $media-768) {
+    margin-top: -70px;
+    text-align: left;
+  }
+  @media screen and (max-width: $media-576) {
+    margin-top: -50px;
+  }
+  @media screen and (max-width: 470px) {
+    line-height: 1.4;
+  }
 }
