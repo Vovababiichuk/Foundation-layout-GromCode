@@ -302,6 +302,11 @@
   padding: 40px 25px 126px 130px;
   position: relative;
 }
+@media screen and (max-width: 1440px) {
+  .headline__inner {
+    padding: 0px 0px 66px 0px;
+  }
+}
 @media screen and (max-width: 992px) {
   .headline__inner {
     padding-left: 15px;
@@ -395,6 +400,12 @@
   right: 22px;
   width: 796px;
   height: 448px;
+}
+@media screen and (max-width: 1440px) {
+  .headline__img {
+    top: 14px;
+    right: 0;
+  }
 }
 @media screen and (max-width: 885px) {
   .headline__img {
