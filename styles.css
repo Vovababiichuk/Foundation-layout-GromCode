@@ -1098,6 +1098,7 @@
   font-size: 24px;
   max-width: 555px;
   line-height: 34px;
+  margin-bottom: 34px;
 }
 @media screen and (max-width: 576px) {
   .audience__content-description {
