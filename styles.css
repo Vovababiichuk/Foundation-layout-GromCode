@@ -364,7 +364,7 @@
 }
 @media screen and (max-width: 885px) {
   .headline__description {
-    margin: 27.5px 0 32px;
+    margin: 27.2px 0 32px;
   }
 }
 .headline__buttons {
@@ -1502,7 +1502,7 @@
   .order {
     align-items: center;
     justify-content: center;
-    gap: 46px;
+    gap: 40px;
     padding: 54px 15px 46px;
   }
 }
@@ -1548,7 +1548,6 @@
 @media screen and (max-width: 480px) {
   .order__description {
     margin-bottom: 38px;
-    font-size: 24px;
     margin-top: 16px;
   }
 }
@@ -1764,7 +1763,7 @@
     height: 60px;
   }
   .logo__text--footer {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
   .footer__links:nth-of-type(3) {
     margin-top: -34px;

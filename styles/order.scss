@@ -16,7 +16,7 @@
   @media screen and (max-width: 586px) {
     align-items: center;
     justify-content: center;
-    gap: 46px;
+    gap: 40px;
     padding: 54px 15px 46px;
   }
   @media screen and (max-width: $media-480) {
@@ -61,7 +61,6 @@
 
     @media screen and (max-width: $media-480) {
       margin-bottom: 38px;
-      font-size: 24px;
       margin-top: 16px;
     }
   }
