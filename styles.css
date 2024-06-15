@@ -1655,6 +1655,7 @@
   font-size: 18px;
   color: rgba(43, 41, 45, 0.6);
   margin-bottom: 28px;
+  margin-top: 26px;
 }
 @media screen and (max-width: 480px) {
   .footer__info-desc {
