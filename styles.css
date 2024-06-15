@@ -1630,7 +1630,7 @@
     padding: 42px 0 12px 15px;
     grid-template-columns: repeat(1, 300px);
     justify-items: left;
-    gap: 64px;
+    gap: 68px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1760,7 +1760,7 @@
   }
   .logo__img--footer {
     width: 60px;
-    height: 60px;
+    height: 58px;
   }
   .logo__text--footer {
     margin-bottom: 30px;
