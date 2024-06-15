@@ -1,6 +1,5 @@
 .header {
   background-color: #f3c6bd;
-  padding: 40px 130px;
 }
 @media screen and (max-width: 992px) {
   .header {
