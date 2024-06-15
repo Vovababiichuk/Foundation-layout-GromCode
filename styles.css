@@ -1,12 +1,10 @@
 .header {
-  width: 1140px;
-  height: 62px;
   background-color: #f3c6bd;
   margin: 40px 130px;
 }
 @media screen and (max-width: 992px) {
   .header {
-    padding: 0;
+    margin: 0;
   }
 }
 .header .nav__list {
@@ -15,6 +13,9 @@
 }
 
 .header__inner {
+  width: 100%;
+  max-width: 1140px;
+  height: 62px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -292,11 +293,6 @@
   .logo__img {
     width: 48px;
     height: 48px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .header__inner {
-    padding: 10px 20px 10px 15px;
   }
 }
 .headline {
