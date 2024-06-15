@@ -1,32 +1,25 @@
 .headline {
-  &__inner {
-    max-width: 1249px;
-    height: 456px;
-    display: flex;
-    justify-content: space-between;
-    background-color: $color-beige;
-    margin: 40px 25px 126px 130px;
+  position: relative;
+  max-width: 1249px;
+  height: 456px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-beige;
+  margin: 40px 25px 126px 130px;
 
-    // @media screen and (max-width: $media-1440) {
-    //   padding: 0px 0px 66px 0px;
-    // }
-
-    position: relative;
-
-    @media screen and (max-width: $media-992) {
-      padding-left: 15px;
-      padding: 40px 15px 126px;
-    }
-    @media screen and (max-width: $media-855) {
-      flex-wrap: wrap;
-      padding-bottom: 58px;
-    }
-    @media screen and (max-width: $media-576) {
-      padding: 32px 15px 58px;
-    }
-    @media screen and (max-width: $media-480) {
-      padding: 0 0px 58px;
-    }
+  @media screen and (max-width: $media-992) {
+    padding-left: 15px;
+    margin: 40px 15px 126px;
+  }
+  @media screen and (max-width: $media-855) {
+    flex-wrap: wrap;
+    padding-bottom: 58px;
+  }
+  @media screen and (max-width: $media-576) {
+    margin: 32px 15px 58px;
+  }
+  @media screen and (max-width: $media-480) {
+    margin: 0 0px 58px;
   }
 
   &__content {

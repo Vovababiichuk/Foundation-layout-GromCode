@@ -299,35 +299,35 @@
     padding: 10px 20px 10px 15px;
   }
 }
-.headline__inner {
+.headline {
+  position: relative;
   max-width: 1249px;
   height: 456px;
   display: flex;
   justify-content: space-between;
   background-color: #f3c6bd;
   margin: 40px 25px 126px 130px;
-  position: relative;
 }
 @media screen and (max-width: 992px) {
-  .headline__inner {
+  .headline {
     padding-left: 15px;
-    padding: 40px 15px 126px;
+    margin: 40px 15px 126px;
   }
 }
 @media screen and (max-width: 885px) {
-  .headline__inner {
+  .headline {
     flex-wrap: wrap;
     padding-bottom: 58px;
   }
 }
 @media screen and (max-width: 576px) {
-  .headline__inner {
-    padding: 32px 15px 58px;
+  .headline {
+    margin: 32px 15px 58px;
   }
 }
 @media screen and (max-width: 480px) {
-  .headline__inner {
-    padding: 0 0px 58px;
+  .headline {
+    margin: 0 0px 58px;
   }
 }
 .headline__content {
