@@ -34,6 +34,12 @@
     }
   }
 
+  &__info {
+    @media screen and (max-width: $media-480) {
+      margin: 0 auto;
+    }
+  }
+
   &__info-desc {
     font-size: 18px;
     color: rgba($color-black, 0.6);
