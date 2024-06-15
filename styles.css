@@ -1636,7 +1636,7 @@
 @media screen and (max-width: 480px) {
   .footer__top {
     border: none;
-    padding: 42px 0 12px;
+    padding: 42px 10px 12px;
   }
 }
 @media screen and (max-width: 480px) {
