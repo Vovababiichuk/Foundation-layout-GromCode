@@ -44,7 +44,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px; //!!!!!!!!!!!!!!!!!!!!!!
   &__img {
     max-width: 60px;
     height: 58px;
@@ -305,7 +305,7 @@
   }
   .logo__img {
     width: 48px;
-    height: 48px;
+    height: 46px; //!!!!!!!!!!!!!!!!!!!!
   }
 }
 
