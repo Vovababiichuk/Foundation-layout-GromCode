@@ -197,6 +197,7 @@
     height: 64px;
     border-left: 1px solid rgba(0, 0, 0, 0.15);
     opacity: 0.15px;
+    margin-top: -10px;
   }
 }
 .mobile-menu-icon .fa-bars,
@@ -287,7 +288,7 @@
   }
   .fa-bars,
   .fa-times {
-    padding: 20px 0 20px 20px;
+    padding: 22px 0 20px 20px;
   }
   .logo__img {
     width: 48px;

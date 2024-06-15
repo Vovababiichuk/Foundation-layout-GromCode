@@ -8,7 +8,6 @@
 
   .nav__list {
     margin-top: -10px;
-    // margin-right: 35.5px; //!!!!!!!!!!!!!!!!!!!!!!!!!!
   }
 }
 
@@ -215,6 +214,7 @@
     height: 64px;
     border-left: 1px solid rgba($color-dark, 0.15);
     opacity: 0.15px;
+    margin-top: -10px;
   }
 
   .fa-bars,
@@ -311,6 +311,6 @@
 
 @media screen and (max-width: $media-480) {
   .header__inner {
-    // margin: 10px 20px 10px 15px;
+    // margin: 10px 20px 10px 15px; //!!!!!!!!!!!!!!!
   }
 }
