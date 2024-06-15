@@ -31,6 +31,7 @@
     }
     @media screen and (max-width: $media-480) {
       border: none;
+      padding: 42px 0 12px;
     }
   }
 
@@ -74,6 +75,10 @@
   }
 
   &__links {
+
+    @media screen and (max-width: 480px) {
+      padding-left: 15px;
+    }
     &-title {
       font-size: 22px;
       font-weight: 700;
@@ -151,6 +156,7 @@
   }
   .footer__links:nth-of-type(3) {
     margin-top: -34px;
+    padding-left: 15px;
   }
   .logo__text-name--footer {
     line-height: 1.5;

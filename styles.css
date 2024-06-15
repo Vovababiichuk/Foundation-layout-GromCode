@@ -1636,6 +1636,7 @@
 @media screen and (max-width: 480px) {
   .footer__top {
     border: none;
+    padding: 42px 0 12px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1675,6 +1676,11 @@
 @media screen and (max-width: 470px) {
   .footer__line {
     display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__links {
+    padding-left: 15px;
   }
 }
 .footer__links-title {
@@ -1767,6 +1773,7 @@
   }
   .footer__links:nth-of-type(3) {
     margin-top: -34px;
+    padding-left: 15px;
   }
   .logo__text-name--footer {
     line-height: 1.5;
