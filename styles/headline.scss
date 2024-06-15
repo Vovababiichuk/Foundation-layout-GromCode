@@ -19,7 +19,8 @@
     margin: 32px 15px 58px;
   }
   @media screen and (max-width: $media-480) {
-    margin: 0 0px 58px;
+    margin: 0;
+    height: 800px;
   }
 
   &__content {
@@ -31,7 +32,7 @@
       margin-bottom: 32px;
     }
     @media screen and (max-width: $media-480) {
-      padding: 0px 15px 0;
+      padding: 0px 15px 0 0;
     }
   }
 
