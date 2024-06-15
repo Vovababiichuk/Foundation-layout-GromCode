@@ -42,7 +42,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 11px;
 }
 .logo__img {
   max-width: 60px;
@@ -204,7 +204,7 @@
 .mobile-menu-icon .fa-times {
   font-size: clamp(22px, 1.1898rem + 0.9259vw, 32px);
   color: rgba(44, 50, 65, 0.6);
-  margin-left: 2px;
+  margin-left: -2px;
 }
 
 .mobile-menu {
@@ -285,11 +285,11 @@
     width: 100%;
     height: 64px;
     background-color: #fff;
-    padding: 8px 15px;
+    padding: 8px 20px 8px 15px;
   }
   .fa-bars,
   .fa-times {
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 20px 24px;
   }
   .logo__img {
     width: 48px;
