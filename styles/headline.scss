@@ -8,7 +8,6 @@
   margin: 40px 25px 126px 130px;
 
   @media screen and (max-width: $media-992) {
-    padding-left: 15px;
     margin: 40px 15px 126px;
   }
   @media screen and (max-width: $media-855) {
@@ -27,6 +26,10 @@
     display: flex;
     flex-direction: column;
     z-index: 100;
+
+    @media screen and (max-width: $media-992) {
+      margin-left: 15px;
+    }
 
     @media screen and (max-width: $media-855) {
       margin-bottom: 32px;
