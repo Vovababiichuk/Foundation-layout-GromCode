@@ -364,7 +364,7 @@
 }
 @media screen and (max-width: 885px) {
   .headline__description {
-    margin: 27.2px 0 32px;
+    margin: 27.4px 0 32px;
   }
 }
 .headline__buttons {
@@ -1695,7 +1695,7 @@
 }
 @media screen and (max-width: 480px) {
   .footer__links-list {
-    gap: 8px;
+    gap: 10px;
   }
 }
 .footer__links-list-item {
