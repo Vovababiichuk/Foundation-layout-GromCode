@@ -89,7 +89,7 @@
       @include flex-column(12px);
 
       @media screen and (max-width: $media-480) {
-        gap: 10px; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        gap: 10px;
       }
 
       &-item {
@@ -149,7 +149,7 @@
   }
   .logo__img--footer {
     width: 60px;
-    height: 58px; //!!!!!!!!!!!!!!!!!!!!!!!!!
+    height: 58px;
   }
   .logo__text--footer {
     margin-bottom: 30px;
