@@ -1,4 +1,6 @@
 .header {
+  width: 1140px;
+  height: 62px;
   background-color: #f3c6bd;
   margin: 40px 130px;
 }
@@ -298,6 +300,8 @@
   }
 }
 .headline__inner {
+  max-width: 1249px;
+  height: 456px;
   display: flex;
   justify-content: space-between;
   background-color: #f3c6bd;
@@ -393,8 +397,8 @@
 }
 .headline__img {
   position: absolute;
-  top: 48px;
-  right: 22px;
+  top: 8px;
+  right: 0;
   width: 796px;
   height: 448px;
 }
