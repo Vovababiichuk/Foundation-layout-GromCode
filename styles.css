@@ -359,6 +359,7 @@
   .headline__title {
     margin-bottom: 8px;
     letter-spacing: -0.3125px;
+    margin: 0;
   }
 }
 .headline__description {
