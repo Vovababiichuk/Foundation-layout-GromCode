@@ -84,7 +84,7 @@
       @include flex-column(12px);
 
       @media screen and (max-width: $media-480) {
-        gap: 6px;
+        gap: 8px;
       }
 
       &-item {

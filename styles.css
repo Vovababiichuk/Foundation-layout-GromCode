@@ -1547,7 +1547,7 @@
 }
 @media screen and (max-width: 480px) {
   .order__description {
-    margin-bottom: 38px;
+    margin-bottom: 70px;
     margin-top: 16px;
   }
 }
@@ -1689,7 +1689,7 @@
 }
 @media screen and (max-width: 480px) {
   .footer__links-list {
-    gap: 6px;
+    gap: 8px;
   }
 }
 .footer__links-list-item {
