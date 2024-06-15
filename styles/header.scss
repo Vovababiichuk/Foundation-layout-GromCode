@@ -296,7 +296,7 @@
 @media screen and (max-width: $media-992) {
   .header__inner {
     width: 100%;
-    height: 64px;
+    // height: 64px; //!!!!!!!!!!!!!!!!!
     background-color: $color-light;
     padding: 8px 20px 8px 15px; //!!!!!!!!!!!!!!!!
   }
