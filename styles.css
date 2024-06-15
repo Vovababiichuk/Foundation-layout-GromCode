@@ -49,6 +49,11 @@
   height: 58px;
 }
 
+@media screen and (max-width: 480px) {
+  .logo__header {
+    gap: 11px;
+  }
+}
 .logo__text {
   display: flex;
   flex-direction: column;
