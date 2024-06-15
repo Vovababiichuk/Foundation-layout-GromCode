@@ -1,7 +1,8 @@
 .header {
   background-color: $color-beige;
   // padding: 40px 130px;
-  padding: 0px 130px;
+  margin: 40px 130px;
+  // padding: 0px 130px;
 
   @media screen and (max-width: $media-992) {
     padding: 0;
