@@ -57,11 +57,14 @@
 .logo__header {
   height: 62px;
   margin-left: -6px;
+  @media screen and (max-width: $media-992) {
+    height: 47px;
+  }
 }
 
 @media screen and (max-width: $media-480) {
   .logo__header {
-    gap: 11px; //!!!!!!!!!!!
+    gap: 7px; //!!!!!!!!!!!
   }
 }
 
@@ -319,8 +322,8 @@
     padding: 20px 0 20px 24px;
   }
   .logo__img {
-    width: 48px;
-    height: 46px; //!!!!!!!!!!!!!!!!!!!!
+    width: 60px;
+    height: 60px; //!!!!!!!!!!!!!!!!!!!!
   }
 }
 
