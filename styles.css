@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 480px) {
   .logo__header {
-    gap: 7px;
+    gap: 10px;
   }
 }
 .logo__text {
@@ -308,7 +308,7 @@
     padding: 20px 0 20px 20px;
   }
   .logo__img {
-    width: 54px;
+    width: 58px;
     height: 54px;
   }
 }
