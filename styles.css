@@ -45,8 +45,8 @@
   gap: 14px;
 }
 .logo__img {
-  max-width: 60px;
-  height: 58px;
+  width: 64px;
+  height: 61px;
 }
 
 @media screen and (max-width: 480px) {
