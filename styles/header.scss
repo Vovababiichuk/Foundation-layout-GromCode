@@ -44,11 +44,19 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  // gap: 14px;
+  gap: 9px;
   &__img {
-    width: 70px; //!!!!!!!!!!!
-    height: 70px;
+    width: 72px; //!!!!!!!!!!!
+    height: 71px;
   }
+}
+.logo__img-header {
+  margin-top: 7px;
+}
+.logo__header {
+  height: 62px;
+  margin-left: -6px;
 }
 
 @media screen and (max-width: $media-480) {
