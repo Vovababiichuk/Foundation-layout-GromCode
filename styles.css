@@ -342,6 +342,7 @@
 @media screen and (max-width: 480px) {
   .headline {
     margin: 0;
+    padding-top: 32px;
     height: 800px;
   }
 }
