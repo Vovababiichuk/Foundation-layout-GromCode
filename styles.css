@@ -336,12 +336,11 @@
 }
 @media screen and (max-width: 576px) {
   .headline {
-    margin: 32px 15px 58px;
+    margin: 32px 0px 58px;
   }
 }
 @media screen and (max-width: 480px) {
   .headline {
-    margin: 0;
     height: 800px;
   }
 }
@@ -363,7 +362,6 @@
 @media screen and (max-width: 480px) {
   .headline__content {
     padding: 0px 15px 0 0;
-    margin-top: 32px;
   }
 }
 .headline__title {
