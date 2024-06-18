@@ -16,9 +16,7 @@
     }
   }
   @media screen and (max-width: $media-768) {
-    flex-direction: column;
-    gap: 30px;
-    border-bottom: 1px solid rgba($color-black, 0.1);
+    display: none;
   }
 
   &__content {
@@ -31,18 +29,6 @@
     font-weight: 700;
     color: $color-green;
     margin-bottom: 22px;
-
-    @media screen and (max-width: $media-855) {
-      display: none;
-    }
-  }
-
-  .features__content-subtitle--mobile {
-    display: none;
-
-    @media screen and (max-width: $media-855) {
-      display: block;
-    }
   }
 
   &__content-title {
@@ -125,7 +111,7 @@
       display: none;
     }
 
-    &:nth-of-type(2):before {
+    &:nth-of-type(3):before {
       content: '';
       background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png');
       background-repeat: no-repeat;
@@ -136,7 +122,7 @@
       margin-right: 15px;
       vertical-align: middle;
     }
-    &:nth-of-type(3):before {
+    &:nth-of-type(4):before {
       content: '';
       background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png');
       background-repeat: no-repeat;

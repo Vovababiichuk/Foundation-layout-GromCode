@@ -545,9 +545,7 @@
 }
 @media screen and (max-width: 768px) {
   .features {
-    flex-direction: column;
-    gap: 30px;
-    border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+    display: none;
   }
 }
 .features__content {
@@ -559,19 +557,6 @@
   font-weight: 700;
   color: #009b4d;
   margin-bottom: 22px;
-}
-@media screen and (max-width: 885px) {
-  .features__content-subtitle {
-    display: none;
-  }
-}
-.features .features__content-subtitle--mobile {
-  display: none;
-}
-@media screen and (max-width: 885px) {
-  .features .features__content-subtitle--mobile {
-    display: block;
-  }
 }
 .features__content-title {
   font-size: 56px;
@@ -654,7 +639,7 @@
     display: none;
   }
 }
-.features__content-info:nth-of-type(2):before {
+.features__content-info:nth-of-type(3):before {
   content: "";
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png");
   background-repeat: no-repeat;
@@ -665,7 +650,7 @@
   margin-right: 15px;
   vertical-align: middle;
 }
-.features__content-info:nth-of-type(3):before {
+.features__content-info:nth-of-type(4):before {
   content: "";
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png");
   background-repeat: no-repeat;
@@ -724,7 +709,7 @@
     padding: 0 15px;
   }
 }
-.engage__content:nth-of-type(1) {
+.engage__content:not(:last-child) {
   width: 100%;
   border-bottom: 1px solid rgba(43, 41, 45, 0.1);
 }
