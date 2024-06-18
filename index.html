@@ -31,10 +31,10 @@
   <body>
     <div class="wrapper">
       <div id="overlay"></div>
-      <div class='top-wrap'>
+      <div class="top-wrap">
         <header class="header">
           <div class="header__inner">
-            <div class="logo logo__header">
+            <div class="logo header-logo">
               <a class="logo__link" href="/">
                 <img
                   class="logo__img logo__img-header"
@@ -73,7 +73,7 @@
                         </li>
                         <li class="dropdown__list-item">
                           <a class="dropdown__list-link" href="#">
-                            <span class="dropdown__list-title">Engage Customers</span>
+                            <span class="dropdown__list-title">Engage partners</span>
                             <p class="dropdown__list-description">
                               Get started with our simple snippet of JavaScript.
                             </p>
@@ -100,19 +100,19 @@
                   </li>
                 </ul>
               </nav>
-              <button class="button-blue button-blue--mobile">
+              <button class="button-blue">
                 Get Started
                 <span class="sr-only"> Get Started </span>
               </button>
             </div>
-            <!-- <div class="header__audio">
+            <div class="header__audio">
               <audio id="myAudio" src="./audio/muz.mp3" preload="auto" loop></audio>
               <div class="audio-player">
                 <button class="play-btn" id="playButton" onclick="togglePlay()">
                   <i class="fa fa-play pulsating-icon"></i>
                 </button>
               </div>
-            </div> -->
+            </div>
             <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
               <i id="menuIcon" class="fa fa-bars"></i>
             </div>
@@ -146,16 +146,14 @@
             </p>
             <div class="headline__buttons">
               <button class="button-blue">Get Started</button>
-              <button class="button-white button-white--color">Learn More</button>
+              <button class="button-white button-white--accent">Learn More</button>
             </div>
           </div>
-          <div class="headline__image">
-            <img
-              class="headline__img"
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
-              alt="Image	ouch"
-            />
-          </div>
+          <img
+            class="headline__img"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+            alt="Image	ouch"
+          />
         </section>
       </div>
       <main class="main">
@@ -176,62 +174,64 @@
           </div>
         </section>
         <section class="partners">
-          <ul class="partners__list">
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+          <div class="partners__row">
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
                   alt="New York Times"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
                   alt="Forbes"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
                   alt="Apple"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+          </div>
+          <div class="partners__row">
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
                   alt="Mashable"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo partners__logo--size"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
                   alt="WSJ"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
                   alt="Google"
                 />
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
         <section class="features">
           <div class="features__content">
@@ -239,12 +239,12 @@
             <span class="features__content-subtitle features__content-subtitle--mobile"
               >Acquire Customers</span
             >
-            <h2 class="features__content-title">Easily find leads and customers</h2>
+            <h2 class="features__content-title">Easily find leads and partners</h2>
             <p class="features__content-description">
               Send one-off and automated email, push, and in-app messages to people. Create better
               stories.
             </p>
-            <h3 class="features__content-sub">Acquire new customers</h3>
+            <h3 class="features__content-sub">Acquire new partners</h3>
             <p class="features__content-text">
               Everything you need to start building – including open-source code, documentation.
             </p>
@@ -324,7 +324,7 @@
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/wheel.png"
               alt="wheel image"
             />
-            <span class="manage__wheel-text">Connect with customers and grow faster</span>
+            <span class="manage__wheel-text">Connect with partners and grow faster</span>
           </div>
           <div class="manage__content">
             <div class="manage__content-inner">
@@ -466,68 +466,69 @@
           </div>
         </section>
         <section class="partners">
-          <ul class="partners__list">
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+          <div class="partners__row">
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
                   alt="New York Times"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
                   alt="Forbes"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
                   alt="Apple"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+          </div>
+          <div class="partners__row">
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
                   alt="Mashable"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo partners__logo--size"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
                   alt="WSJ"
                 />
               </a>
-            </li>
-            <li class="partners__list-item">
-              <a class="partners__list-item-link" href="#">
+            </div>
+            <div class="partners__item">
+              <a href="#" class="partners__link">
                 <img
-                  class="partners__list-item-logo"
+                  class="partners__logo"
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
                   alt="Google"
                 />
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
         <section class="feedback">
           <h2 class="feedback__title">
             Trusted by the world’s most innovative businesses – big and small
           </h2>
-          <!-- Swiper Slider -->
           <div class="swiper my-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">

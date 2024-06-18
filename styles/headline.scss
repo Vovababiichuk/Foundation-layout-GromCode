@@ -85,7 +85,7 @@
       gap: 15px;
     }
 
-    .button-white--color {
+    .button-white--accent {
       color: $color-accent;
     }
   }
@@ -97,17 +97,18 @@
     width: 796px;
     height: 448px;
 
-    @media screen and (max-width: $media-855) {
-      position: static;
-    }
-  }
-
-  &__image {
     @media screen and (max-width: $media-1200) {
       opacity: 0.5;
     }
     @media screen and (max-width: $media-855) {
-      @include adaptive-image(796, 448);
+      display: none;
+      position: static;
+    }
+    @media screen and (max-width: $media-480) {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      display: block;
       opacity: 1;
     }
   }

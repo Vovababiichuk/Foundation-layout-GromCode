@@ -1,57 +1,60 @@
 .partners {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   background-color: $color-light;
-  padding: 30px 130px 106px;
+  padding-bottom: 34px;
 
-  @media screen and (max-width: $media-1200) {
-    padding: 30px 130px 30px;
-  }
-  @media screen and (max-width: $media-855) {
-    padding: 20px 15px 46px 15px;
-  }
-  @media (max-width: $media-576) {
-    padding: 0 0 46px 0;
+  @media screen and (min-width: $media-1440) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1140px;
+    margin: auto;
+    padding: 22px 0 97px;
   }
 
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 100%;
-    max-width: 1400px;
+  &__row {
+    display: flex;
 
-    @media (max-width: $media-576) {
-      grid-template-columns: repeat(3, minmax(107px, 1fr));
-      gap: 0;
+    @media screen and (min-width: $media-1440) {
+      flex: 1;
+      justify-content: space-around;
     }
   }
 
-  &__list-item {
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     height: 94px;
+    width: 100%;
 
-    @media (max-width: $media-576) {
-      border-bottom: 1px solid rgba($color-black, 0.1);
-      border-right: 1px solid rgba($color-black, 0.1);
+    @media screen and (max-width: $media-768) {
+      border-bottom: 1px solid $color-border;
+      border-right: 1px solid $color-border;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    @media screen and (min-width: $media-1440) {
+      border: none;
     }
   }
 
-  &__list-item-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__list-item:nth-child(3),
-  &__list-item:nth-child(6) {
-    border-right: 0;
+  &__link {
+    max-width: 80%;
   }
 
-  &__list-item-logo {
+  &__logo {
     filter: brightness(0);
-    max-width: 100%;
-    height: auto;
+    margin: 0 auto;
+  }
+  &__logo--size {
+    @media screen and (max-width: 325px) {
+      max-width: 78%;
+    }
   }
 }

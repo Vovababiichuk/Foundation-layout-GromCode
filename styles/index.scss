@@ -31,7 +31,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  background-color: $color-body;
   color: $color-black;
 }
 
@@ -69,6 +68,10 @@ body {
 .button-blue {
   background-color: $color-accent;
   color: $color-light;
+
+  @media screen and (max-width: $media-1200) {
+    display: none;
+  }
 }
 
 .button-white {

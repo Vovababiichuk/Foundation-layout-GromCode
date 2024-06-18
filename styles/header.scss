@@ -51,7 +51,7 @@
   height: 71px;
   margin-top: 7px;
 }
-.logo__header {
+.header-logo {
   height: 62px;
   margin-left: -6px;
   @media screen and (max-width: $media-992) {
@@ -60,7 +60,7 @@
 }
 
 @media screen and (max-width: $media-480) {
-  .logo__header {
+  .header-logo {
     gap: 10px;
   }
 }
@@ -297,9 +297,6 @@
 }
 
 @media screen and (max-width: $media-1200) {
-  .button-blue--mobile {
-    display: none;
-  }
   .logo,
   .mobile-menu-icon {
     position: relative;
