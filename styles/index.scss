@@ -68,10 +68,6 @@ body {
 .button-blue {
   background-color: $color-accent;
   color: $color-light;
-
-  @media screen and (max-width: $media-1200) {
-    display: none;
-  }
 }
 
 .button-white {

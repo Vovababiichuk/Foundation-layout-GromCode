@@ -38,6 +38,11 @@
   align-items: center;
   gap: 58px;
 }
+@media screen and (max-width: 1200px) {
+  .header__inner .header__content {
+    display: none;
+  }
+}
 
 .logo {
   display: flex;
@@ -186,7 +191,7 @@
 
 .header__audio {
   position: absolute;
-  top: 12px;
+  top: 6px;
   right: -85px;
 }
 @media screen and (max-width: 1200px) {
@@ -1927,11 +1932,6 @@ body {
 .button-blue {
   background-color: #3040c4;
   color: #fff;
-}
-@media screen and (max-width: 1200px) {
-  .button-blue {
-    display: none;
-  }
 }
 
 .button-white {
