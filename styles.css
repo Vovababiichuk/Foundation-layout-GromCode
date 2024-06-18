@@ -309,7 +309,7 @@
   }
   .logo__img {
     width: 56px;
-    height: 54px;
+    height: 52px;
   }
 }
 .headline {
@@ -1934,6 +1934,10 @@ body {
 
 .main {
   flex-grow: 1;
+}
+
+.top-wrap {
+  background-color: #f3c6bd;
 }
 
 .button-blue,
