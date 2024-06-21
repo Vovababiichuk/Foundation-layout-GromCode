@@ -74,15 +74,15 @@
   width: 56px;
   height: 52px;
 }
+@media screen and (min-width: 900px) {
+  .logo__img {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .logo__img-header {
   margin-top: 7px;
-}
-@media screen and (min-width: 900px) {
-  .logo__img-header {
-    width: 72px;
-    height: 71px;
-  }
 }
 
 .header-logo {
@@ -113,6 +113,7 @@
 }
 @media screen and (min-width: 900px) {
   .logo__text-description {
+    display: block;
     font-size: 18px;
     opacity: 0.6;
     color: #2b292d;
