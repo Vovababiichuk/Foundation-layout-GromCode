@@ -98,15 +98,15 @@
 .logo__img {
   width: 56px;
   height: 52px;
+}
+
+.logo__img-header {
+  margin-top: 7px;
 
   @media screen and (min-width: $media-900) {
     width: 72px;
     height: 71px;
   }
-}
-
-.logo__img-header {
-  margin-top: 7px;
 
   // @media screen and (min-width: $media-900) {
   //   width: 72px;
