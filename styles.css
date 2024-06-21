@@ -33,6 +33,7 @@
 @media screen and (min-width: 1440px) {
   .header__inner {
     align-items: start;
+    padding: 0;
   }
 }
 .header__inner--sticky {
