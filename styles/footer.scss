@@ -76,7 +76,6 @@
   }
 
   &__links {
-
     @media screen and (max-width: 480px) {
       padding-left: 15px;
     }
@@ -142,16 +141,32 @@
   }
 }
 
+//!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!
+@media screen and (min-width: $media-900) {
+  .logo__img--footer {
+    width: 66px;
+    height: 60px;
+  }
+}
+
 @media screen and (max-width: $media-480) {
   .footer__info .logo {
     flex-direction: column;
     text-align: center;
     gap: 16px;
   }
-  .logo__img--footer {
-    width: 60px;
-    height: 58px;
-  }
+
+  //! ======
+  //! ======
+  //! ======
+  // .logo__img--footer {
+  //   width: 60px;
+  //   height: 58px;
+  // }
+
   .logo__text--footer {
     margin-bottom: 30px;
   }
