@@ -142,11 +142,11 @@
 }
 
 //!!!!!!!!!!!!!!
-//!!!!!!!!!!!!!!
-//!!!!!!!!!!!!!!
-//!!!!!!!!!!!!!!
-@media screen and (min-width: $media-900) {
-  .logo__img--footer {
+.logo__img--footer {
+  width: 60px;
+  height: 58px;
+
+  @media screen and (min-width: $media-900) {
     width: 66px;
     height: 60px;
   }
@@ -159,9 +159,6 @@
     gap: 16px;
   }
 
-  //! ======
-  //! ======
-  //! ======
   // .logo__img--footer {
   //   width: 60px;
   //   height: 58px;

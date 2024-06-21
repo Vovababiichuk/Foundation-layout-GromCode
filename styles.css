@@ -1759,12 +1759,17 @@
   gap: 20px;
 }
 
+.logo__img--footer {
+  width: 60px;
+  height: 58px;
+}
 @media screen and (min-width: 900px) {
   .logo__img--footer {
     width: 66px;
     height: 60px;
   }
 }
+
 @media screen and (max-width: 480px) {
   .footer__info .logo {
     flex-direction: column;
