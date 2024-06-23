@@ -14,7 +14,7 @@
   @media screen and (min-width: $media-1400) {
     flex-direction: row;
     gap: 120px;
-    padding: 72px 15px;
+    padding: 72px 0;
   }
 
   &__image {
@@ -30,9 +30,9 @@
   &__content {
     padding: 0 15px 46px;
 
-    @media screen and (min-width: $media-400) {
-      padding: 72px 0;
-    }
+    // @media screen and (min-width: $media-400) {
+    //   padding: 72px 0;
+    // }
   }
 
   &__title {
@@ -62,11 +62,12 @@
 
   &__form {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
 
-    @media screen and (max-width: 586px) {
-      flex-direction: column;
+    @media screen and (min-width: $media-400) {
+      flex-direction: row;
     }
   }
 

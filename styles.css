@@ -1434,7 +1434,7 @@
   .order {
     flex-direction: row;
     gap: 120px;
-    padding: 72px 15px;
+    padding: 72px 0;
   }
 }
 .order__image {
@@ -1449,11 +1449,6 @@
 }
 .order__content {
   padding: 0 15px 46px;
-}
-@media screen and (min-width: 400px) {
-  .order__content {
-    padding: 72px 0;
-  }
 }
 .order__title {
   font-size: 40px;
@@ -1482,12 +1477,13 @@
 }
 .order__form {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 586px) {
+@media screen and (min-width: 400px) {
   .order__form {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .order__form-input {
