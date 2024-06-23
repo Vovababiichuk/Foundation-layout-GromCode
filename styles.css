@@ -497,20 +497,16 @@
   align-items: center;
   height: 94px;
   width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 900px) {
   .partners__item {
-    border-bottom: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
+    border: none;
   }
 }
 .partners__item:last-child {
   border-right: none;
-}
-@media screen and (min-width: 1400px) {
-  .partners__item {
-    border: none;
-  }
 }
 .partners__link {
   max-width: 80%;

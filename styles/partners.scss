@@ -29,18 +29,15 @@
     align-items: center;
     height: 94px;
     width: 100%;
+    border-bottom: 1px solid $color-border;
+    border-right: 1px solid $color-border;
 
-    @media screen and (max-width: $media-768) {
-      border-bottom: 1px solid $color-border;
-      border-right: 1px solid $color-border;
+    @media screen and (min-width: $media-900) {
+      border: none;
     }
 
     &:last-child {
       border-right: none;
-    }
-
-    @media screen and (min-width: $media-1400) {
-      border: none;
     }
   }
 
