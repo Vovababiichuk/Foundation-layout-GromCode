@@ -579,10 +579,11 @@
   font-weight: 700;
   color: #3142c6;
   margin-bottom: -16px;
+  display: none;
 }
-@media screen and (max-width: 885px) {
+@media screen and (min-width: 900px) {
   .features__content-sub {
-    display: none;
+    display: block;
   }
 }
 .features__content-sub::before {

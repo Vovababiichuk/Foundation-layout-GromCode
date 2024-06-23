@@ -75,9 +75,10 @@
     font-weight: 700;
     color: $color-blue;
     margin-bottom: -16px;
+    display: none;
 
-    @media screen and (max-width: $media-855) {
-      display: none;
+    @media screen and (min-width: $media-900) {
+      display: block;
     }
 
     &::before {
