@@ -1256,20 +1256,16 @@
 }
 
 .feedback__title {
-  font-size: 24px;
   font-weight: 700;
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.3;
   color: #3142c6;
-  text-align: center;
   margin-bottom: 28px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 400px) {
   .feedback__title {
-    text-align: left;
-  }
-}
-@media screen and (max-width: 480px) {
-  .feedback__title {
-    line-height: 1.3;
+    text-align: center;
   }
 }
 
