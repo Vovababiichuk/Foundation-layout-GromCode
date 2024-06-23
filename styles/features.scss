@@ -84,13 +84,12 @@
   }
 
   &__content-divider {
-    display: block;
+    display: none;
     height: 1px;
     opacity: 0.1;
     width: 100%;
-    background-color: $color-black;
     margin-bottom: 16px;
-    display: none;
+    background-color: $color-black;
 
     @media screen and (min-width: $media-900) {
       display: block;
@@ -104,11 +103,10 @@
   }
 
   &__content-info {
-    display: block;
+    display: none;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 22px;
-    display: none;
 
     @media screen and (min-width: $media-900) {
       display: block;
@@ -139,10 +137,10 @@
   }
 
   &__content-img {
+    display: none;
     position: absolute;
     top: 258px;
     left: -130px;
-    display: none;
 
     @media screen and (min-width: $media-1400) {
       display: block;

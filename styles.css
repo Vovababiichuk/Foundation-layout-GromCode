@@ -608,13 +608,12 @@
   }
 }
 .features__content-divider {
-  display: block;
+  display: none;
   height: 1px;
   opacity: 0.1;
   width: 100%;
-  background-color: #2b292d;
   margin-bottom: 16px;
-  display: none;
+  background-color: #2b292d;
 }
 @media screen and (min-width: 900px) {
   .features__content-divider {
@@ -627,11 +626,10 @@
   background-color: #3142c6;
 }
 .features__content-info {
-  display: block;
+  display: none;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 22px;
-  display: none;
 }
 @media screen and (min-width: 900px) {
   .features__content-info {
@@ -661,10 +659,10 @@
   vertical-align: middle;
 }
 .features__content-img {
+  display: none;
   position: absolute;
   top: 258px;
   left: -130px;
-  display: none;
 }
 @media screen and (min-width: 1400px) {
   .features__content-img {
