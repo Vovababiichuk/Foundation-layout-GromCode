@@ -1470,14 +1470,13 @@
   }
 }
 .order__description {
-  font-size: 22px;
   max-width: 555px;
+  font-size: 22px;
   margin-top: 16px;
   margin-bottom: 70px;
 }
 @media screen and (min-width: 400px) {
   .order__description {
-    margin-bottom: 30px;
     margin-bottom: 26px;
   }
 }
@@ -1494,8 +1493,8 @@
 }
 .order__form-input {
   display: block;
-  width: 100%;
   text-align: center;
+  width: 100%;
   line-height: 1;
   border-radius: 2px;
   border: 1px solid rgba(43, 41, 45, 0.2);
@@ -1515,10 +1514,10 @@
   outline: 1px solid #3142c6;
 }
 .order__text {
-  font-size: 14px;
-  color: rgba(43, 41, 45, 0.6);
-  line-height: 157%;
   display: block;
+  font-size: 14px;
+  line-height: 157%;
+  color: rgba(43, 41, 45, 0.6);
 }
 .order__link {
   color: #3142c6;
