@@ -13,7 +13,7 @@
   }
   @media screen and (min-width: $media-1400) {
     gap: 110px;
-    padding: 108px 56px 110px 130px;
+    padding: 108px 0 130px;
   }
 
   // ======================================
@@ -33,12 +33,12 @@
   // }
 
   &__content {
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
-    padding-right: 70px;
+    // padding-right: 0;
 
-    @media screen and (max-width: $media-1200) {
-      padding-right: 0;
+    @media screen and (min-width: $media-1400) {
+      // padding-right: 70px;
     }
 
     &-decor {

@@ -1040,18 +1040,11 @@
 @media screen and (min-width: 1400px) {
   .audience {
     gap: 110px;
-    padding: 108px 56px 110px 130px;
+    padding: 108px 0 130px;
   }
 }
 .audience__content {
-  margin: 0 auto;
   text-align: center;
-  padding-right: 70px;
-}
-@media screen and (max-width: 1200px) {
-  .audience__content {
-    padding-right: 0;
-  }
 }
 .audience__content-decor {
   display: block;
