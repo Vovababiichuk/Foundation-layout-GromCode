@@ -1087,16 +1087,13 @@
 
 .audience__content-buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 400px) {
   .audience__content-buttons {
-    flex-direction: column;
-  }
-  .audience__content-buttons .button-blue,
-  .audience__content-buttons .button-white {
-    width: 100%;
+    flex-direction: row;
   }
 }
 

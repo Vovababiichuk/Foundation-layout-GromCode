@@ -58,15 +58,12 @@
 
 .audience__content-buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
 
-  @media screen and (max-width: $media-576) {
-    flex-direction: column;
-    .button-blue,
-    .button-white {
-      width: 100%;
-    }
+  @media screen and (min-width: $media-400) {
+    flex-direction: row;
   }
 }
 
