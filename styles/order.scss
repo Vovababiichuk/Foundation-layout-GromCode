@@ -28,8 +28,10 @@
   }
 
   &__content {
-    @media screen and (max-width: $media-480) {
-      padding: 0 15px 46px;
+    padding: 0 15px 46px;
+
+    @media screen and (min-width: $media-400) {
+      padding: 72px 0;
     }
   }
 

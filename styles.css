@@ -1447,9 +1447,12 @@
     height: 296px;
   }
 }
-@media screen and (max-width: 480px) {
+.order__content {
+  padding: 0 15px 46px;
+}
+@media screen and (min-width: 400px) {
   .order__content {
-    padding: 0 15px 46px;
+    padding: 72px 0;
   }
 }
 .order__title {
