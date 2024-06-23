@@ -1022,25 +1022,25 @@
   color: #0189d1;
 }
 
-.audience__inner {
+.audience {
   display: flex;
   flex-direction: column;
-  gap: 110px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 52px 15px 52px;
   background-color: #edf8fb;
-  padding: 108px 56px 110px 130px;
 }
-@media screen and (max-width: 1320px) {
-  .audience__inner {
-    padding: 52px 15px 130px;
-    align-items: center;
-    justify-content: center;
+@media screen and (min-width: 400px) {
+  .audience {
     gap: 60px;
+    padding: 52px 15px 130px;
   }
 }
-@media screen and (max-width: 576px) {
-  .audience__inner {
-    padding: 52px 15px 52px;
-    gap: 40px;
+@media screen and (min-width: 1400px) {
+  .audience {
+    gap: 110px;
+    padding: 108px 56px 110px 130px;
   }
 }
 .audience__content {
