@@ -1,22 +1,44 @@
 .manage {
-  @include flex-center(baseline, 160px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 58px;
+  text-align: left;
+  padding: 50px 24px 34px;
   background-color: $color-yellow-light;
-  padding: 142px 24px 102px 192px;
 
-  @media screen and (max-width: $media-1400) {
-    justify-content: center;
-    padding: 142px 24px 102px;
-  }
-  @media screen and (max-width: $media-1200) {
-    flex-direction: column;
-    text-align: center;
-    gap: 58px;
+  @media screen and (min-width: $media-400) {
     padding: 20px 24px 102px;
   }
-  @media screen and (max-width: $media-480) {
-    text-align: left;
-    padding: 50px 24px 34px;
+  @media screen and (min-width: $media-900) {
+    @include flex-center(baseline, 160px);
+    text-align: center;
+    padding: 142px 24px 102px;
   }
+  @media screen and (min-width: $media-1400) {
+    padding: 142px 24px 102px 192px;
+  }
+
+  // =====================================
+  // @include flex-center(baseline, 160px);
+  // background-color: $color-yellow-light;
+  // padding: 142px 24px 102px 192px;
+
+  // @media screen and (max-width: $media-1400) {
+  //   justify-content: center;
+  //   padding: 142px 24px 102px;
+  // }
+  // @media screen and (max-width: $media-1200) {
+  //   flex-direction: column;
+  //   text-align: center;
+  //   gap: 58px;
+  //   padding: 20px 24px 102px;
+  // }
+  // @media screen and (max-width: $media-480) {
+  //   text-align: left;
+  //   padding: 50px 24px 34px;
+  // }
 
   &__wheel-image {
     width: 100%;
