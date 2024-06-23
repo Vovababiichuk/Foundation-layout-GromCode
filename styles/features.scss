@@ -97,9 +97,10 @@
   &__content-text {
     font-size: 18px;
     max-width: 460px;
+    display: none;
 
-    @media screen and (max-width: $media-855) {
-      display: none;
+    @media screen and (min-width: $media-900) {
+      display: block;
     }
   }
 
@@ -110,9 +111,10 @@
     width: 100%;
     background-color: $color-black;
     margin-bottom: 16px;
+    display: none;
 
-    @media screen and (max-width: $media-855) {
-      display: none;
+    @media screen and (min-width: $media-900) {
+      display: block;
     }
   }
 
@@ -127,9 +129,10 @@
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 22px;
+    display: none;
 
-    @media screen and (max-width: $media-855) {
-      display: none;
+    @media screen and (min-width: $media-900) {
+      display: block;
     }
 
     &:nth-of-type(3):before {
@@ -160,20 +163,20 @@
     position: absolute;
     top: 258px;
     left: -130px;
+    display: none;
 
-    @media screen and (max-width: $media-1320) {
-      display: none;
+    @media screen and (min-width: $media-1400) {
+      display: block;
     }
   }
 
   &__image-caption {
-    display: none;
     font-size: 14px;
     color: rgba($color-black, 0.6);
+    text-align: center;
 
-    @media screen and (max-width: $media-1320) {
-      display: block;
-      text-align: center;
+    @media screen and (min-width: $media-1400) {
+      display: none;
     }
   }
 }
