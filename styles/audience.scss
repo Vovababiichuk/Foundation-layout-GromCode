@@ -70,13 +70,12 @@
 .cards {
   &__list {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 
-    @media screen and (max-width: $media-1320) {
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
+    @media screen and (min-width: $media-1400) {
+      gap: 30px;
     }
 
     &-item {
