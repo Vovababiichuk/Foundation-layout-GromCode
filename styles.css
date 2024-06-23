@@ -538,10 +538,10 @@
   .features {
     padding: 0 0 102px 130px;
   }
-  .features .features__image {
-    display: block;
-    margin-bottom: 20px;
-  }
+}
+.features__image {
+  display: block;
+  margin-bottom: 20px;
 }
 .features__content {
   position: relative;

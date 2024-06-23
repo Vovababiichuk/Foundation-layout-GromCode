@@ -11,33 +11,12 @@
   }
   @media screen and (min-width: $media-1400) {
     padding: 0 0 102px 130px;
-
-    .features__image {
-      display: block;
-      margin-bottom: 20px;
-    }
   }
 
-  // =============================
-  // display: flex;
-  // gap: 125px;
-  // background-color: $color-light;
-  // padding: 0 0 102px 130px;
-
-  // @media screen and (max-width: $media-1320) {
-  //   align-items: center;
-  //   justify-content: center;
-  //   padding: 0 15px 40px;
-  // }
-  // @media screen and (max-width: $media-1320) {
-  //   .features__image {
-  //     display: block;
-  //     margin-bottom: 20px;
-  //   }
-  // }
-  // @media screen and (max-width: $media-768) {
-  //   display: none;
-  // }
+  &__image {
+    display: block;
+    margin-bottom: 20px;
+  }
 
   &__content {
     position: relative;
