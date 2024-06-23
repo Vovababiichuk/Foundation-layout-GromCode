@@ -1417,37 +1417,24 @@
 
 .order {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-center;
-  gap: 120px;
   justify-content: center;
+  gap: 40px;
   background-color: #f4f5f7;
-  padding: 72px 0;
+  padding: 50px 0 46px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 400px) {
   .order {
-    justify-content: center;
-    align-items: center;
-    padding: 72px 15px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .order {
-    flex-direction: column;
     gap: 50px;
-  }
-}
-@media screen and (max-width: 586px) {
-  .order {
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
     padding: 54px 15px 46px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1400px) {
   .order {
-    padding: 50px 0 46px;
+    flex-direction: row;
+    gap: 120px;
+    padding: 72px 15px;
   }
 }
 .order__image {
