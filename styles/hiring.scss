@@ -81,23 +81,26 @@
 
     &-info {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      align-items: start;
       width: 100%;
       max-width: 620px;
 
-      @media screen and (max-width: $media-768) {
-        flex-direction: column;
-        align-items: start;
+      @media screen and (min-width: $media-900) {
+        flex-direction: row;
+        align-items: center;
       }
 
       &-role {
         font-size: 22px;
         font-weight: 700;
+        max-width: 130px;
+        margin-bottom: 14px;
 
-        @media screen and (max-width: 370px) {
-          max-width: 130px;
-          margin-bottom: 14px;
+        @media screen and (min-width: $media-400) {
+          max-width: 260px;
         }
       }
 
@@ -108,13 +111,16 @@
     }
 
     &-arrow {
-      font-size: 14px;
+      background-color: $color-gray;
+      padding: 60px 20px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
 
-      @media screen and (max-width: $media-480) {
-        background-color: $color-gray;
-        padding: 60px 20px;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
+      @media screen and (min-width: $media-400) {
+        font-size: 14px;
+        padding: 0;
+        background-color: $color-light;
+        border: none;
       }
     }
   }
