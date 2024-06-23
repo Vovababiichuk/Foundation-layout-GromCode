@@ -522,27 +522,25 @@
 }
 
 .features {
-  display: flex;
-  gap: 125px;
+  display: none;
+  padding: 0 15px 40px;
   background-color: #fff;
-  padding: 0 0 102px 130px;
 }
-@media screen and (max-width: 1320px) {
+@media screen and (min-width: 900px) {
   .features {
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 15px 40px;
+    gap: 125px;
   }
 }
-@media screen and (max-width: 1320px) {
+@media screen and (min-width: 1400px) {
+  .features {
+    padding: 0 0 102px 130px;
+  }
   .features .features__image {
     display: block;
     margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .features {
-    display: none;
   }
 }
 .features__content {
