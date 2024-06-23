@@ -884,7 +884,7 @@
 @media screen and (min-width: 900px) {
   .communicate {
     gap: 34px;
-    padding: 58px 50px 120px;
+    padding: 58px 50px 60px;
   }
 }
 @media screen and (min-width: 1400px) {
