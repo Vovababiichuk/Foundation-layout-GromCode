@@ -787,10 +787,10 @@
   }
 }
 .manage__wheel-text {
+  display: none;
+  text-align: center;
   font-size: 14px;
   opacity: 0.6;
-  text-align: center;
-  display: none;
 }
 @media screen and (min-width: 400px) {
   .manage__wheel-text {
@@ -835,8 +835,8 @@
   }
 }
 .manage__content-inner-description {
-  font-size: 24px;
   max-width: 462px;
+  font-size: 24px;
   line-height: 1.4;
 }
 .manage__content-blockquote {
@@ -845,9 +845,9 @@
   gap: 26px;
   max-width: 520px;
   font-size: 20px;
-  background-color: #fff;
   padding: 30px 30px 28px 30px;
   border-bottom: 4px solid #3142c6;
+  background-color: #fff;
 }
 .manage__content-blockquote-info {
   display: flex;
