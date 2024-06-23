@@ -318,51 +318,40 @@
 .headline {
   position: relative;
   max-width: 1249px;
-  height: 456px;
   display: flex;
   justify-content: space-between;
   background-color: #f3c6bd;
-  margin: 40px 25px 126px 130px;
+  height: 800px;
+  margin: 32px 0px 58px;
+  flex-wrap: wrap;
+  padding-bottom: 58px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 400px) {
+  .headline {
+    height: 456px;
+  }
+}
+@media screen and (min-width: 900px) {
   .headline {
     margin: 40px 15px 126px;
   }
 }
-@media screen and (max-width: 885px) {
+@media screen and (min-width: 1400px) {
   .headline {
-    flex-wrap: wrap;
-    padding-bottom: 58px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .headline {
-    margin: 32px 0px 58px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .headline {
-    height: 800px;
+    margin: 40px 25px 126px 130px;
   }
 }
 .headline__content {
   display: flex;
   flex-direction: column;
   z-index: 100;
+  padding: 0px 15px 0 0;
+  margin-bottom: 32px;
+  margin-left: 15px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 1400px) {
   .headline__content {
-    margin-left: 15px;
-  }
-}
-@media screen and (max-width: 885px) {
-  .headline__content {
-    margin-bottom: 32px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .headline__content {
-    padding: 0px 15px 0 0;
+    margin-left: 0;
   }
 }
 .headline__title {

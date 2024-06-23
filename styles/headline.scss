@@ -1,41 +1,74 @@
 .headline {
   position: relative;
   max-width: 1249px;
-  height: 456px;
   display: flex;
   justify-content: space-between;
   background-color: $color-beige;
-  margin: 40px 25px 126px 130px;
 
-  @media screen and (max-width: $media-992) {
+  height: 800px;
+  margin: 32px 0px 58px;
+  flex-wrap: wrap;
+  padding-bottom: 58px;
+
+  @media screen and (min-width: $media-400) {
+    height: 456px;
+  }
+  @media screen and (min-width: $media-900) {
     margin: 40px 15px 126px;
   }
-  @media screen and (max-width: $media-855) {
-    flex-wrap: wrap;
-    padding-bottom: 58px;
+  @media screen and (min-width: $media-1400) {
+    margin: 40px 25px 126px 130px;
   }
-  @media screen and (max-width: $media-576) {
-    margin: 32px 0px 58px;
-  }
-  @media screen and (max-width: $media-480) {
-    height: 800px;
-  }
+  // =================================
+  // position: relative;
+  // max-width: 1249px;
+  // height: 456px;
+  // display: flex;
+  // justify-content: space-between;
+  // background-color: $color-beige;
+  // margin: 40px 25px 126px 130px;
+
+  // @media screen and (max-width: $media-992) {
+  //   margin: 40px 15px 126px;
+  // }
+  // @media screen and (max-width: $media-855) {
+  //   flex-wrap: wrap;
+  //   padding-bottom: 58px;
+  // }
+  // @media screen and (max-width: $media-576) {
+  //   margin: 32px 0px 58px;
+  // }
+  // @media screen and (max-width: $media-480) {
+  //   height: 800px;
+  // }
 
   &__content {
     display: flex;
     flex-direction: column;
     z-index: 100;
+    padding: 0px 15px 0 0;
+    margin-bottom: 32px;
+    margin-left: 15px;
 
-    @media screen and (max-width: $media-992) {
-      margin-left: 15px;
+    @media screen and (min-width: $media-1400) {
+      margin-left: 0;
     }
 
-    @media screen and (max-width: $media-855) {
-      margin-bottom: 32px;
-    }
-    @media screen and (max-width: $media-480) {
-      padding: 0px 15px 0 0;
-    }
+    // ========================================
+    // display: flex;
+    // flex-direction: column;
+    // z-index: 100;
+
+    // @media screen and (max-width: $media-992) {
+    //   margin-left: 15px;
+    // }
+
+    // @media screen and (max-width: $media-855) {
+    //   margin-bottom: 32px;
+    // }
+    // @media screen and (max-width: $media-480) {
+    //   padding: 0px 15px 0 0;
+    // }
   }
 
   &__title {
