@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
 const swiper = new Swiper('.my-swiper', {
   direction: 'horizontal',
   loop: true,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

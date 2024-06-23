@@ -1191,56 +1191,44 @@
 }
 
 .feedback {
-  background-color: #fff;
   position: relative;
-  padding-bottom: 50px;
   border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+  background-color: #fff;
+  padding: 0 15px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 900px) {
   .feedback {
-    padding: 0 15px;
+    padding-bottom: 50px;
   }
 }
 .feedback .feedback__blockquote-author {
   display: block;
   font-size: 16px;
   font-weight: 700;
+  text-align: left;
+  margin-top: 256px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 400px) {
   .feedback .feedback__blockquote-author {
-    margin-top: 90px;
+    text-align: center;
+    margin-top: 130px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 900px) {
   .feedback .feedback__blockquote-author {
-    margin-top: 120px;
-  }
-}
-@media screen and (max-width: 470px) {
-  .feedback .feedback__blockquote-author {
-    margin-top: 156px;
-    text-align: left;
-  }
-}
-@media screen and (max-width: 380px) {
-  .feedback .feedback__blockquote-author {
-    margin-top: 246px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .feedback .feedback__blockquote-author {
-    margin-top: 256px;
+    margin-top: 60px;
   }
 }
 .feedback .feedback__blockquote-role {
   display: block;
   font-size: 16px;
-  color: #2b292d;
+  text-align: left;
   opacity: 0.6;
+  color: #2b292d;
 }
-@media screen and (max-width: 470px) {
+@media screen and (min-width: 400px) {
   .feedback .feedback__blockquote-role {
-    text-align: left;
+    text-align: center;
   }
 }
 .feedback__image {
