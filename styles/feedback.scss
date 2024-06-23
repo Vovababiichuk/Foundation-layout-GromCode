@@ -65,23 +65,23 @@
   }
 
   &__image {
-    position: absolute;
-    right: 20px;
-    bottom: 0;
-    width: 273px;
-    height: 243px;
-    z-index: 999;
+    position: static;
+    width: 290px;
+    height: 258px;
+    margin: 30px auto 48px;
 
-    @media screen and (max-width: $media-1200) {
+    @media screen and (min-width: $media-400) {
       display: none;
     }
-
-    @media screen and (max-width: 470px) {
+    @media screen and (min-width: $media-1400) {
       display: block;
-      position: static;
-      width: 290px;
-      height: 258px;
-      margin: 30px auto 48px;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      width: 273px;
+      height: 243px;
+      margin: 0;
+      z-index: 999;
     }
   }
 }
