@@ -1287,8 +1287,8 @@
 }
 
 .hiring {
-  background-color: #fff;
   padding: 50px 15px 30px;
+  background-color: #fff;
 }
 @media screen and (min-width: 900px) {
   .hiring {
@@ -1329,9 +1329,9 @@
   }
 }
 .hiring__content-description {
-  font-size: 24px;
   max-width: 555px;
   margin: 0 auto;
+  font-size: 24px;
   line-height: 1.4;
   margin-bottom: 32px;
 }
@@ -1342,8 +1342,8 @@
   }
 }
 .hiring__list {
-  margin: 0 auto;
   max-width: 750px;
+  margin: 0 auto;
 }
 .hiring__link:hover .hiring__item-info-location {
   color: #fff;
@@ -1352,12 +1352,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 0 18px;
+  max-width: 750px;
   border: 2px solid rgba(43, 41, 45, 0.1);
   border-radius: 8px;
-  max-width: 750px;
-  transition: background-color 0.2s ease-in-out;
+  padding: 0 0 0 18px;
   margin-bottom: 14px;
+  transition: background-color 0.2s ease-in-out;
 }
 @media screen and (min-width: 400px) {
   .hiring__item {
@@ -1366,8 +1366,8 @@
   }
 }
 .hiring__item:hover {
-  background-color: #3142c6;
   cursor: pointer;
+  background-color: #3142c6;
   color: #fff;
 }
 .hiring__item-info {
@@ -1386,9 +1386,9 @@
   }
 }
 .hiring__item-info-role {
-  font-size: 22px;
   font-weight: 700;
   max-width: 130px;
+  font-size: 22px;
   margin-bottom: 14px;
 }
 @media screen and (min-width: 400px) {
@@ -1401,17 +1401,17 @@
   color: rgba(43, 41, 45, 0.6);
 }
 .hiring__item-arrow {
-  background-color: #d5d4d5;
-  padding: 60px 20px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  padding: 60px 20px;
+  background-color: #d5d4d5;
 }
 @media screen and (min-width: 400px) {
   .hiring__item-arrow {
+    border: none;
     font-size: 14px;
     padding: 0;
     background-color: #fff;
-    border: none;
   }
 }
 
