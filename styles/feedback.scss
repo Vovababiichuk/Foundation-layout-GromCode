@@ -1,21 +1,12 @@
 .swiper {
   width: 100%;
-  height: 250px;
+  height: 450px;
 
-  @media screen and (max-width: $media-768) {
-    height: 285px;
+  @media screen and (min-width: $media-400) {
+    height: 320px;
   }
-  @media screen and (max-width: $media-576) {
-    height: 300px;
-  }
-  @media screen and (max-width: 470px) {
-    height: 360px;
-  }
-  @media screen and (max-width: 380px) {
-    height: 440px;
-  }
-  @media screen and (max-width: 340px) {
-    height: 450px;
+  @media screen and (min-width: $media-900) {
+    height: 250px;
   }
 }
 
