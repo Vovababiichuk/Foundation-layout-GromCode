@@ -386,20 +386,23 @@
 .headline__buttons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 15px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 400px) {
   .headline__buttons {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
   }
+}
+.headline__buttons .button-blue,
+.headline__buttons .button-white {
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
   .headline__buttons .button-blue,
   .headline__buttons .button-white {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .headline__buttons {
-    gap: 15px;
+    width: auto;
   }
 }
 .headline__buttons .button-white--accent {
