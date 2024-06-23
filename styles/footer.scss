@@ -6,33 +6,54 @@
 
   &__top {
     display: grid;
-    grid-template-columns: repeat(3, 360px 220px 220px);
-    column-gap: 100px;
-    border-bottom: 1px solid rgba($color-black, 0.1);
-    padding: 42px 260px 46px 130px;
+    grid-template-columns: repeat(1, 300px);
+    justify-items: left;
+    gap: 68px;
+    border: none;
+    padding: 42px 10px 12px;
 
-    @media screen and (max-width: $media-1200) {
-      grid-template-columns: repeat(3, 300px 220px 220px);
-      justify-items: center;
-      gap: 30px;
+    @media screen and (min-width: $media-400) {
+      padding: 42px 0 12px 15px;
     }
-    @media screen and (max-width: $media-992) {
+    @media screen and (min-width: $media-900) {
       grid-template-columns: repeat(2, 300px);
     }
-    @media screen and (max-width: $media-768) {
-      grid-template-columns: repeat(1, 300px);
-      justify-items: left;
+    @media screen and (min-width: $media-1400) {
+      grid-template-columns: repeat(3, 360px 220px 220px);
+      column-gap: 100px;
+      border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+      padding: 42px 260px 46px 130px;
     }
-    @media screen and (max-width: $media-576) {
-      padding: 42px 0 12px 15px;
-      grid-template-columns: repeat(1, 300px);
-      justify-items: left;
-      gap: 68px;
-    }
-    @media screen and (max-width: $media-480) {
-      border: none;
-      padding: 42px 10px 12px;
-    }
+
+    // ======================================
+    // display: grid;
+    // grid-template-columns: repeat(3, 360px 220px 220px);
+    // column-gap: 100px;
+    // border-bottom: 1px solid rgba($color-black, 0.1);
+    // padding: 42px 260px 46px 130px;
+
+    // @media screen and (max-width: $media-1200) {
+    //   grid-template-columns: repeat(3, 300px 220px 220px);
+    //   justify-items: center;
+    //   gap: 30px;
+    // }
+    // @media screen and (max-width: $media-992) {
+    //   grid-template-columns: repeat(2, 300px);
+    // }
+    // @media screen and (max-width: $media-768) {
+    //   grid-template-columns: repeat(1, 300px);
+    //   justify-items: left;
+    // }
+    // @media screen and (max-width: $media-576) {
+    //   padding: 42px 0 12px 15px;
+    //   grid-template-columns: repeat(1, 300px);
+    //   justify-items: left;
+    //   gap: 68px;
+    // }
+    // @media screen and (max-width: $media-480) {
+    //   border: none;
+    //   padding: 42px 10px 12px;
+    // }
   }
 
   &__info {
