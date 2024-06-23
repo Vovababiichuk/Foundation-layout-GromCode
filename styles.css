@@ -1438,13 +1438,13 @@
   }
 }
 .order__image {
-  max-width: 270px;
-  height: 296px;
+  max-width: 200px;
+  height: 220px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) {
   .order__image {
-    max-width: 200px;
-    height: 220px;
+    max-width: 270px;
+    height: 296px;
   }
 }
 @media screen and (max-width: 480px) {
