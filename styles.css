@@ -235,6 +235,16 @@
   cursor: pointer;
   color: rgba(43, 41, 45, 0.6);
 }
+@media screen and (min-width: 900px) {
+  .mobile-menu-icon {
+    border-left: none;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+}
 .mobile-menu-icon .fa-bars,
 .mobile-menu-icon .fa-times {
   font-size: clamp(22px, 1.1898rem + 0.9259vw, 32px);

@@ -312,7 +312,10 @@
   color: rgba($color-black, 0.6);
 
   @media screen and (min-width: $media-900) {
-    // display: none;
+    border-left: none;
+  }
+  @media screen and (min-width: $media-1400) {
+    display: none;
   }
 
   // @media screen and (max-width: $media-992) {
