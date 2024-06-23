@@ -67,7 +67,7 @@
     gap: 10px;
     margin-bottom: 10px;
 
-    @media screen and (min-width: $media-400) {
+    @media screen and (min-width: $media-900) {
       flex-direction: row;
     }
   }
@@ -75,15 +75,17 @@
   &__form-input {
     display: block;
     width: 100%;
-    max-width: 385px;
-    border-radius: 2px;
+    text-align: center;
     line-height: 1;
+    border-radius: 2px;
     border: 1px solid rgba($color-black, 0.2);
     padding: 13px 0 13px 15px;
 
-    @media screen and (max-width: 586px) {
-      max-width: 100%;
-      text-align: center;
+    @media screen and (min-width: $media-400) {
+      text-align: left;
+    }
+    @media screen and (min-width: $media-900) {
+      max-width: 385px;
     }
 
     &:focus {
