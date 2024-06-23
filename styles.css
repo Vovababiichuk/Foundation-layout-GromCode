@@ -439,18 +439,18 @@
   }
 }
 
-.about__inner {
+.about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding: 76px 130px 50px;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  padding: 48px 15px 18px;
   background-color: #f4f5f7;
 }
-@media screen and (max-width: 768px) {
-  .about__inner {
-    grid-template-columns: 1fr;
-    padding: 48px 15px 18px;
-    gap: 4px;
+@media screen and (min-width: 900px) {
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 76px 130px 50px;
   }
 }
 .about__content {
