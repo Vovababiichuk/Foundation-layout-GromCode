@@ -1,23 +1,44 @@
 .engage {
-  display: none;
-  padding: 40px 15px;
+  @include flex-column(30px);
+  align-items: center;
+  text-align: left;
+  gap: 40px;
+  padding: 40px 0 4px;
   background-color: $color-light;
 
-  @media screen and (max-width: $media-768) {
-    @include flex-column(30px);
+  @media screen and (min-width: $media-400) {
     text-align: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 0 4px;
   }
-  @media screen and (max-width: $media-480) {
-    text-align: left;
+  @media screen and (min-width: $media-900) {
+    display: none;
+    // padding: 40px 15px;
   }
-  @media screen and (max-width: $media-768) {
-    .engage__content {
-      padding: 0 15px;
-    }
+
+  // ===========================
+  // display: none;
+  // padding: 40px 15px;
+  // background-color: $color-light;
+
+  // @media screen and (max-width: $media-768) {
+  //   @include flex-column(30px);
+  //   text-align: center;
+  //   align-items: center;
+  //   gap: 40px;
+  //   padding: 40px 0 4px;
+  // }
+  // @media screen and (max-width: $media-480) {
+  //   text-align: left;
+  // }
+  // @media screen and (max-width: $media-768) {
+  //   .engage__content {
+  //   }
+  // }
+
+  &__content {
+    padding: 0 15px;
   }
+
+  // =========================================
 
   &__content:not(:last-child) {
     width: 100%;

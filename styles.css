@@ -681,30 +681,27 @@
 }
 
 .engage {
-  display: none;
-  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+  gap: 40px;
+  padding: 40px 0 4px;
   background-color: #fff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 400px) {
   .engage {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     text-align: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 0 4px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 900px) {
   .engage {
-    text-align: left;
+    display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .engage .engage__content {
-    padding: 0 15px;
-  }
+.engage__content {
+  padding: 0 15px;
 }
 .engage__content:not(:last-child) {
   width: 100%;

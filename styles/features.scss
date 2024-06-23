@@ -1,7 +1,7 @@
 .features {
   display: none;
   padding: 0 15px 40px;
-  background-color: #fff;
+  background-color: $color-light;
 
   @media screen and (min-width: $media-900) {
     display: flex;
