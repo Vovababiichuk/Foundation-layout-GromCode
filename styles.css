@@ -636,7 +636,7 @@
     display: block;
   }
 }
-.features__content-info:nth-of-type(3):before {
+.features__content-info:nth-of-type(2):before {
   content: "";
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png");
   background-repeat: no-repeat;
@@ -647,7 +647,7 @@
   margin-right: 15px;
   vertical-align: middle;
 }
-.features__content-info:nth-of-type(4):before {
+.features__content-info:nth-of-type(3):before {
   content: "";
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png");
   background-repeat: no-repeat;
