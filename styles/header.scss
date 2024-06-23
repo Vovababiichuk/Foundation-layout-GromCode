@@ -3,6 +3,10 @@
   background-color: $color-light;
 
   @media screen and (min-width: $media-900) {
+    margin: 40px 20px;
+    background-color: $color-beige;
+  }
+  @media screen and (min-width: $media-1400) {
     margin: 40px 130px;
   }
 }
@@ -21,13 +25,11 @@
   @media screen and (max-width: 480px) {
     z-index: 1000;
   }
-
   @media screen and (min-width: $media-900) {
-    max-width: 1140px;
     background-color: $color-beige;
   }
-
   @media screen and (min-width: $media-1400) {
+    max-width: 1140px;
     align-items: start;
     padding: 0;
   }
@@ -57,10 +59,10 @@
 }
 
 .logo {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
-  position: relative;
 
   @media screen and (min-width: $media-900) {
     gap: 9px;
@@ -97,10 +99,10 @@
   }
 
   &-name {
-    color: $color-black;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
+    color: $color-black;
   }
 
   &-description {
@@ -110,8 +112,8 @@
       display: block;
       font-size: 18px;
       opacity: 0.6;
-      color: $color-black;
       line-height: 25px;
+      color: $color-black;
     }
   }
 }
@@ -136,9 +138,9 @@
     }
 
     &-link {
-      color: $color-black;
-      border-bottom-width: 2px;
       @include hover-link;
+      border-bottom-width: 2px;
+      color: $color-black;
 
       &--active {
         font-weight: 700;
@@ -159,7 +161,6 @@
 
 .dropdown {
   display: none;
-  background-color: $color-light;
   position: absolute;
   top: 50px;
   right: 20px;
@@ -167,6 +168,7 @@
   width: 612px;
   height: 292px;
   transition: box-shadow 0.2s ease-in-out;
+  background-color: $color-light;
   z-index: 1000;
   &:hover {
     box-shadow: 0 0 10px 6px rgba($color-beige, 0.8);
@@ -221,8 +223,8 @@
 
 .play-btn {
   cursor: pointer;
-  color: $color-yellow-light;
   font-size: 26px;
+  color: $color-yellow-light;
 }
 
 .header__audio {
@@ -245,8 +247,8 @@
   opacity: 0.15px;
   border-left: 1px solid rgba($color-dark, 0.15);
   cursor: pointer;
-  z-index: 1100;
   color: rgba($color-black, 0.6);
+  z-index: 1100;
 
   @media screen and (min-width: $media-900) {
     border-left: none;
