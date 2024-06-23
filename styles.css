@@ -722,40 +722,28 @@
   font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
   max-width: 462px;
   margin-bottom: 22px;
-}
-@media screen and (max-width: 768px) {
-  .engage__content-title {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 }
 .engage__content-description {
   font-size: 22px;
   max-width: 462px;
   letter-spacing: 0.85px;
   line-height: 1.5;
-  margin-bottom: 2px;
-}
-@media screen and (max-width: 768px) {
-  .engage__content-description {
-    margin: 22px auto 0;
-  }
+  margin: 22px auto 0;
 }
 .engage__content-figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
   margin-bottom: 40px;
 }
 .engage__content-figure-image {
-  margin: 0;
   margin-top: 30px;
 }
 .engage__content-figure-caption {
   font-size: 14px;
   max-width: 100%;
   color: rgba(43, 41, 45, 0.6);
-  margin: 0;
   margin-top: 19px;
 }
 
