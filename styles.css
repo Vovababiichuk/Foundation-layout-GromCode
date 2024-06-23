@@ -1288,25 +1288,25 @@
 
 .hiring {
   background-color: #fff;
-  padding: 80px 0 110px;
+  padding: 50px 15px 30px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 900px) {
   .hiring {
     padding: 50px 15px 60px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1400px) {
   .hiring {
-    padding: 50px 15px 30px;
+    padding: 80px 0 110px;
   }
 }
 .hiring__content {
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 40px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .hiring__content {
-    margin-bottom: 40px;
+    margin-bottom: 110px;
   }
 }
 @media screen and (max-width: 370px) {
@@ -1321,22 +1321,24 @@
   line-height: 1;
   margin-bottom: 30px;
   font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+  margin-bottom: 22px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 900px) {
   .hiring__content-title {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
   }
 }
 .hiring__content-description {
   font-size: 24px;
   max-width: 555px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  line-height: 1.4;
+  margin-bottom: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 900px) {
   .hiring__content-description {
-    line-height: 1.4;
-    margin-bottom: 32px;
+    line-height: 1.5;
+    margin-bottom: 28px;
   }
 }
 .hiring__list {
@@ -1350,17 +1352,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 26px;
+  padding: 0 0 0 18px;
   border: 2px solid rgba(43, 41, 45, 0.1);
   border-radius: 8px;
   max-width: 750px;
   transition: background-color 0.2s ease-in-out;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) {
   .hiring__item {
-    padding: 0 0 0 18px;
-    margin-bottom: 14px;
+    padding: 24px 26px;
+    margin-bottom: 20px;
   }
 }
 .hiring__item:hover {

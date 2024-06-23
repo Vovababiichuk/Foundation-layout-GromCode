@@ -1,20 +1,20 @@
 .hiring {
   background-color: $color-light;
-  padding: 80px 0 110px;
+  padding: 50px 15px 30px;
 
-  @media screen and (max-width: $media-1200) {
+  @media screen and (min-width: $media-900) {
     padding: 50px 15px 60px;
   }
-  @media screen and (max-width: $media-480) {
-    padding: 50px 15px 30px;
+  @media screen and (min-width: $media-1400) {
+    padding: 80px 0 110px;
   }
 
   &__content {
     text-align: center;
-    margin-bottom: 110px;
+    margin-bottom: 40px;
 
-    @media screen and (max-width: $media-1200) {
-      margin-bottom: 40px;
+    @media screen and (min-width: $media-1400) {
+      margin-bottom: 110px;
     }
   }
 
@@ -28,9 +28,10 @@
   &__content-title {
     @include title;
     font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
+    margin-bottom: 22px;
 
-    @media screen and (max-width: $media-768) {
-      margin-bottom: 22px;
+    @media screen and (min-width: $media-900) {
+      margin-bottom: 30px;
     }
   }
 
@@ -38,11 +39,12 @@
     font-size: 24px;
     max-width: 555px;
     margin: 0 auto;
-    margin-bottom: 28px;
+    line-height: 1.4;
+    margin-bottom: 32px;
 
-    @media screen and (max-width: $media-768) {
-      line-height: 1.4;
-      margin-bottom: 32px;
+    @media screen and (min-width: $media-900) {
+      line-height: 1.5;
+      margin-bottom: 28px;
     }
   }
 
@@ -59,16 +61,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 26px;
+    padding: 0 0 0 18px;
     border: 2px solid rgb($color-black, 0.1);
     border-radius: 8px;
     max-width: 750px;
     transition: background-color 0.2s ease-in-out;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 
-    @media screen and (max-width: $media-480) {
-      padding: 0 0 0 18px;
-      margin-bottom: 14px;
+    @media screen and (min-width: $media-400) {
+      padding: 24px 26px;
+      margin-bottom: 20px;
     }
 
     &:hover {
