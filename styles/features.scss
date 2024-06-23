@@ -63,10 +63,10 @@
     max-width: 462px;
     letter-spacing: 0.85px;
     line-height: 1.5;
-    margin-bottom: 42px;
+    margin-bottom: 0;
 
-    @media screen and (max-width: $media-576) {
-      margin-bottom: 0;
+    @media screen and (min-width: $media-400) {
+      margin-bottom: 42px;
     }
   }
 

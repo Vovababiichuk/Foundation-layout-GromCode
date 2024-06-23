@@ -567,11 +567,11 @@
   max-width: 462px;
   letter-spacing: 0.85px;
   line-height: 1.5;
-  margin-bottom: 42px;
+  margin-bottom: 0;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 400px) {
   .features__content-description {
-    margin-bottom: 0;
+    margin-bottom: 42px;
   }
 }
 .features__content-sub {
