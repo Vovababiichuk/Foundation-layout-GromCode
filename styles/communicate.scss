@@ -1,24 +1,40 @@
 .communicate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 38px;
+  padding: 58px 15px 48px;
   background-color: $color-light;
 
-  &__inner {
-    @include flex-column(24px);
-    padding: 110px 50px 120px 130px;
-
-    @media screen and (max-width: $media-1320) {
-      align-items: center;
-      justify-content: center;
-      padding: 110px 50px 120px;
-    }
-    @media screen and (max-width: $media-1200) {
-      gap: 34px;
-      padding: 58px 50px 120px;
-    }
-    @media screen and (max-width: $media-576) {
-      padding: 58px 15px 48px;
-      gap: 38px;
-    }
+  @media screen and (min-width: $media-900) {
+    gap: 34px;
+    padding: 58px 50px 120px;
   }
+  @media screen and (min-width: $media-1400) {
+    gap: 24px;
+    // padding: 110px 50px 120px;
+    padding: 110px 50px 120px 130px;
+  }
+
+  //============================
+
+  // @include flex-column(24px);
+  // padding: 110px 50px 120px 130px;
+
+  // @media screen and (max-width: $media-1320) {
+  //   align-items: center;
+  //   justify-content: center;
+  //   padding: 110px 50px 120px;
+  // }
+  // @media screen and (max-width: $media-1200) {
+  //   gap: 34px;
+  //   padding: 58px 50px 120px;
+  // }
+  // @media screen and (max-width: $media-576) {
+  //   padding: 58px 15px 48px;
+  //   gap: 38px;
+  // }
 
   &__content {
     display: flex;
