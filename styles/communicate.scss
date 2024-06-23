@@ -21,31 +21,23 @@
     text-align: left;
     gap: 100px;
 
+    &-wrap {
+      margin: 0 auto;
+    }
+
     @media screen and (min-width: $media-400) {
       text-align: center;
     }
     @media screen and (min-width: $media-900) {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
       flex-direction: row;
     }
     @media screen and (min-width: $media-1400) {
-      align-items: center;
       text-align: left;
       gap: 192px;
     }
-
-    // =======================
-    // display: flex;
-    // align-items: center;
-    // gap: 192px;
-
-    // @media screen and (max-width: $media-1200) {
-    //   flex-direction: column;
-    //   text-align: center;
-    //   gap: 100px;
-    // }
-    // @media screen and (max-width: $media-576) {
-    //   text-align: left;
-    // }
 
     &-decor {
       font-size: 22px;
@@ -70,14 +62,15 @@
     }
 
     &-divider {
+      display: none;
+      width: 150px;
       border-width: 1px;
       border-style: solid;
       border-color: rgba($color-black, 0.1);
-      width: 150px;
       margin-top: 90px;
 
-      @media screen and (max-width: $media-1320) {
-        display: none;
+      @media screen and (min-width: $media-1400) {
+        display: block;
       }
     }
 
@@ -85,10 +78,10 @@
       width: 100%;
       max-width: 425px;
       margin-top: -50px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
 
-      @media screen and (max-width: $media-576) {
-        margin-bottom: 20px;
+      @media screen and (min-width: $media-400) {
+        margin-bottom: 24px;
       }
     }
 
