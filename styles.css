@@ -1562,20 +1562,19 @@
     padding: 42px 260px 46px 130px;
   }
 }
-@media screen and (max-width: 480px) {
-  .footer__info {
-    margin: 0 auto;
-  }
+.footer__info {
+  margin: 0 auto;
 }
 .footer__info-desc {
+  display: none;
   font-size: 18px;
-  color: rgba(43, 41, 45, 0.6);
   margin-bottom: 28px;
   margin-top: 26px;
+  color: rgba(43, 41, 45, 0.6);
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) {
   .footer__info-desc {
-    display: none;
+    display: block;
   }
 }
 .footer__info-apps {
@@ -1589,7 +1588,6 @@
   scale: 1.05;
 }
 .footer__line {
-  display: none;
   position: absolute;
   top: 280px;
   left: 0;
@@ -1597,14 +1595,17 @@
   height: 1px;
   border-bottom: 1px solid rgba(43, 41, 45, 0.1);
 }
-@media screen and (max-width: 470px) {
+@media screen and (min-width: 400px) {
   .footer__line {
-    display: block;
+    display: none;
   }
 }
-@media screen and (max-width: 480px) {
+.footer__links {
+  padding-left: 15px;
+}
+@media screen and (min-width: 400px) {
   .footer__links {
-    padding-left: 15px;
+    padding-left: 0;
   }
 }
 .footer__links-title {
@@ -1615,11 +1616,11 @@
 .footer__links-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) {
   .footer__links-list {
-    gap: 10px;
+    gap: 12px;
   }
 }
 .footer__links-list-item {
@@ -1637,26 +1638,25 @@
 }
 .footer__bottom {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0;
-  padding: 15px 130px;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  padding: 15px 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 400px) {
   .footer__bottom {
-    padding: 15px 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer__bottom {
-    flex-direction: column;
-    align-items: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
     gap: 30px;
+    padding: 15px 130px;
   }
 }
-@media screen and (max-width: 480px) {
-  .footer__bottom .footer-info {
-    padding: 0 15px;
+@media screen and (min-width: 900px) {
+  .footer__bottom {
+    flex-direction: row;
+    align-items: center;
   }
 }
 .footer__bottom .footer-info__list {
@@ -1704,7 +1704,6 @@
   }
   .footer__links:nth-of-type(3) {
     margin-top: -34px;
-    padding-left: 15px;
   }
   .logo__text-name--footer {
     line-height: 1.5;

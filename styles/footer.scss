@@ -29,19 +29,18 @@
   }
 
   &__info {
-    @media screen and (max-width: $media-480) {
-      margin: 0 auto;
-    }
+    margin: 0 auto;
   }
 
   &__info-desc {
+    display: none;
     font-size: 18px;
-    color: rgba($color-black, 0.6);
     margin-bottom: 28px;
     margin-top: 26px;
+    color: rgba($color-black, 0.6);
 
-    @media screen and (max-width: $media-480) {
-      display: none;
+    @media screen and (min-width: $media-400) {
+      display: block;
     }
   }
 
@@ -55,7 +54,6 @@
   }
 
   &__line {
-    display: none;
     position: absolute;
     top: 280px;
     left: 0;
@@ -63,15 +61,18 @@
     height: 1px;
     border-bottom: 1px solid rgba($color-black, 0.1);
 
-    @media screen and (max-width: 470px) {
-      display: block;
+    @media screen and (min-width: $media-400) {
+      display: none;
     }
   }
 
   &__links {
-    @media screen and (max-width: 480px) {
-      padding-left: 15px;
+    padding-left: 15px;
+
+    @media screen and (min-width: $media-400) {
+      padding-left: 0;
     }
+
     &-title {
       font-size: 22px;
       font-weight: 700;
@@ -79,10 +80,10 @@
     }
 
     &-list {
-      @include flex-column(12px);
+      @include flex-column(10px);
 
-      @media screen and (max-width: $media-480) {
-        gap: 10px;
+      @media screen and (min-width: $media-400) {
+        gap: 12px;
       }
 
       &-item {
@@ -98,21 +99,25 @@
   }
 
   &__bottom {
-    @include flex-center(space-between);
-    padding: 15px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    padding: 15px 15px;
 
-    @media screen and (max-width: $media-768) {
-      padding: 15px 15px;
-    }
-    @media screen and (max-width: $media-480) {
-      flex-direction: column;
-      align-items: start;
+    @media screen and (min-width: $media-400) {
+      @include flex-center(space-between);
       gap: 30px;
+      padding: 15px 130px;
+    }
+    @media screen and (min-width: $media-900) {
+      flex-direction: row;
+      align-items: center;
     }
 
     .footer-info {
       @media screen and (max-width: $media-480) {
-        padding: 0 15px;
+        // padding: 0 15px;
       }
 
       &__list {
@@ -134,7 +139,6 @@
   }
 }
 
-//!!!!!!!!!!!!!!
 .logo__img--footer {
   width: 60px;
   height: 58px;
@@ -152,17 +156,11 @@
     gap: 16px;
   }
 
-  // .logo__img--footer {
-  //   width: 60px;
-  //   height: 58px;
-  // }
-
   .logo__text--footer {
     margin-bottom: 30px;
   }
   .footer__links:nth-of-type(3) {
     margin-top: -34px;
-    padding-left: 15px;
   }
   .logo__text-name--footer {
     line-height: 1.5;
