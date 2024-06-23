@@ -317,14 +317,14 @@
 
 .headline {
   position: relative;
-  max-width: 1249px;
   display: flex;
   justify-content: space-between;
-  background-color: #f3c6bd;
+  flex-wrap: wrap;
+  max-width: 1249px;
   height: 800px;
   margin: 32px 0px 58px;
-  flex-wrap: wrap;
   padding-bottom: 58px;
+  background-color: #f3c6bd;
 }
 @media screen and (min-width: 400px) {
   .headline {
@@ -344,10 +344,10 @@
 .headline__content {
   display: flex;
   flex-direction: column;
-  z-index: 100;
-  padding: 0px 15px 0 0;
   margin-bottom: 32px;
   margin-left: 15px;
+  padding: 0px 15px 0 0;
+  z-index: 100;
 }
 @media screen and (min-width: 1400px) {
   .headline__content {
@@ -356,14 +356,14 @@
 }
 .headline__title {
   position: relative;
-  z-index: 100;
   max-width: 754px;
   font-size: clamp(50px, 2.5694rem + 2.7778vw, 80px);
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 8px;
   letter-spacing: -0.3125px;
+  margin-bottom: 8px;
   margin: 0;
+  z-index: 100;
 }
 @media screen and (min-width: 400px) {
   .headline__title {
@@ -408,10 +408,10 @@
   color: #3040c4;
 }
 .headline__img {
+  display: block;
   width: 100%;
   max-width: 480px;
   height: auto;
-  display: block;
   position: static;
 }
 @media screen and (min-width: 400px) {

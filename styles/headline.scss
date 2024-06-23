@@ -1,14 +1,13 @@
 .headline {
   position: relative;
-  max-width: 1249px;
   display: flex;
   justify-content: space-between;
-  background-color: $color-beige;
-
+  flex-wrap: wrap;
+  max-width: 1249px;
   height: 800px;
   margin: 32px 0px 58px;
-  flex-wrap: wrap;
   padding-bottom: 58px;
+  background-color: $color-beige;
 
   @media screen and (min-width: $media-400) {
     height: 456px;
@@ -19,89 +18,35 @@
   @media screen and (min-width: $media-1400) {
     margin: 40px 25px 126px 130px;
   }
-  // =================================
-  // position: relative;
-  // max-width: 1249px;
-  // height: 456px;
-  // display: flex;
-  // justify-content: space-between;
-  // background-color: $color-beige;
-  // margin: 40px 25px 126px 130px;
-
-  // @media screen and (max-width: $media-992) {
-  //   margin: 40px 15px 126px;
-  // }
-  // @media screen and (max-width: $media-855) {
-  //   flex-wrap: wrap;
-  //   padding-bottom: 58px;
-  // }
-  // @media screen and (max-width: $media-576) {
-  //   margin: 32px 0px 58px;
-  // }
-  // @media screen and (max-width: $media-480) {
-  //   height: 800px;
-  // }
 
   &__content {
     display: flex;
     flex-direction: column;
-    z-index: 100;
-    padding: 0px 15px 0 0;
     margin-bottom: 32px;
     margin-left: 15px;
+    padding: 0px 15px 0 0;
+    z-index: 100;
 
     @media screen and (min-width: $media-1400) {
       margin-left: 0;
     }
-
-    // ========================================
-    // display: flex;
-    // flex-direction: column;
-    // z-index: 100;
-
-    // @media screen and (max-width: $media-992) {
-    //   margin-left: 15px;
-    // }
-
-    // @media screen and (max-width: $media-855) {
-    //   margin-bottom: 32px;
-    // }
-    // @media screen and (max-width: $media-480) {
-    //   padding: 0px 15px 0 0;
-    // }
   }
 
   &__title {
     position: relative;
-    z-index: 100;
     max-width: 754px;
     font-size: clamp(50px, 2.5694rem + 2.7778vw, 80px);
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 8px;
     letter-spacing: -0.3125px;
+    margin-bottom: 8px;
     margin: 0;
+    z-index: 100;
 
     @media screen and (min-width: $media-400) {
       margin-bottom: 14px;
       letter-spacing: -1px;
     }
-
-    // ============================================
-    // position: relative;
-    // z-index: 100;
-    // max-width: 754px;
-    // font-size: clamp(50px, 2.5694rem + 2.7778vw, 80px);
-    // font-weight: 700;
-    // line-height: 1;
-    // letter-spacing: -1px;
-    // margin-bottom: 14px;
-
-    // @media screen and (max-width: $media-480) {
-    //   margin-bottom: 8px;
-    //   letter-spacing: -0.3125px;
-    //   margin: 0;
-    // }
   }
 
   &__description {
@@ -113,15 +58,6 @@
     @media screen and (min-width: $media-900) {
       margin-bottom: 60px;
     }
-
-    // max-width: 456px;
-    // font-size: 24px;
-    // line-height: 142%;
-    // margin-bottom: 60px;
-
-    // @media screen and (max-width: $media-855) {
-    //   margin: 29px 0 32px;
-    // }
   }
 
   &__buttons {
@@ -147,35 +83,13 @@
     .button-white--accent {
       color: $color-accent;
     }
-
-    // ======================================
-    // display: flex;
-    // align-items: center;
-    // gap: 10px;
-
-    // @media screen and (max-width: $media-576) {
-    //   flex-direction: column;
-
-    //   .button-blue,
-    //   .button-white {
-    //     width: 100%;
-    //   }
-    // }
-
-    // @media screen and (max-width: $media-480) {
-    //   gap: 15px;
-    // }
-
-    // .button-white--accent {
-    //   color: $color-accent;
-    // }
   }
 
   &__img {
+    display: block;
     width: 100%;
     max-width: 480px;
     height: auto;
-    display: block;
     position: static;
 
     @media screen and (min-width: $media-400) {
@@ -193,27 +107,5 @@
     @media screen and (min-width: $media-1400) {
       opacity: 1;
     }
-
-    // ==========================
-    // position: absolute;
-    // top: 8px;
-    // right: 0;
-    // width: 796px;
-    // height: 448px;
-
-    // @media screen and (max-width: $media-1200) {
-    //   opacity: 0.5;
-    // }
-    // @media screen and (max-width: $media-855) {
-    //   display: none;
-    //   position: static;
-    // }
-    // @media screen and (max-width: $media-480) {
-    //   width: 100%;
-    //   max-width: 480px;
-    //   height: auto;
-    //   display: block;
-    //   opacity: 1;
-    // }
   }
 }
