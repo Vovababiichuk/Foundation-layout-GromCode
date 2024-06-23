@@ -21,10 +21,8 @@
   padding: 8px 20px 8px 15px;
   background-color: #fff;
   transition: padding 0.3s, background-color 0.3s;
+  z-index: 400;
 
-  @media screen and (max-width: 480px) {
-    z-index: 1000;
-  }
   @media screen and (min-width: $media-900) {
     background-color: $color-beige;
   }
@@ -162,8 +160,9 @@
 .dropdown {
   display: none;
   position: absolute;
-  top: 50px;
-  right: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 6px;
   width: 612px;
   height: 292px;
