@@ -227,12 +227,12 @@
 
 .mobile-menu-icon {
   position: relative;
-  z-index: 1100;
   height: 64px;
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
-  opacity: 0.15px;
   font-size: 24px;
+  opacity: 0.15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  z-index: 1100;
   color: rgba(43, 41, 45, 0.6);
 }
 @media screen and (min-width: 900px) {
