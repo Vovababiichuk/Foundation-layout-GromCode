@@ -92,12 +92,12 @@
     }
 
     &-divider--mobile {
-      display: none;
+      display: flex;
+      align-self: self-start;
+      margin: 0;
 
-      @media screen and (max-width: $media-576) {
-        display: flex;
-        align-self: self-start;
-        margin: 0;
+      @media screen and (min-width: $media-400) {
+        display: none;
       }
     }
   }

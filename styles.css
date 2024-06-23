@@ -973,13 +973,13 @@
   text-align: center;
 }
 .communicate__content-divider--mobile {
-  display: none;
+  display: flex;
+  align-self: self-start;
+  margin: 0;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 400px) {
   .communicate__content-divider--mobile {
-    display: flex;
-    align-self: self-start;
-    margin: 0;
+    display: none;
   }
 }
 .communicate__list {
