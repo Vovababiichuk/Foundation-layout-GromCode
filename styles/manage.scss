@@ -12,7 +12,9 @@
     padding: 20px 24px 102px;
   }
   @media screen and (min-width: $media-900) {
-    @include flex-center(baseline, 160px);
+    // @include flex-center(baseline, 160px);
+    flex-direction: row;
+    gap: 160px;
     text-align: center;
     padding: 142px 24px 102px;
   }
