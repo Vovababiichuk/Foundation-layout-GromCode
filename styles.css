@@ -1433,6 +1433,7 @@
 @media screen and (min-width: 1400px) {
   .order {
     flex-direction: row;
+    align-items: center;
     gap: 120px;
     padding: 72px 0;
   }
