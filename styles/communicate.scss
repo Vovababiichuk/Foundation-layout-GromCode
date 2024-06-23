@@ -13,42 +13,38 @@
   }
   @media screen and (min-width: $media-1400) {
     gap: 24px;
-    // padding: 110px 50px 120px;
     padding: 110px 50px 120px 130px;
   }
 
-  //============================
-
-  // @include flex-column(24px);
-  // padding: 110px 50px 120px 130px;
-
-  // @media screen and (max-width: $media-1320) {
-  //   align-items: center;
-  //   justify-content: center;
-  //   padding: 110px 50px 120px;
-  // }
-  // @media screen and (max-width: $media-1200) {
-  //   gap: 34px;
-  //   padding: 58px 50px 120px;
-  // }
-  // @media screen and (max-width: $media-576) {
-  //   padding: 58px 15px 48px;
-  //   gap: 38px;
-  // }
-
   &__content {
     display: flex;
-    align-items: center;
-    gap: 192px;
+    flex-direction: column;
+    text-align: left;
+    gap: 100px;
 
-    @media screen and (max-width: $media-1200) {
-      flex-direction: column;
+    @media screen and (min-width: $media-400) {
       text-align: center;
-      gap: 100px;
     }
-    @media screen and (max-width: $media-576) {
-      text-align: left;
+    @media screen and (min-width: $media-900) {
+      flex-direction: row;
     }
+    @media screen and (min-width: $media-1400) {
+      gap: 192px;
+    }
+
+    // =======================
+    // display: flex;
+    // align-items: center;
+    // gap: 192px;
+
+    // @media screen and (max-width: $media-1200) {
+    //   flex-direction: column;
+    //   text-align: center;
+    //   gap: 100px;
+    // }
+    // @media screen and (max-width: $media-576) {
+    //   text-align: left;
+    // }
 
     &-decor {
       font-size: 22px;

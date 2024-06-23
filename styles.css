@@ -896,19 +896,23 @@
 }
 .communicate__content {
   display: flex;
-  align-items: center;
-  gap: 192px;
+  flex-direction: column;
+  text-align: left;
+  gap: 100px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 400px) {
   .communicate__content {
-    flex-direction: column;
     text-align: center;
-    gap: 100px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 900px) {
   .communicate__content {
-    text-align: left;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .communicate__content {
+    gap: 192px;
   }
 }
 .communicate__content-decor {
