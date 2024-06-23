@@ -1,6 +1,5 @@
 .communicate {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 38px;
@@ -29,6 +28,8 @@
       flex-direction: row;
     }
     @media screen and (min-width: $media-1400) {
+      align-items: center;
+      text-align: left;
       gap: 192px;
     }
 

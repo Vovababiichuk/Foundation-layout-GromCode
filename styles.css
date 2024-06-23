@@ -875,7 +875,6 @@
 
 .communicate {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 38px;
@@ -912,6 +911,8 @@
 }
 @media screen and (min-width: 1400px) {
   .communicate__content {
+    align-items: center;
+    text-align: left;
     gap: 192px;
   }
 }
