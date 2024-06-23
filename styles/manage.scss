@@ -48,10 +48,10 @@
     margin-top: -38px;
 
     &-inner {
-      padding-left: 30px;
+      padding-left: 0px;
 
-      @media screen and (max-width: $media-480) {
-        padding-left: 0px;
+      @media screen and (min-width: $media-400) {
+        padding-left: 30px;
       }
     }
 
@@ -60,10 +60,10 @@
       font-size: 22px;
       font-weight: 700;
       color: $color-orange;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
 
-      @media screen and (max-width: $media-480) {
-        margin-bottom: 20px;
+      @media screen and (min-width: $media-400) {
+        margin-bottom: 24px;
       }
     }
 
@@ -71,10 +71,10 @@
       @include title;
       font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
       max-width: 462px;
-      margin-bottom: 30px;
+      margin-bottom: -8px;
 
-      @media screen and (max-width: $media-480) {
-        margin-bottom: -8px;
+      @media screen and (min-width: $media-400) {
+        margin-bottom: 30px;
       }
     }
 
