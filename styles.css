@@ -875,8 +875,8 @@
 
 .communicate {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   gap: 38px;
   padding: 58px 15px 48px;
   background-color: #fff;
@@ -890,7 +890,7 @@
 @media screen and (min-width: 1400px) {
   .communicate {
     gap: 24px;
-    padding: 110px 50px 120px 130px;
+    padding: 102px 65px 120px 0;
   }
 }
 .communicate__content {
@@ -911,7 +911,6 @@
   .communicate__content {
     align-items: center;
     text-align: center;
-    justify-content: center;
     flex-direction: row;
   }
 }
@@ -984,21 +983,23 @@
 }
 .communicate__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -24px;
   font-size: 18px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 400px) {
   .communicate__list {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    margin-top: 0;
+    gap: 30px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1400px) {
   .communicate__list {
-    gap: 20px;
-    margin-top: -24px;
+    align-items: center;
+    padding-left: 65px;
   }
 }
 .communicate__list-item {
