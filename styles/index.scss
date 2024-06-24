@@ -42,10 +42,7 @@ body {
   overflow-x: hidden;
   max-width: 1400px;
   margin: 0 auto;
-
-  @media screen and (max-width: $media-1200) {
-    padding: 0;
-  }
+  padding: 0;
 }
 
 .main {
