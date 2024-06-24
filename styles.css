@@ -1693,22 +1693,41 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+.footer__info .logo {
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+@media screen and (min-width: 400px) {
   .footer__info .logo {
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
-  }
-  .logo__text--footer {
-    margin-bottom: 30px;
-  }
-  .footer__links:nth-of-type(3) {
-    margin-top: -34px;
-  }
-  .logo__text-name--footer {
-    line-height: 1.5;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
 }
+
+.logo__text--footer {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 400px) {
+  .logo__text--footer {
+    margin-bottom: 0;
+  }
+}
+
+.footer__links:nth-of-type(3) {
+  margin-top: -34px;
+}
+@media screen and (min-width: 400px) {
+  .footer__links:nth-of-type(3) {
+    margin-top: 0;
+  }
+}
+
+.logo__text-name--footer {
+  line-height: 1.5;
+}
+
 .logo--footer .logo__text-description {
   display: block;
 }
