@@ -118,8 +118,8 @@
     .footer-info {
       &__list {
         @include flex-center(flex-start, 20px);
-        color: rgba($color-black, 0.6);
         font-size: 14px;
+        color: rgba($color-black, 0.6);
 
         &-link {
           @include hover-link;

@@ -1664,8 +1664,8 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  color: rgba(43, 41, 45, 0.6);
   font-size: 14px;
+  color: rgba(43, 41, 45, 0.6);
 }
 .footer__bottom .footer-info__list-link {
   transition: border-bottom 0.2s linear;
