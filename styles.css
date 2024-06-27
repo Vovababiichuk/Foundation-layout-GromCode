@@ -1043,12 +1043,11 @@
   }
 }
 .audience__content-title {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1;
   max-width: 555px;
+  font-weight: 700;
   font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
   letter-spacing: -0.36px;
+  line-height: 1;
   margin-bottom: -10px;
 }
 @media screen and (min-width: 400px) {
