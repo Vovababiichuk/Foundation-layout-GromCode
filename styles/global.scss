@@ -2,6 +2,13 @@
   display: block;
 }
 
+.title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -35,5 +42,3 @@
 .filter-blur {
   filter: blur(6px);
 }
-
-

@@ -47,7 +47,6 @@
     }
 
     &-title {
-      @include title;
       max-width: 462px;
       font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
       margin-bottom: 29px;
@@ -63,9 +62,7 @@
     &-divider {
       display: none;
       width: 150px;
-      border-width: 1px;
-      border-style: solid;
-      border-color: rgba($color-black, 0.1);
+      border: 1px solid rgba($color-black, 0.1);
       margin-top: 90px;
 
       @media screen and (min-width: $media-1400) {
@@ -89,15 +86,18 @@
       color: rgba($color-black, 0.6);
       text-align: center;
     }
+  }
 
-    &-divider--mobile {
-      display: flex;
-      align-self: self-start;
-      margin: 0;
+  &__divider {
+    width: 150px;
+    border: 1px solid rgba($color-black, 0.1);
+    margin-top: 90px;
+    display: flex;
+    align-self: self-start;
+    margin: 0;
 
-      @media screen and (min-width: $media-400) {
-        display: none;
-      }
+    @media screen and (min-width: $media-400) {
+      display: none;
     }
   }
 

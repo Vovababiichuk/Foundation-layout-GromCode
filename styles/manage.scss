@@ -68,7 +68,6 @@
     }
 
     &-inner-title {
-      @include title;
       font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
       max-width: 462px;
       margin-bottom: -8px;

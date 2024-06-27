@@ -31,7 +31,6 @@
     }
 
     &-title {
-      @include title;
       max-width: 555px;
       font-size: clamp(40px, 2.2037rem + 1.4815vw, 56px);
       letter-spacing: -0.36px;
